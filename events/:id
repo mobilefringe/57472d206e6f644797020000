@@ -6,7 +6,8 @@
 <div class="main_container mobile_padding">
     <div class="details_row">
         <div class="details_col_3 hidden_phone">
-            <img src="http://assets.codecloudapp.com/sites/57472d206e6f644797020000/image/jpeg/undefined/dtl_440x1200_side_events.jpg" />
+          <a href="/events-and-promotions">
+            <img src="http://assets.codecloudapp.com/sites/57472d206e6f644797020000/image/jpeg/undefined/dtl_440x1200_side_events.jpg" /></a>
         </div>
         <div class="details_col_9" id="event_details_container">
             <script id="event_details_template" type="x-tmpl-mustache/text">
