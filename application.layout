@@ -70,8 +70,8 @@
                 <li><a href="/dine">DINE</a></li>
                 <li><a href="/location">LOCATION</a></li>
                 <li><a href="#" id="mobile_dd">CENTER INFORMATION</a></li>
-                <li class="hidden_now mobile_menu_dd"><a href="/pages/greenvalley-services">SERVICES</a></li>
-                <li class="hidden_now mobile_menu_dd"><a href="/pages/greenvalley-contact-us">CONTACT</a></li>
+                <li class="hidden_now mobile_menu_dd"><a href="/pages/district-services">SERVICES</a></li>
+                <li class="hidden_now mobile_menu_dd"><a href="/pages/district-contact-us">CONTACT</a></li>
             </ul>
         </div>
         <div class="row">
@@ -108,8 +108,8 @@
                     <div class="dropdown">
                         <a href="#" type="button" id="dropdownMenuCenterInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Center Information</a>
                         <ul class="dropdown-menu center_info_dd" aria-labelledby="dropdownMenuCenterInfo">
-                            <li><a href="/pages/greenvalley-services">SERVICES</a></li>
-                            <li><a href="/pages/greenvalley-contact-us">CONTACT</a></li>
+                             <li class="hidden_now mobile_menu_dd"><a href="/pages/district-services">SERVICES</a></li>
+                <li class="hidden_now mobile_menu_dd"><a href="/pages/district-contact-us">CONTACT</a></li>
                         </ul>
                     </div>
                     <div class="clearfix"></div>
