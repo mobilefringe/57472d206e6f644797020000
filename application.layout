@@ -108,8 +108,8 @@
                     <div class="dropdown">
                         <a href="#" type="button" id="dropdownMenuCenterInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Center Information</a>
                         <ul class="dropdown-menu center_info_dd" aria-labelledby="dropdownMenuCenterInfo">
-                             <li class="hidden_now mobile_menu_dd"><a href="/pages/district-services">SERVICES</a></li>
-                <li class="hidden_now mobile_menu_dd"><a href="/pages/district-contact-us">CONTACT</a></li>
+                             <li><a href="/pages/district-services">SERVICES</a></li>
+                <li><a href="/pages/district-contact-us">CONTACT</a></li>
                         </ul>
                     </div>
                     <div class="clearfix"></div>
