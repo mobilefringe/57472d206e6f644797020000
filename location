@@ -12,7 +12,7 @@
             <p class="side_link">
                 2437 Park Avenue, Tustin, California 92782
             </p>
-            <a class="main_btn block animated_btn" href="https://maps.google.com/maps?ll=36.022438,-115.08492&z=16&t=m&hl=en-US&gl=CA&mapclient=embed&daddr=2225%20Village%20Walk%20Dr%20%23171%20Henderson%2C%20NV%2089052%20USA@36.022438,-115.0849203" target="_blank" >Driving Direction</a>
+            <a class="main_btn block animated_btn" href="https://www.google.com/maps?ll=33.697761,-117.828375&z=16&t=m&hl=en-US&gl=CA&mapclient=embed&daddr=2437+Park+Ave+Tustin,+CA+92782+USA@33.6977609,-117.828375" target="_blank" >Driving Direction</a>
         </div>
         <div class="details_col_9" id="event_details_container">
             <div class="map_container">
