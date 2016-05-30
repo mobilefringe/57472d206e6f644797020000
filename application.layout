@@ -174,7 +174,8 @@
             <p class="footer_text">
                 <a href="tel:7142599090">714.259.9090</a> | <a href="	/pages/district-privacy-policy">Privacy Policy | </a> <a href="/jobs">Jobs</a> | Vestar Property
             </p>
-            <img src="http://assets.codecloudapp.com/sites/57472d206e6f644797020000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt="">
+          <a href="http://www.vestar.com/" target="_blank">
+                <img src="http://assets.codecloudapp.com/sites/574609776e6f645e19040000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt=""> </a>
             <p class="footer_text">
                 Powered by <a href="http://mallmaverick.com" target="_blank">Mall Maverick</a>
             </p>
@@ -189,7 +190,8 @@
                 </p>
             </div>
             <div class="col-md-6 text-right ">
-                <img src="http://assets.codecloudapp.com/sites/57472d206e6f644797020000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt="">
+                <a href="http://www.vestar.com/" target="_blank">
+                <img src="http://assets.codecloudapp.com/sites/574609776e6f645e19040000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt=""> </a>
                 <div>
                     <p class="footer_text">
                         2437 Park Avenue, Tustin, California 92782
