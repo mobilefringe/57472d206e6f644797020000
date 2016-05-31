@@ -2,7 +2,7 @@
     <script id="store_details_template" type="x-tmpl-mustache/text">
         <div class="header_banner">
             <div class="main_container">
-                <h4 class="header_banner_heading">{{name}}</h4>
+                <h4 class="header_banner_heading" id="store_name" data-value='{{x_coordinate}},{{y_coordinate}},{{id}}'>{{name}}</h4>
             </div>
         </div>
         <div class="main_container mobile_padding">
@@ -15,10 +15,15 @@
                     <p class="side_link">
                         2437 Park Avenue, Tustin, California 92782
                     </p>
-                    <a class="main_btn animated_btn" href="{{website}}" target="_blank" style="{{show}}">Visit Website</a>
+                    <a class="main_btn animated_btn" href="http://{{website}}" target="_blank" style="{{show}}">Visit Website</a>
                 </div>
                 <div class="details_col_9">
-                    <div id="mapsvg_store_detail" class="map_container"></div>
+                    <div id="zoom_container" class="map_container">
+                        <img id="png_map" class="png_map" alt="center map" src=""  />
+                    
+                        <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true">
+                	    </div>    
+                    </div>
                     <h5 class="details_header">Store Hours & Information</h5>
                     <table id="reg_hours_container" class="hours_container"></table>
                     <div class="details_desc margin_30">{{{rich_description}}}</div>
@@ -89,10 +94,7 @@
 </script>
 <!-- End Jobs Template-->
 
-
-<script type="text/javascript" src="http://cdn.mallmaverick.com/javascripts/mapsvg/raphael.js"></script>
-<script type="text/javascript" src="http://cdn.mallmaverick.com/javascripts/mapsvg/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="http://cdn.mallmaverick.com/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>s
 <script>
     $(document).ready(function(e){
         init(e);
@@ -100,6 +102,11 @@
         if($(window).width() <= 768){
             $('.details_header').click()
         }
+        
+    })
+    
+    $(window).load(function(e){
+        show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map")
     })
     
     function renderPage(){
@@ -151,15 +158,21 @@
         }
         show_content();
         var stores = getStoresList();
-        var regions = {}
-        $.each( stores , function( key, val ) {
-            if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                obj = {};
-                obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>"+val.name+"</p></div>"
-                obj["attr"] = {}
-                regions[val.svgmap_region] = obj
-            }
-        });
-        load_map(regions, store_details, 2500, 2000);
+        $("#png_map").attr("src", getPNGMapURL())
+		$('#png_map').smoothZoom({
+		    height: 496,
+		    width: 619,
+		    initial_ZOOM: 50,
+			initial_POSITION: '500 1000',
+			zoom_MIN: 50,
+			zoom_MAX: 100,
+			responsive: true,
+		    responsive_maintain_ratio: true,
+			zoom_BUTTONS_SHOW : 'YES',
+			pan_BUTTONS_SHOW : 'NO',
+			pan_LIMIT_BOUNDARY : 'NO',
+			button_ALIGN: "top left",
+			container: 'zoom_container'
+		});
     }
 </script>
