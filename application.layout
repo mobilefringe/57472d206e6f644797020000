@@ -86,9 +86,9 @@
                     <a href="https://twitter.com/DistrictTustin" target="_blank">
                         <span id="social_twitter"></span>
                     </a>
-                    <a href="https://www.pinterest.com/shopthedistrict/" target="_blank">
-                        <span id="social_pinterest"></span>
-                    </a>
+                    <!--<a href="https://www.pinterest.com/shopthedistrict/" target="_blank">-->
+                    <!--    <span id="social_pinterest"></span>-->
+                    <!--</a>-->
                     <a href="https://www.instagram.com/TheDistrictTL/" target="_blank">
                         <span id="social_insta"></span>
                     </a>
