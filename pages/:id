@@ -26,9 +26,7 @@
     function renderPage(){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
-        if (slug == "district-privacy-policy"){
-           $('#side_image').attr(’src’, 'http://assets.codecloudapp.com/sites/57472d206e6f644797020000/image/jpeg/undefined/dtl_440x1200_side_privacy.jpg')
-       }
+       
         
         prefix = get_prefix();
         $('#top_banner').addClass(slug)
