@@ -42,7 +42,7 @@
 		    width: 619,
 		    initial_ZOOM: 0,
 			initial_POSITION: '500 1000',
-			zoom_MIN: 50,
+			zoom_MIN: 0,
 			zoom_MAX: 100,
 			responsive: true,
 		    responsive_maintain_ratio: true,
