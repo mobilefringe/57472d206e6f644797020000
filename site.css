@@ -47,3 +47,11 @@ $animation_color: #a5afb0;
 .district-privacy-policy{
     background-image: url(http://assets.codecloudapp.com/sites/57472d206e6f644797020000/image/jpeg/undefined/dtl_1920x150_banner_privacy.jpg);
 }
+
+.main_logo{
+    margin-top: 0;
+    max-height: 90px;
+}
+
+
+
