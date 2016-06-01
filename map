@@ -41,7 +41,6 @@
 		    height: 496,
 		    width: 619,
 		    initial_ZOOM: 0,
-			initial_POSITION: '0 0',
 			zoom_MIN: 0,
 			zoom_MAX: 100,
 			responsive: true,
