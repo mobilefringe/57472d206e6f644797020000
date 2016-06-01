@@ -26,6 +26,10 @@
     function renderPage(){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
+        if (slug == "district-privacy-policy"){
+           $('#side_image').attr(’src’, '')
+       }
+        
         prefix = get_prefix();
         $('#top_banner').addClass(slug)
         var pages_json = prefix+"/pages/" + slug + ".json"
