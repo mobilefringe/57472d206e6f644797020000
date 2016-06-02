@@ -1,6 +1,6 @@
 <div id="store_details_container">
     <script id="store_details_template" type="x-tmpl-mustache/text">
-        <div class="header_banner">
+        <div class="header_banner stores_banner">
             <div class="main_container">
                 <h4 class="header_banner_heading" id="store_name" data-value='{{x_coordinate}},{{y_coordinate}},{{id}}'>{{name}}</h4>
             </div>
