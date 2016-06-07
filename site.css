@@ -1,7 +1,7 @@
 $layout_color: #f89d54;
 $animation_color: #a5afb0;
 
-.main_btn, .back_to_home, .copyright_footer, .newsletter_btn, .flex-control-paging li a.flex-active, .store_nav a.active_store_nav:after, .store_nav a:hover:after, .store_initial, .details_header, .back_to_list, .back_to_list:hover, .back_to_list:focus, .mobile_menu_dd, #mm_page_content h2{
+.main_btn, .back_to_home, .copyright_footer, .newsletter_btn, .flex-control-paging li a.flex-active, .store_nav a.active_store_nav:after, .store_nav a:hover:after, .store_initial, .details_header, .back_to_list, .back_to_list:hover, .back_to_list:focus, .mobile_menu_dd, #mm_page_content h2, .promo_exist{
     background: $layout_color;
 }
 
