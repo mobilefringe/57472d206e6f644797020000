@@ -94,7 +94,7 @@
 </script>
 <!-- End Jobs Template-->
 
-<script src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>s
+<script src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
@@ -102,12 +102,17 @@
         if($(window).width() <= 768){
             $('.details_header').click()
         }
+        console.log(isIE())
+        if (isIE()){
+            show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map")
+        }    
         
     })
-    
-    $(window).load(function(e){
-        show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map")
-    })
+    if (isIE() == false){
+        $(window).load(function(e){
+            show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map")
+        })
+    }
     
     function renderPage(){
         var pathArray = window.location.pathname.split( '/' );
@@ -160,7 +165,7 @@
         var stores = getStoresList();
         $("#png_map").attr("src", getPNGMapURL())
 		$('#png_map').smoothZoom({
-		  height: 496,
+		      height: 496,
 		    width: 619,
 		    initial_ZOOM: 0,
 			zoom_MIN: 0,
