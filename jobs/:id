@@ -15,8 +15,7 @@
                 <p class="colored_link">{{name}}</p>
                 <h3 class="publish_date"><span class="promo_parent">{{store_name}} | </span>{{dates}}</h3>
                 <div class="details_desc">{{{rich_description}}}</div>
-                // <p class="promo_parent">Contact Name: <span class="details_desc">{{contact_name}}</span></p>
-                // <p class="promo_parent">Contact Email: <span class="details_desc">{{contact_email}}</span></p>
+               
             </script>
         </div>
     </div>
