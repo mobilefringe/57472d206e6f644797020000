@@ -45,6 +45,8 @@
     function renderPage(){
         var banners = getBanners();
         var feature_items = getFeatureList();
+        var popup = getPopups()[0];
+        renderPopUp("#popup_container", "#popup_template", popup)
         renderBanner('#banner_template','#home_banner',banners);
         renderFeatureItems('#feature_container','#feature_template', feature_items);
         $('.flexslider').flexslider({
