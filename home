@@ -46,7 +46,6 @@
         var banners = getBanners();
         var feature_items = getFeatureList();
         var popup = getPopups()[0];
-        renderPopUp("#popup_container", "#popup_template", popup)
         renderBanner('#banner_template','#home_banner',banners);
         renderFeatureItems('#feature_container','#feature_template', feature_items);
         $('.flexslider').flexslider({
@@ -54,6 +53,7 @@
         });
         show_content();
         if(popup != undefined && $.cookie("popup_viewed") != "true"){
+            renderPopUp("#popup_container", "#popup_template", popup)
             $.cookie("popup_viewed", "true");
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show()
@@ -63,4 +63,7 @@
 	        $(".popup_home").remove();
         })
     }
+    
+    
+    
 </script>
