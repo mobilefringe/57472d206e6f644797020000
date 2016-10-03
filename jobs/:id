@@ -1,0 +1,38 @@
+<div class="header_banner jobs_banner">
+    <div class="main_container">
+        <h4 class="header_banner_heading">Jobs</h4>
+    </div>
+</div>
+<div class="main_container mobile_padding">
+    <div class="details_row">
+        <div class="details_col_3 hidden_phone">
+        <a href="/events-and-promotions">
+            <img src="//assets.codecloudapp.com/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_jobs.jpg" /></a>
+        </div>
+        <div class="details_col_9" id="job_details_container">
+            <script id="job_details_template" type="x-tmpl-mustache/text">
+                <a href="/jobs" class="back_to_list"><i class="fa fa-chevron-left"></i> &nbsp;Back to list</a>
+                <p class="colored_link">{{name}}</p>
+                <h3 class="publish_date"><span class="promo_parent">{{store_name}} | </span>{{dates}}</h3>
+                <div class="details_desc">{{{rich_description}}}</div>
+               
+            </script>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        job_details = getJobDetailsBySlug(slug);
+        renderJobDetails('#job_details_container', '#job_details_template', job_details)
+        show_content();
+    }
+</script>
