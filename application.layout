@@ -41,8 +41,8 @@
     <script src="../site.js" type="text/javascript"></script>
     
     <!--MallMaverick SDK-->
-    <script src="//mallmaverick.cdn.speedyrails.net/mallmaverick.js?v=0.3"></script>
-    <script src="//mallmaverick.cdn.speedyrails.net/mustache_mallmaverick.js?v=0.3"></script>
+    <script src="//mallmaverick.codecloudapp.com/mallmaverick.js?v=0.3"></script>
+    <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
     
      <!--Analytics -->
      <script>
