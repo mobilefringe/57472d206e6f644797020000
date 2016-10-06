@@ -18,7 +18,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
    
-    <!--CSS-->
+   <!--CSS-->
     
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
@@ -33,11 +33,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/application/x-javascript/1404372988000/instagram.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/text/javascript/1446569669000/instafeed.min.js"></script>
-    <script src="/application.js" type="text/javascript"></script>
-    <script src="//5730acef6e6f6455e0000000.codecloudapp.com/helpers.js" type="text/javascript"></script>
+    <script src="//57f3bee46e6f643959000000.codecloudapp.com/application.js" type="text/javascript"></script>
+    <script src="//57f3bee46e6f643959000000.codecloudapp.com/helpers.js" type="text/javascript"></script>
     <script src="../site.js" type="text/javascript"></script>
     
     <!--MallMaverick SDK-->
