@@ -458,6 +458,7 @@ function renderJobs(container, template, collection){
         // }
         
         var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
+        val.published_on = show_date.format("MMM D");
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
