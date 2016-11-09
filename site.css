@@ -48,6 +48,9 @@ $animation_color: #a5afb0;
     background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_privacy.jpg);
 }
 
+.district-videos{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_events.jpg);
+}
 .main_logo{
     margin-top: 0;
     max-height: 90px;
