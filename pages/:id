@@ -29,6 +29,9 @@
         if (slug == "district-privacy-policy"){
            $('#side_image').attr('src', "//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_privacy.jpg")
         }
+        if (slug == "district-videos"){
+           $('#side_image').attr('src', "//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_privacy.jpg")
+        }
          if (slug == "district-contact-us"){
            $('#side_image').attr('src', "//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_privacy.jpg")
         }
