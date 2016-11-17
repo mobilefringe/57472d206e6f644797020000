@@ -15,7 +15,7 @@
                     <p class="side_link">
                         {{unit}}
                     </p>
-                    <a class="main_btn animated_btn" href="//{{website}}" target="_blank" style="{{show}}">Visit Website</a>
+                    <a class="main_btn animated_btn" href="{{website}}" target="_blank" style="{{show}}">Visit Website</a>
                 </div>
                 <div class="details_col_9">
                     <div id="zoom_container" class="map_container">
@@ -99,14 +99,13 @@
     $(document).ready(function(e){
         init(e);
         loadMallDataCached(renderPage);
-        if($(window).width() <= 768){
+        if ($(window).width() <= 768){
             $('.details_header').click()
         }
         console.log(isIE())
         if (isIE()){
             show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map")
         }    
-        
     })
     if (isIE() == false){
         $(window).load(function(e){
@@ -146,6 +145,7 @@
         else {
             $('#promotions_header').hide();
         }
+        
         var store_job_ids = store_details.jobs
         var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
         var published_jobs = [];
@@ -169,7 +169,7 @@
         var stores = getStoresList();
         $("#png_map").attr("src", getPNGMapURL())
 		$('#png_map').smoothZoom({
-		    height: 496,
+		      height: 496,
 		    width: 619,
 		    initial_ZOOM: 26,
 			zoom_MIN: 26,
