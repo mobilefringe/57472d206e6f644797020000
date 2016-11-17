@@ -175,7 +175,7 @@
 			container: 'zoom_container'
 		});
 		show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map");
-    	setTimeout(zoomIn, 2000);
+    	setTimeout(zoomIn, 200);
     }
     function zoomIn(){
         var coords = ($('#store_name').attr('data-value')).split(",");
