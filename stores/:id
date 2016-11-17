@@ -177,7 +177,9 @@
 			container: 'zoom_container'
 		});
 		if (isIE() == false){
-            
+            $(window).load(function(e){
+                show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map")
+            })
         }
     }
 </script>
