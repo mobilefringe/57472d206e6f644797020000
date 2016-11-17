@@ -1,11 +1,3 @@
-<styles>
-    .map_container {
-        img {
-            max-width: 100%;
-        }
-    }
-</style>
-
 <div id="store_details_container">
     <script id="store_details_template" type="x-tmpl-mustache/text">
         <div class="header_banner stores_banner">
