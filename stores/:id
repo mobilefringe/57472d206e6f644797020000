@@ -174,7 +174,6 @@
 			button_ALIGN: "top left",
 			container: 'zoom_container'
 		});
-		alert(slug)
 		show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map");
 		$("#png_map").smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
     }
