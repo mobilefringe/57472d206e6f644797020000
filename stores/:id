@@ -163,7 +163,7 @@
 		$('#png_map').smoothZoom({
 		    height: 496,
 		    width: 619,
-		    initial_ZOOM: 300,
+		    initial_ZOOM: 26,
 			zoom_MIN: 26,
 			zoom_MAX: 100,
 			responsive: true,
