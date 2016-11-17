@@ -175,7 +175,7 @@
 			container: 'zoom_container'
 		});
 		show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map");
-	alert($('#store_name').attr('data-value'))
+    	coords = ($('#store_name').attr('data-value')).split(",")
 		$("#png_map").smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
     }
 </script>
