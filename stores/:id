@@ -107,6 +107,11 @@
             show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map")
         }    
     })
+    if (isIE() == false){
+        $(window).load(function(e){
+            show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map")
+        })
+    }
     
     function renderPage(){
         var pathArray = window.location.pathname.split( '/' );
