@@ -15,7 +15,7 @@
                     <p class="side_link">
                         {{unit}}
                     </p>
-                    <a class="main_btn animated_btn" href="{{website}}" target="_blank" style="{{show}}">Visit Website</a>
+                    <a class="main_btn animated_btn" href="http://{{website}}" target="_blank" style="{{show}}">Visit Website</a>
                 </div>
                 <div class="details_col_9">
                     <div id="zoom_container" class="map_container">
@@ -94,18 +94,19 @@
 </script>
 <!-- End Jobs Template-->
 
-<script src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
         loadMallDataCached(renderPage);
-        if ($(window).width() <= 768){
+        if($(window).width() <= 768){
             $('.details_header').click()
         }
         console.log(isIE())
         if (isIE()){
             show_png_pin_without_link($('#store_name').attr('data-value'), $('#store_name').text(), "#png_map")
         }    
+        
     })
     if (isIE() == false){
         $(window).load(function(e){
@@ -117,32 +118,30 @@
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         var store_details = getStoreDetailsBySlug(slug);
+        
         renderStoreDetails('#store_details_container','#store_details_template', store_details);
         var hour_ids = store_details.store_hours;
         if (hour_ids.length > 0){
             var hours = getHoursForIds(hour_ids);
             renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
         }
-        else {
+        else{
             $('#reg_hours_container').hide();
         }
         var store_promo_ids = store_details.promotions
         var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
         var published_promos = [];
         $.each( store_promos , function( key, val ){
-            // today = new Date();
-            // webDate = new Date(val.show_on_web_date)
-            
-            today = moment();
-            webDate = moment(val.show_on_web_date);
+            today = new Date();
+            webDate = new Date(val.show_on_web_date)
             if (today >= webDate) {
                 published_promos.push(val)
             } 
         });
-        if (published_promos.length > 0){
+        if( published_promos.length > 0){
             renderPromotions("#promos_container","#promos_template", published_promos);
         }
-        else {
+        else{
             $('#promotions_header').hide();
         }
         
@@ -150,19 +149,16 @@
         var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
         var published_jobs = [];
         $.each( store_jobs , function( key, val ){
-            // today = new Date();
-            // webDate = new Date(val.show_on_web_date)
-            
-            today = moment();
-            webDate = moment(val.show_on_web_date);
+            today = new Date();
+            webDate = new Date(val.show_on_web_date)
             if (today >= webDate) {
                 published_jobs.push(val)
             } 
         });
-        if (published_jobs.length > 0){
+        if( published_jobs.length > 0){
             renderJobs('#jobs_container', '#jobs_template', published_jobs);
         }
-        else {
+        else{
             $('#jobs_header').hide();
         }
         show_content();
@@ -171,8 +167,8 @@
 		$('#png_map').smoothZoom({
 		      height: 496,
 		    width: 619,
-		    initial_ZOOM: 0,
-			zoom_MIN: 0,
+		    initial_ZOOM: 26,
+			zoom_MIN: 26,
 			zoom_MAX: 100,
 			responsive: true,
 		    responsive_maintain_ratio: true,
