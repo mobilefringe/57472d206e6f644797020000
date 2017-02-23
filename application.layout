@@ -155,7 +155,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <h5 class="heading">NEWSLETTER SUBSCRIPTION</h5>
                 <div class="newsletter_div">
                     <form action="//mobilefringe.createsend.com/t/d/s/ulqyh/" method="post" id="newsletter_form">
-                        <input name="cm-ulqyh-ulqyh" type="text" placeholder="Susbcribe to Newsletter" class="newsletter_control" required />
+                        <input name="cm-ulqyh-ulqyh" type="text" placeholder="Subscribe to Newsletter" class="newsletter_control" required />
                         <button class="newsletter_btn animated_btn">Subscribe</button>
                         <label class="newsletter_label">
                             <input id="newsletter_agree" type="checkbox" />
