@@ -17,7 +17,7 @@
             <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
                 <div class="store_desc" id="events_container">
                     <div class="store_desc" id="no_events">
-                        Currently we have no Events, but check back soon!
+                        Check back soon for future Events!
                         <hr class="promo_separator" />
                     </div>
                     <script id="events_template" type="x-tmpl-mustache/text">
@@ -42,7 +42,7 @@
             </h5>
             <div id="collapse3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
                 <div class="store_desc" id="no_promotions">
-                    Currently we have no Promotions, but check back soon!
+                   Check back soon for future Promotions!
                     <hr class="promo_separator" />
                 </div>
                 <div class="store_desc" id="promos_container">
