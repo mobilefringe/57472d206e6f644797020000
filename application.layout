@@ -94,17 +94,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <a href="https://www.facebook.com/DistrictTustin" target="_blank">
                         <span id="social_facebook"></span>
                     </a>
-                    <a href="https://twitter.com/DistrictTustin" target="_blank">
-                        <span id="social_twitter"></span>
-                    </a>
+                    <!--<a href="https://twitter.com/DistrictTustin" target="_blank">-->
+                    <!--    <span id="social_twitter"></span>-->
+                    <!--</a>-->
                     <!--<a href="https://www.pinterest.com/shopthedistrict/" target="_blank">-->
                     <!--    <span id="social_pinterest"></span>-->
                     <!--</a>-->
                     <a href="https://www.instagram.com/TheDistrictTustin" target="_blank">
                         <span id="social_insta"></span>
                     </a>
-                    <!--<a href="#" target="_blank">-->
-                    <!--    <span id="social_yt"></span>-->
+                    <a href="http://bit.ly/2roztiJ  " target="_blank">
+                        <span id="social_yt"></span>
                     <!--</a>-->
                     <!--<a href="#" target="_blank">-->
                     <!--    <span id="social_gplus"></span>-->
