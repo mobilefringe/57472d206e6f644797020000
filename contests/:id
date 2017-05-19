@@ -49,7 +49,7 @@
                                 <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" required data-validation="required"/> 
                                 I agree to receive newsletters from {{property_name}}. You can unsubscribe anytime.
                             </label>
-                            <p>For more details about personal privacy, please read our <a href="/pages/costamesa-privacy-policy" target="_blank">Privacy Policy.</a></p>
+                            <p>For more details about personal privacy, please read our <a href="/pages/district-privacy-policy" target="_blank">Privacy Policy.</a></p>
                             <br/><br/>
                             <button class="main_btn animated_btn contest_btn">Submit</button>
                             <br/><br/>
