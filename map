@@ -1,0 +1,58 @@
+<div class="header_banner stores_banner">
+    <div class="main_container">
+        <h4 class="header_banner_heading">Center Map</h4>
+    </div>
+</div>
+<div class="main_container mobile_padding">
+    <div class="details_row">
+        <div class="details_col_3">
+            <p class='colored_link'>Find Store</p>
+            <div id="stores_container">
+                <script id="stores_template" type="x-tmpl-mustache/text">
+                    <h5 class="stores_map"><a class="map_pin_a" href="#" data-value='{{x_coordinate}},{{y_coordinate}},{{id}}'>{{name}}</a></h5>
+                </script>
+            </div>
+        </div>
+        <div class="details_col_9">
+            <div id="zoom_container">
+                <img id="png_map" class="png_map" alt="center map" src="" />
+                <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true">
+        	    </div>    
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+         var stores = getStoresList();
+        renderStoreList('#stores_container','#stores_template', stores, "stores", "A", "Z");
+        renderStoreList('#landmark_container','#landmark_template', stores, "stores", "A", "Z");
+        show_content();
+        $('#top_nav_stores').addClass('active_yellow')
+        
+        $("#png_map").attr("src", getPNGMapURL())
+		$('#png_map').smoothZoom({
+		    height: 496,
+		    width: 619,
+		    initial_ZOOM: 0,
+			zoom_MIN: 0,
+			zoom_MAX: 100,
+			responsive: true,
+		    responsive_maintain_ratio: true,
+			zoom_BUTTONS_SHOW : 'YES',
+			pan_BUTTONS_SHOW : 'NO',
+			pan_LIMIT_BOUNDARY : 'NO',
+			button_ALIGN: "top left",
+			container: 'zoom_container'
+		});
+		
+		show_png_pin(".map_pin_a", "#png_map")
+        
+    }
+</script>
