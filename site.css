@@ -1,0 +1,83 @@
+$layout_color: #f89d54;
+$animation_color: #a5afb0;
+
+.main_btn, .back_to_home, .copyright_footer, .newsletter_btn, .flex-control-paging li a.flex-active, .store_nav a.active_store_nav:after, .store_nav a:hover:after, .store_initial, .details_header, .back_to_list, .back_to_list:hover, .back_to_list:focus, .mobile_menu_dd, #mm_page_content h2{
+    background: $layout_color;
+}
+
+.newsletter_control:focus{
+    border-color: $layout_color;
+}
+
+.view_more_btn, .colored_link, .colored_link a, #mm_page_content h1, .mobile_menu li a, .promo_exist{
+    color: $layout_color;
+}
+
+.animated_btn:before{
+    background: $animation_color;
+}
+
+.stores_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_directory.jpg);
+}
+
+.events_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_events.jpg);
+}
+
+.dine_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_dine2.jpg);
+}
+
+.jobs_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_jobs.jpg);
+}
+
+.location_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_services.jpg);
+}
+
+.district-services{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_services.jpg);
+}
+
+.district-contact-us{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_contact.jpg);
+}
+.district-privacy-policy{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_privacy.jpg);
+}
+.district-videos{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_events.jpg);
+}
+.main_logo{
+    margin-top: 0;
+    max-height: 90px;
+}
+
+/* *** CALENDAR PAGE *** */
+.event_calendar_header {
+    position: absolute;
+    right: 0;
+    list-style: none;
+    width: calc(100% - 200px);
+    margin-bottom: 0;
+    top: 72px;
+    font-size: 16px;
+}
+.event_calendar_header li {
+    margin-left: 20px;
+    float: right;
+    line-height: normal;
+    color: #000;
+}
+.event_calendar_header li span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    border-radius: 4px;
+    float: left;
+}
+
+
