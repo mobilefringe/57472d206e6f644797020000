@@ -13,7 +13,7 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_events.jpg" /></a>
         </div>
         <div class="details_col_9">
-            <h3 class="hours_header">Events Calendar</h3>
+            <p class="colored_link">Events Calendar</p>
             <div class="position_relative">
                 <ul class="event_calendar_header">
                     <li><span id="closed_event_tile"></span>Closed</li>
