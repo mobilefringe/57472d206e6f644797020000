@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('//codecloud.cdn.speedyrails.net/sites/594a86296e6f644aad7d0100//1463611310000/Avenir-Heavy.woff') format('woff'),
+        
+    font-weight: normal;
+    font-style: normal;
+}
+
 .fc-toolbar .fc-right{
     float:none;
 }
