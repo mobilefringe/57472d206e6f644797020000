@@ -1,0 +1,69 @@
+<div class="header_banner events_banner">
+    <div class="main_container">
+        <h4 class="header_banner_heading">Events & Promotions</h4>
+    </div>
+</div>
+<div class="main_container mobile_padding">
+    <div class="details_row">
+        <div class="details_col_3 hidden_phone">
+            <a href="/events-and-promotions">
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_events.jpg" /></a>
+        </div>
+        <div class="details_col_9">
+            
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        var events = getEventsList().sortBy(function(o){ return o.start_date });
+        var published_events = [];
+        $.each( events , function( key, val ){
+            // today = new Date();
+            // webDate = new Date(val.show_on_web_date)
+            
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today >= webDate) {
+                published_events.push(val)
+            } 
+        });
+        if (published_events.length > 0){
+            renderEvents("#events_container","#events_template", published_events);
+            $('#no_events').hide()
+        }
+        else {
+            $('#events_header').click();
+            $('#events_header').find('i').toggleClass('fa-chevron-down fa-chevron-up');
+        }
+        
+        var promos = getPromotionsList().sortBy(function(o){ return o.start_date });
+        var published_promos = [];
+        $.each( promos , function( key, val ){
+            // today = new Date();
+            // webDate = new Date(val.show_on_web_date)
+            
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today >= webDate) {
+                published_promos.push(val)
+            } 
+        });
+        if (published_promos.length > 0){
+            renderPromotions("#promos_container","#promos_template", published_promos);
+            $('#no_promotions').hide()
+        }
+        else {
+            $('#promotions_header').click();
+            $('#promotions_header').find('i').toggleClass('fa-chevron-down fa-chevron-up');
+        }
+        show_content();
+    }
+</script>
