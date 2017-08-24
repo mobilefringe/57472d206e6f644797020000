@@ -10,7 +10,18 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_events.jpg" /></a>
         </div>
         <div class="details_col_9">
-            
+            <h3 class="hours_header">Events Calendar</h3>
+            <div class="position_relative">
+                <ul class="event_calendar_header">
+                    <li><span id="closed_event_tile"></span>Closed</li>
+                    <li><span id="private_event_tile"></span>Private Events</li>
+                    <li><span id="public_event_tile"></span>Public Events</li>
+                    <li><span id="dixie_event_tile"></span>Dixie Events</li>
+                </ul>
+                <div class="calendar" id="calendar">
+                    
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -23,47 +34,61 @@
     })
     
     function renderPage(){
+        var calendar_events = [];
         var events = getEventsList().sortBy(function(o){ return o.start_date });
-        var published_events = [];
         $.each( events , function( key, val ){
-            // today = new Date();
-            // webDate = new Date(val.show_on_web_date)
-            
+            var published_event = {};
             today = moment();
-            webDate = moment(val.show_on_web_date);
-            if (today >= webDate) {
-                published_events.push(val)
-            } 
+            five_months = moment().add('4', 'M').endOf("d");
+            if (today < five_months){
+                webDate = moment(val.show_on_web_date);
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone()) && (val.tags.indexOf("#living_room") >= 0)) {
+                    if(val.tags.indexOf("#public_event") >= 0 || val.tags.indexOf("#dixie_event") >= 0){
+                        published_event.start = val.start_date;
+                        published_event.end = val.end_date;
+                        // published_event.title = val.name;
+                        published_event.color = (val.tags.indexOf("#public_event") >= 0 ) ? "#E56717" : "#FBB917";
+                        published_event.url = "/events/" + val.slug;
+                        calendar_events.push(published_event);
+                    }
+                    else if(val.tags.indexOf("#private_event") >= 0  || val.tags.indexOf("#closed") >= 0 ){
+                        published_event.start = val.start_date;
+                        published_event.end = val.end_date;
+                        // published_event.title = "Private Event";
+                        published_event.color =  (val.tags.indexOf("#private_event") >= 0 ) ? "#E77471" : "#347235";
+                        // published_event.url = "/events/" + val.slug;
+                        calendar_events.push(published_event);
+                    }
+                    
+                    
+                }
+            }
         });
-        if (published_events.length > 0){
-            renderEvents("#events_container","#events_template", published_events);
-            $('#no_events').hide()
-        }
-        else {
-            $('#events_header').click();
-            $('#events_header').find('i').toggleClass('fa-chevron-down fa-chevron-up');
-        }
         
-        var promos = getPromotionsList().sortBy(function(o){ return o.start_date });
-        var published_promos = [];
-        $.each( promos , function( key, val ){
-            // today = new Date();
-            // webDate = new Date(val.show_on_web_date)
-            
-            today = moment();
-            webDate = moment(val.show_on_web_date);
-            if (today >= webDate) {
-                published_promos.push(val)
-            } 
-        });
-        if (published_promos.length > 0){
-            renderPromotions("#promos_container","#promos_template", published_promos);
-            $('#no_promotions').hide()
-        }
-        else {
-            $('#promotions_header').click();
-            $('#promotions_header').find('i').toggleClass('fa-chevron-down fa-chevron-up');
-        }
         show_content();
+        
+        $('#calendar').fullCalendar({
+            header: {
+                right:  'prev,next'
+            },
+            timezone: getPropertyTimeZone(),
+            events: calendar_events,
+            buttonText: {
+                prev: "Previous Month",
+                next: "Next Month"
+            },
+            viewRender: function(view,element) {
+                var now = new Date();
+                var end = new Date();
+                end.setMonth(now.getMonth() + 3); //Adjust as needed
+                if ( end < view.end) {
+                    $("#calendar .fc-next-button").addClass("fc-state-disabled");
+                    return false;
+                } else {
+                    $("#calendar .fc-next-button").removeClass("fc-state-disabled");
+                }
+            }
+            
+        });
     }
 </script>
