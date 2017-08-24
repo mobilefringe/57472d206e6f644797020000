@@ -45,7 +45,7 @@
                     // if(val.tags.indexOf("#public_event") >= 0 || val.tags.indexOf("#dixie_event") >= 0){
                         published_event.start = val.start_date;
                         published_event.end = val.end_date;
-                        // published_event.title = val.name;
+                        published_event.title = val.name;
                         published_event.color = (val.tags.indexOf("#public_event") >= 0 ) ? "#E56717" : "#FBB917";
                         published_event.url = "/events/" + val.slug;
                         calendar_events.push(published_event);
