@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'LeagueGothic-Regular';
+    src: url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/application/font-woff/1330081700000/League-Gothic.ttf.woff') format('woff'),
+        url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/image/svg+xml/1330081700000/League-Gothic.ttf.svg#League-Gothic') format('svg'),
+        url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100//1330081700000/League-Gothic.ttf.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .fc-toolbar .fc-right{
     float:none;
 }
@@ -5,8 +14,14 @@
 .fc-toolbar .fc-left{
     float:none;
     margin-bottom: 20px;
-    h2{
-        float:none !important;
+    h2 {
+        margin: 0;
+        float: none !important;
+        font-family: 'LeagueGothic-Regular';
+        font-size: 36px;
+        line-height: 44px;
+        color: #000;
+        text-transform: uppercase;
     }
 }
 .fc-time{
@@ -43,4 +58,30 @@
 
 .fc-button-group{
     margin-left:0 !important;
+}
+.fc .fc-button-group > * {
+    font-size: 16px;
+}
+
+.fc-prev-button:before {
+    font-family: 'FontAwesome';
+    content: "\f104";
+    margin-right: 5px;
+}
+
+.fc-next-button:after {
+    font-family: 'FontAwesome';
+    content: "\f105";
+    margin-left: 5px;
+}
+
+/* Small devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .fc-toolbar .fc-left h2 {
+        text-align: left;
+    }
+    .fc-next-button.fc-button.fc-state-default.fc-corner-right {
+        margin-right: 0 !important;
+        float: right;
+    }
 }
