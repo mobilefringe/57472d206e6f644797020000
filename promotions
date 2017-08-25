@@ -10,32 +10,6 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_events.jpg" /></a>
         </div>
         <div class="details_col_9">
-            <h5 id="events_header" class="details_header accordion_header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                Events
-                <i class="fa fa-chevron-up pull-right"></i>
-            </h5>
-            <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
-                <div class="store_desc" id="events_container">
-                    <div class="store_desc" id="no_events">
-                        Check back soon for future Events!
-                        <hr class="promo_separator" />
-                    </div>
-                    <script id="events_template" type="x-tmpl-mustache/text">
-                        <div class="promo_row">
-                            <div class="promo_col_3" style="{{promo_image}}">
-                                <img src="{{event_image_url_abs}}" alt="Promotion" class="" />
-                            </div>
-                            <div class="promo_col_9" style="{{full_width}}">
-                                <p class="colored_link"><a href="/events/{{slug}}">{{name}}</a></p>
-                                <h3 class="publish_date">{{dates}}</h3>
-                                <div class="details_desc">{{description_short}}</div>
-                                <a href="/events/{{slug}}" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                        <hr class="promo_separator" />
-                    </script>
-                </div>
-            </div>
             <h5 id="promotions_header" class="details_header accordion_header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
                 Promotions
                 <i class="fa fa-chevron-up pull-right"></i>
