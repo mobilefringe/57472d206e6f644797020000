@@ -52,7 +52,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <!--MallMaverick SDK-->
     <!--<script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.1.js"></script>-->
-    <script src="//preview-mallmaverick.codecloudapp.com/mallmaverick_v3.1.js"></script>
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
     
      <!--Analytics -->
