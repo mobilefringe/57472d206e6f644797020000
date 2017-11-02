@@ -19,7 +19,7 @@
             
         </ul>
         <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Select Category <i class="fa fa-chevron-down visible_phone pull-right"></i>
+            Select Store <i class="fa fa-chevron-down visible_phone pull-right"></i>
         </a>
         <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2">
             <script id="category_template" type="x-tmpl-mustache/text">
