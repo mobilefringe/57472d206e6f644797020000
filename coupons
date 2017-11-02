@@ -201,44 +201,8 @@
     		        $(el).attr("src","//codecloud.cdn.speedyrails.net/sites/59d7b1c56e6f64669e8d0000/image/png/1508347595000/CheckmarkGreen.png");
     		        $(el).parent().parent().addClass("green_selected_box"); 
     		        $(".basket_number").text(parseInt($(".basket_number").text())+1);
-    		      //  var img = $("#"+ current_coupon_id +" .product-front img");
-    		      //  var position =$(img).offset();	;//$("#"+$(el).parent().parent().attr("id") +" .product-front img").offset();	
-    		      //  console.log("img",img, "img src",img.attr("src"));
-        // 			$("body").append('<div class="floating-cart"></div>');		
-        // 			var cart = $('div.floating-cart');
-        // // 			console.log("1", cart.offset());
-        // 			$("<img src='"+img.attr("src")+"' class='floating-image-large' />").appendTo(cart);
-        // 			cart.css({'top' : position.top + 'px', "left" : position.left + 'px'}).fadeIn("slow").addClass('moveToCart');		
-        // // 			var float_to_position = $(".basket_number").offset();
-        // 			$("div.floating-cart.moveToCart").css({'top' : float_to_position.top + 'px!important', "left" : float_to_position.left + 'px!important'});
-        // 			setTimeout(function(){$("body").addClass("MakeFloatingCart");
-        // // 			console.log(float_to_position);
-        // 			 //   $("body.MakeFloatingCart").css({'top' : float_to_position.top + 'px!important', "left" : float_to_position.left + 'px!important'});
-        // 			 //   console.log("$('body.MakeFloatingCart').offset()", $("body.MakeFloatingCart").offset());
-        // 			}, 800);
-        // // 			console.log("2", cart.offset());
-        // 			setTimeout(function(){
-        //     			$('div.floating-cart').remove();
-        //     			$("body").removeClass("MakeFloatingCart");
-            			
-        // 		    }, 1000);
-        //             $("body").append('<div class="floating-cart"></div>');		
-        // 			var cart = $('div.floating-cart');		
-        // 			$("<img src='"+img.attr("src")+"' class='floating-image-large' />").appendTo(cart);
-        // 			cart.css({'top' : position.top + 'px', "left" : position.left + 'px'}).fadeIn("slow").addClass('moveToCart');		
-        // 			setTimeout(function(){$("body").addClass("MakeFloatingCart");}, 800);
-        			
-        // 			setTimeout(function(){
-        //     			$('div.floating-cart').remove();
-        //     			$("body").removeClass("MakeFloatingCart");
-            			
-        // 		    }, 1000);
-        		    //add coupon to list variable
-        // 			selected_coupon_id.add(current_coupon_id);
-                    // console.log(Object.keys(selected_coupon_id).length);
+    
         			selected_coupon_id.push(current_coupon_id);
-        			//[Object.keys(selected_coupon_id).length] = current_coupon_id;
-        		  //  console.log(selected_coupon_id);
     		    } else {
     		        $(el).attr("is_in_cart","false");
     		        $(el).attr("src","//codecloud.cdn.speedyrails.net/sites/59d7b1c56e6f64669e8d0000/image/png/1508346683000/Basket@2x.png");
@@ -250,11 +214,7 @@
                         return (val !== current_coupon_id);
                     });
     		    }
-    		    //getting the logo image
-    		  //  console.log($("#"+$(el).parent().parent().attr("id") +" .product-front"));
-    		  //  console.log(selected_coupon_id);
     			//add updated coupon list to localstorage
-    // 			localStorage['coupon_ids'] = JSON.stringify(selected_coupon_id);
                 $.cookie("coupon_ids",JSON.stringify(selected_coupon_id)); 
                 // console.log(JSON.stringify(selected_coupon_id), $.cookie());
     			console.log("cookie has" , $.cookie().coupon_ids);
@@ -279,20 +239,12 @@
             $('.active_cat').removeClass('active_cat');
             $(this).addClass('active_cat');
             $(".product.large").hide();
-            // var rows = $('.cats_row');
-            // rows.hide();
-            // $('.store_initial').hide();
-            // $('#cat_name').text($(this).text());
-            // $('#cat_name').css('display', 'block');
-            // $('#store_list_container, #store_list_container2').addClass("full_width");
+          
             $.each(coupons, function(i, val){
                 if(store_name == val.store_name){
                     $("#"+val.id).show();
                 }
-                // var cat_array = val.getAttribute('data-cat').split(',');
-                // if ($.inArray(cat_id, cat_array) >= 0){
-                //     $(val).show();
-                // }
+            
             });
             $.each($("#coupon_container").children(), function(i,val) {
                 if( !$(val).children().is(":visible")){
@@ -301,7 +253,6 @@
                 
             }
             })
-            //  console.log("do something")
             
             $('html, body').animate({scrollTop : 0},800);
             e.preventDefault();
@@ -309,36 +260,7 @@
         $('.show_all_coupons').click(function(e){
             $("#coupon_container").children().show();
             $("#coupon_container .product.large").show();
-            // coupons = getStoreCouponsListByStoreName();
-            // var store_name = $(this).attr('data-name');
-            // $('.active_cat').removeClass('active_cat');
-            // $(this).addClass('active_cat');
-            // $(".product.large").hide();
-            // // var rows = $('.cats_row');
-            // // rows.hide();
-            // // $('.store_initial').hide();
-            // // $('#cat_name').text($(this).text());
-            // // $('#cat_name').css('display', 'block');
-            // // $('#store_list_container, #store_list_container2').addClass("full_width");
-            // $.each(coupons, function(i, val){
-            //     if(store_name == val.store_name){
-            //         $("#"+val.id).show();
-            //     }
-            //     // var cat_array = val.getAttribute('data-cat').split(',');
-            //     // if ($.inArray(cat_id, cat_array) >= 0){
-            //     //     $(val).show();
-            //     // }
-            // });
-            // $.each($("#coupon_container").children(), function(i,val) {
-            //     if( !$(val).children().is(":visible")){
-            //     // console.log(val);
-            //     $(val).hide();
-                
-            // }
-            // })
-            // //  console.log("do something")
-            
-            // $('html, body').animate({scrollTop : 0},800);
+          
             e.preventDefault();
         });
         
@@ -371,15 +293,7 @@
             else {
                 val.description_short = val.description
             }
-            // var show_date = new Date (val.show_on_web_date + site_json.time_zone);
-            // start = new Date (val.start_date + site_json.time_zone);
-            // end = new Date (val.end_date + site_json.time_zone);
-            // if (start.toDateString() == end.toDateString()) {
-            //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-            // } else {
-            //     val.dates = "Starts " + (get_month(start.getMonth()))+" "+(start.getDate())+" - Ends "+get_month(end.getMonth())+" "+end.getDate();    
-            // }
-            
+    
             var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
             var start = moment(val.start_date).tz(getPropertyTimeZone());
             var end = moment(val.end_date).tz(getPropertyTimeZone());
@@ -394,22 +308,6 @@
         });
         $(container).html(item_rendered.join(''));
     }
-    // $(window).on('resize', function(){
-    //     addNewStyle();
-    // });
-    // function addNewStyle(){
-    //     console.log( $(".basket_number"));
-    //     var float_to_position = $(".basket_number").offset();
-    //     console.log("float_to_position", float_to_position);
-    //     var float_style_1="div.floating-cart.moveToCart{left: "+float_to_position.left+"px!important;top:"+float_to_position.top+"px !important;width: 47px;height: 47px;	-webkit-transition: all 800ms ease-in-out;-moz-transition: all 800ms ease-in-out;-ms-transition: all 800ms ease-in-out;-o-transition: all 800ms ease-in-out;transition: all 800ms ease-in-out; }";
-    //     var float_style_2="body.MakeFloatingCart div.floating-cart.moveToCart{left: "+float_to_position.left+"px!important;top:"+ (float_to_position.top+50) +"px !important;width: 21px;height: 22px;box-shadow:0px 5px 31px -1px rgba(0, 0, 0, 0);-webkit-transition: all 200ms ease-out;-moz-transition: all 200ms ease-out;-ms-transition: all 200ms ease-out;-o-transition: all 200ms ease-out;transition: all 200ms ease-out;}";
-    //     $("<style type='text/css'> "+ float_style_1 + " " +float_style_2 + "</style>").appendTo($(".coupons_container").parent());
-        
-    //     console.log($(".coupons_container").parent() );
-    // }
-    // $(window).load(function(){
-    //     addNewStyle();
-    // });
     function renderStoreList(container, template, collection, type, starter, breaker){
         var item_list = [];
         var item_rendered = [];
