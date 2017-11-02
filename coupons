@@ -20,12 +20,12 @@
         <a class="mobile_header" href="#" id="store_dd2" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
             Select Store <i class="fa fa-chevron-down visible_phone pull-right"></i>
         </a>
-        <ul id="store_list_container2" class="dropdown-menu" aria-labelledby="store_dd2">
-            <script id="store_list_template" type="x-tmpl-mustache/text">
-                <li class="show_coupon_by_stores show_cat_stores padding_5 uppercase" data-id="{{id}}">{{name}}</li>    
-            </script>
+        <!--<ul id="store_list_container2" class="dropdown-menu" aria-labelledby="store_dd2">-->
+        <!--    <script id="store_list_template" type="x-tmpl-mustache/text">-->
+        <!--        <li class="show_coupon_by_stores show_cat_stores padding_5 uppercase" data-id="{{id}}">{{name}}</li>    -->
+        <!--    </script>-->
             
-        </ul>
+        <!--</ul>-->
         <ul  class="dropdown-menu" aria-labelledby="store_dd">
             <div id="store_list_container2">
                 <script id="store_list_template" type="x-tmpl-mustache/text">
