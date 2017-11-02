@@ -350,6 +350,7 @@
                 }
                 
                 // console.log(val.total_published_coupons);
+                sorted_stores.push(val)
                 item_rendered.push(rendered);
             }
         });
