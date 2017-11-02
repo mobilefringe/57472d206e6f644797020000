@@ -244,6 +244,7 @@
             e.preventDefault();
         });
         $('.show_coupon_by_cats').click(function(e){
+            console.log("show_coupon_by_cats")
             $("#coupon_container").children().show();
             coupons = getStoreCouponsListByStoreName();
             var cat_id = $(this).attr('data-id');
