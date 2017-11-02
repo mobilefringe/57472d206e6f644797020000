@@ -113,6 +113,9 @@
         var categories = getStoreCategories();
         $.each(category_of_stores, function(key,val){
             console.log(val);
+            $.grep(selected_coupon_id, function( val, i ) {
+                        return (val !== current_coupon_id);
+                    });
         });
         console.log(category_of_stores);
         renderGeneral('#category_container, #category_container2', '#category_template', category_of_stores);
