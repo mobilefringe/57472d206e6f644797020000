@@ -114,8 +114,8 @@
         $.each(category_of_stores, function(key,val){
             console.log(val);
             var temp = $.grep(categories, function( value, i ) {
-                        return (value.id !== val);
-                    });
+                return (value.id !== val);
+            });
         });
         console.log(category_of_stores);
         renderGeneral('#category_container, #category_container2', '#category_template', category_of_stores);
