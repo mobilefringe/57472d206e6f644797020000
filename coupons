@@ -117,7 +117,7 @@
             var temp = $.grep(categories, function( value, i ) {
                 return (value.id !== val);
             });
-            temp.
+            selected_cats.push(temp);
         });
         console.log(category_of_stores);
         renderGeneral('#category_container, #category_container2', '#category_template', category_of_stores);
