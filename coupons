@@ -252,7 +252,7 @@
             $(".product.large").hide();
           
             $.each(coupons, function(i, val){
-                var is_inArray = $.grep(Object.keys(selected_coupon_id), function(i) {
+                var is_inArray = $.grep(coupons, function(i) {
                     // console.log(value);
                     return val.id.toString() ==selected_coupon_id[i];
                 });
