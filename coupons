@@ -258,6 +258,7 @@
                 if(is_inArray.length > 0){
                     $("#"+val.id).show();
                 }
+                }
             
             });
             $.each($("#coupon_container").children(), function(i,val) {
