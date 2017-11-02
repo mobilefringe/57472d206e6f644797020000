@@ -42,7 +42,7 @@
                 </ul>
                 <ul  class="dropdown-menu" aria-labelledby="store_dd">
                     <div id="category_container">
-                        <script id="store_list_template" type="x-tmpl-mustache/text">
+                        <script id="category_template" type="x-tmpl-mustache/text">
                             <li class="show_coupon_by_stores show_cat_stores padding_5 uppercase" data-id="{{id}}" data-name="{{name}}">{{name}}</li>    
                         </script>
                   </div>  
