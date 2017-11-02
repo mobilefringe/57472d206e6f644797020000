@@ -113,7 +113,7 @@
         var categories = getStoreCategories();
         $.each(category_of_stores, function(key,val){
             console.log(val);
-            $.grep(selected_coupon_id, function( val, i ) {
+            vat temp = $.grep(selected_coupon_id, function( val, i ) {
                         return (val !== current_coupon_id);
                     });
         });
