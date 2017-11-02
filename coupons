@@ -49,7 +49,7 @@
                 <ul  class="dropdown-menu" aria-labelledby="store_dd">
                     <div id="store_list_container">
                         <script id="store_list_template" type="x-tmpl-mustache/text">
-                            <li class="show_coupon_by_stores show_stores padding_5 uppercase" data-id="{{id}}" data-name="{{name}}">{{name}}</li>    
+                            <li class="show_coupon_by_stores show_cat_stores padding_5 uppercase" data-id="{{id}}" data-name="{{name}}">{{name}}</li>    
                         </script>
                   </div>  
                 </ul>
