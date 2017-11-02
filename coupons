@@ -242,10 +242,8 @@
         });
         
         $('.show_coupon_by_cats').click(function(e){
-            console.log("show_coupon_by_cats")
             $("#coupon_container").children().show();
             coupons = getStoreCouponsListByStoreName();
-            // var stores = getStoresList();
             var cat_id = $(this).attr('data-id');
             $('.active_cat').removeClass('active_cat');
             $(this).addClass('active_cat');
@@ -254,22 +252,16 @@
             $.each(sorted_stores, function(i, val){
                 // console.log(val);
                 if(val.categories !== null && val.categories !==undefined){
-                     console.log(val);
                     var is_inArray = $.grep(val.categories, function(i) {
-                        console.log("i",i,"cat_id",cat_id,i.toString() == cat_id);
                         return i.toString() == cat_id;
                     });
-                    // console.log(is_inArray);
                     if(is_inArray.length > 0){
                         $.each(coupons, function(i, value){
-                            // console.log("val.name",val.name,"value.store_name",value.store_name)
                             if(val.name == value.store_name){
-                                // console.log("showing",value);
                                 $("#"+value.id).show();
                             }
                 
                         });
-                        // $("#"+val.id).show();
                     }
                 }
             
