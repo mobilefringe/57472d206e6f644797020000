@@ -213,7 +213,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         2437 Park Avenue, Tustin, California 92782
                     </p>
                     <p class="footer_text">
-                <a href="tel:7142599090">714.259.9090</a> | <a href="/pages/district-privacy-policy">Privacy Policy | </a> <a href="/jobs">Jobs</a> | Vestar Property
+                <!--<a href="tel:7142599090">714.259.9090</a> | <a href="/pages/district-privacy-policy">Privacy Policy | </a> <a href="/jobs">Jobs</a> | Vestar Property-->
             </p>
                 </div>
             </div>
