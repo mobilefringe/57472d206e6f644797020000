@@ -243,7 +243,31 @@
             $('html, body').animate({scrollTop : 0},800);
             e.preventDefault();
         });
-        $('.show_coupon_by_cats')
+        $('.show_coupon_by_cats').click(function(e){
+            $("#coupon_container").children().show();
+            coupons = getStoreCouponsListByStoreName();
+            var store_name = $(this).attr('data-name');
+            $('.active_cat').removeClass('active_cat');
+            $(this).addClass('active_cat');
+            $(".product.large").hide();
+          
+            $.each(coupons, function(i, val){
+                if(store_name == val.store_name){
+                    $("#"+val.id).show();
+                }
+            
+            });
+            $.each($("#coupon_container").children(), function(i,val) {
+                if( !$(val).children().is(":visible")){
+                // console.log(val);
+                $(val).hide();
+                
+            }
+            })
+            
+            $('html, body').animate({scrollTop : 0},800);
+            e.preventDefault();
+        });
         $('.show_all_coupons').click(function(e){
             $("#coupon_container").children().show();
             $("#coupon_container .product.large").show();
