@@ -189,7 +189,7 @@
     		        $(el).attr("is_in_cart","true");
     		        $(el).attr("src","//codecloud.cdn.speedyrails.net/sites/59d7b1c56e6f64669e8d0000/image/png/1508347595000/CheckmarkGreen.png");
     		        $(el).parent().parent().addClass("green_selected_box"); 
-    		        $(".basket_number").text(parseInt($(".basket_number").text())+1);
+    		        $(".basket_number").text((Object.keys(selected_coupon_id).length);
     
         			selected_coupon_id.push(current_coupon_id);
     		    } else {
