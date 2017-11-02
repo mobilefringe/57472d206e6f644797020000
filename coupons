@@ -73,7 +73,7 @@
         <div id="grid" class="row">
             <div id="coupon_container">
                 <script id="coupon_template" type="x-tmpl-mustache/text">
-                   <div class="col-md-6 col-xs-6">
+                   <div class="col-md-6 col-xs-12">
                         <div class="product large" id="{{id}}" >
                             <div class="make3D col-md-6 col-xs-6">
                                 <div class="product-front">
