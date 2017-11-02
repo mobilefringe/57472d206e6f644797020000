@@ -252,7 +252,7 @@
             $(".product.large").hide();
           
             $.each(coupons, function(i, val){
-                if(store_name == val.store_name){
+                if(cat_id == val.store_name){
                     $("#"+val.id).show();
                 }
             
