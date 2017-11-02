@@ -252,6 +252,13 @@
             $(".product.large").hide();
           
             $.each(coupons, function(i, val){
+                var is_inArray = $.grep(Object.keys(selected_coupon_id), function(i) {
+                    // console.log(value);
+                    return val.id.toString() ==selected_coupon_id[i];
+                });
+                if(is_inArray.length > 0){
+                    coupons.push(val);
+                }
                 if(cat_id == val.store_name){
                     $("#"+val.id).show();
                 }
