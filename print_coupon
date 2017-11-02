@@ -148,68 +148,7 @@
         // setTimeout(window.close, 300);
         window.onfocus = function () { setTimeout(function () { window.close(); }, 100); }
     }
-    // function printPage() {
-    //     var coupons = [];
-    //     var all_coupons = getCouponsList();
-    //     $.each(all_coupons , function (index, val){
-    //         if (val.promotionable_type == "Store") {
-    //             var store_details = getStoreDetailsByID(val.promotionable_id);
-    //             val.store_detail_btn = store_details.slug ;
-    //             val.store_name = store_details.name;
-    //         }
-    //         else {
-    //             val.store_name = site_json.name;
-    //         }
-    //         if (val.promo_image_url_abs.indexOf('missing.png') > 0){
-    //             val.promo_image_url_abs  = site_json.default_image ;
-    //             // val.promo_image = "display:none";
-    //             // val.full_width = "width:100%"
-    //         }
-    //         var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
-    //         var start = moment(val.start_date).tz(getPropertyTimeZone());
-    //         var end = moment(val.end_date).tz(getPropertyTimeZone());
-    //         if (start.format("DMY") == end.format("DMY")){
-    //         	val.dates = start.format("MMM D");
-    //         }
-    //         else {
-    //         	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
-    //         }
-    //         var is_inArray = $.grep(Object.keys(selected_coupon_id), function(i) {
-    //             // console.log(value);
-    //             return val.id.toString() ==selected_coupon_id[i];
-    //         });
-    //         if(is_inArray.length > 0){
-    //             coupons.push(val);
-    //         }
-    //     });
-    //     var w = window.open();
-    //     // var headers = $(".coupon_title").html();
-    //     // var html = "<!DOCTYPE HTML>";
-    //     // html += '<html lang="en-us">';
-    //     // html += '<head><link href="//preview-59d7b1c56e6f64669e8d0000.codecloudapp.com/coupons.css" rel="stylesheet"><style>body{text-align:center;}.col-md-6{width:50%;display:block;border: 1px solid #000;padding:10px; margin:auto;}.make3D.col-md-6, .info-large.col-md-6{border:none}</style></head>';
-    //     // html += "<body><a href='/'><img src='//codecloud.cdn.speedyrails.net/sites/59d7b1c56e6f64669e8d0000/image/jpeg/undefined/dtl_500x500_logo.jpg' class='main_logo' /></a>";
-    //     //  if(headers != null) html += headers + "<br/><br/>";
-    //     // // var fields = [];
-    //     // $.each(coupons , function (index, val){
-    //     //   html +=  '<div class="col-md-6"><div class="product large"><div class="make3D col-md-3"><div class="product-front"><img src="'+val.promo_image_url_abs+'" alt="" /></div></div><div class="info-large col-md-3"><p>'+ val.store_name+' - '+ val.dates+'</p><h4>'+ val.name+'</h4><p>'+val.description+'<p/></div></div></div>'
-    //     // });
-        
-    //     // var field= $(".coupon_image").html();
-    //     // var field2= $(".coupon_store_date").html();
-    //     // var field3= $(".coupon_info").html();
-        
-        
     
-    //     //check to see if they are null so "undefined" doesnt print on the page. <br>s optional, just to give space
-       
-    //     // if(field != null)  "<br/><br/>";
-    //     // if(field2 != null) html += field2 + "<br/><br/>";
-    //     // if(field3 != null) html += field3 + "<br/><br/>";
-    //     // html += "</body>";
-    //     // w.document.write(html);
-    //     // w.window.print();
-    //     w.document.close();
-    // }
     function renderCoupons(container, template, collection){
         var item_list = [];
         var item_rendered = [];
@@ -258,48 +197,6 @@
         });
         $(container).html(item_rendered.join(''));
     }
-    // $(window).on('resize', function(){
-    //     addNewStyle();
-    // });
-    // function addNewStyle(){
-    //     // console.log( $(".basket_number"));
-    //     // var float_to_position = $(".basket_number").offset();
-    //     // console.log("float_to_position", float_to_position);
-    //     // var float_style_1="div.floating-cart.moveToCart{left: "+float_to_position.left+"px!important;top:"+float_to_position.top+"px !important;width: 47px;height: 47px;	-webkit-transition: all 800ms ease-in-out;-moz-transition: all 800ms ease-in-out;-ms-transition: all 800ms ease-in-out;-o-transition: all 800ms ease-in-out;transition: all 800ms ease-in-out; }";
-    //     // var float_style_2="body.MakeFloatingCart div.floating-cart.moveToCart{left: "+float_to_position.left+"px!important;top:"+ (float_to_position.top+50) +"px !important;width: 21px;height: 22px;box-shadow:0px 5px 31px -1px rgba(0, 0, 0, 0);-webkit-transition: all 200ms ease-out;-moz-transition: all 200ms ease-out;-ms-transition: all 200ms ease-out;-o-transition: all 200ms ease-out;transition: all 200ms ease-out;}";
-    //     $("<style type='text/css'> "+ float_style_1 + " " +float_style_2 + "</style>").appendTo($(".coupons_container").parent());
-        
-    //     // console.log($(".coupons_container").parent() );
-    // }
-    // $(window).load(function(){
-    //     addNewStyle();
-    // });
-    // function renderStoreList(container, template, collection, type, starter, breaker){
-    //     var item_list = [];
-    //     var item_rendered = [];
-    //     var template_html = $(template).html();
-    //     Mustache.parse(template_html);   // optional, speeds up future uses
-    //     var store_initial="";
-    //     $.each( collection , function( key, val ) {
-    //         if (type == "stores" || type == "category_stores"){
-    //             if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-    //                 val.alt_store_front_url = "";
-    //             } else {
-    //                 val.alt_store_front_url = getImageURL(val.store_front_url);    
-    //             }
-    //         }
-    //         if(val.categories !== null && val.categories !== undefined){
-    //             category_of_stores = $.merge( val.categories, category_of_stores);
-    //         }
-    //         // console.log(val);
-    //         var rendered = Mustache.render(template_html,val)
-    //         if (val != null && val != undefined && val.total_published_coupons > 0){
-    //             // console.log(val.total_published_coupons);
-    //             item_rendered.push(rendered);
-    //         }
-    //     });
-    //     $(container).show();
-    //     $(container).html(item_rendered.join(''));
-    // }
+    
 
 </script>
