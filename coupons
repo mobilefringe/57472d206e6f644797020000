@@ -254,7 +254,7 @@
             $.each(coupons, function(i, val){
                 var is_inArray = $.grep(val.categories, function(i) {
                     // console.log(value);
-                    return val.id.toString() ==cat_id[i];
+                    return val.id.toString() == cat_id[i];
                 });
                 if(is_inArray.length > 0){
                     coupons.push(val);
