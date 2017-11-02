@@ -31,6 +31,11 @@
         init(e);
         loadMallDataCached(renderAll);
     });
+    $(window).load(function(e){
+         window.print();
+        // setTimeout(window.close, 300);
+        window.onfocus = function () { setTimeout(function () { window.close(); }, 100); }
+    })
     function renderAll(){
         // var cache_coupon_ids = localStorage['coupon_ids'];
         var cache_coupon_ids = $.cookie().coupon_ids;
