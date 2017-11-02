@@ -243,6 +243,7 @@
             $('html, body').animate({scrollTop : 0},800);
             e.preventDefault();
         });
+        $('.show_coupon_by_cats')
         $('.show_all_coupons').click(function(e){
             $("#coupon_container").children().show();
             $("#coupon_container .product.large").show();
