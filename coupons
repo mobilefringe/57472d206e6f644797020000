@@ -246,7 +246,7 @@
         $('.show_coupon_by_cats').click(function(e){
             $("#coupon_container").children().show();
             coupons = getStoreCouponsListByStoreName();
-            var store_name = $(this).attr('data-id');
+            var cat_id = $(this).attr('data-id');
             $('.active_cat').removeClass('active_cat');
             $(this).addClass('active_cat');
             $(".product.large").hide();
