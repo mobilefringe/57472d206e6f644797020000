@@ -32,16 +32,6 @@
         loadMallDataCached(renderAll);
     });
     function renderAll(){
-        // var stores = getStoresList();
-        // renderStoreList('#store_list_container','#store_list_template', stores, "stores", "#", "Z");
-        // $('#store_list_container').prepend('<li href="#" class="show_all_stores  padding_5 uppercase">All</li>');
-        // var categories = getStoreCategories();
-        // // console.log(category_of_stores);
-        // renderGeneral('#category_container, #category_container2', '#category_template', category_of_stores);
-        // $('#category_container, #category_container2').prepend('<li href="#" class="show_all_stores">All</li>');
-        
-       
-        
         // var cache_coupon_ids = localStorage['coupon_ids'];
         var cache_coupon_ids = $.cookie().coupon_ids;
         if (cache_coupon_ids) {
