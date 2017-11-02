@@ -110,7 +110,6 @@
         var categories = getStoreCategories();
         var selected_cats = [];
         $.each(category_of_stores, function(key,val){
-            // console.log(val);
             var temp = $.grep(categories, function( value, i ) {
                 // console.log("value",value.id);
                 return (value.id == val.toString());
