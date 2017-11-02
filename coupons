@@ -114,7 +114,7 @@
         var stores = getStoresList();
         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "#", "Z");
         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "#", "Z");
-        $('#store_list_container, #category_container2').prepend('<li href="#" class="show_all_coupons  padding_5 uppercase">All</li>');
+        $('#store_list_container, #store_list_container2').prepend('<li href="#" class="show_all_coupons  padding_5 uppercase">All</li>');
         var categories = getStoreCategories();
         var selected_cats = [];
         $.each(category_of_stores, function(key,val){
