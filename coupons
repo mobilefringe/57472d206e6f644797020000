@@ -254,6 +254,7 @@
             $.each(sorted_stores, function(i, val){
                 // console.log(val);
                 if(val.categories !== null && val.categories !==undefined){
+                     console.log(val);
                     var is_inArray = $.grep(val.categories, function(i) {
                         console.log("i",i,"cat_id",cat_id,i.toString() == cat_id);
                         return i.toString() == cat_id;
