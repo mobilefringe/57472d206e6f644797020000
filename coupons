@@ -305,6 +305,7 @@
             
             var rendered = Mustache.render(template_html,val)
             if (val != null && val != undefined && val.total_published_coupons > 0){
+                console.log(val.name,val.categories);
                 // console.log(val.total_published_coupons);
                 item_rendered.push(rendered);
             }
