@@ -267,7 +267,6 @@
             });
             $.each($("#coupon_container").children(), function(i,val) {
                 if( !$(val).children().is(":visible")){
-                // console.log(val);
                 $(val).hide();
                 
             }
