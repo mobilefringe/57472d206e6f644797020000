@@ -119,7 +119,7 @@
             });
             selected_cats.push(temp);
         });
-        console.log(selected_cats);
+        console.log("selected_cats"selected_cats);
         renderGeneral('#category_container, #category_container2', '#category_template', category_of_stores);
         $('#category_container, #category_container2').prepend('<li href="#" class="show_all_coupons">All</li>');
         var coupons = getCouponsList().sortBy(function(o){ return o.end_date });
