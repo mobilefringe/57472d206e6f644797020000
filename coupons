@@ -8,9 +8,7 @@
 <div class="main_container mobile_padding coupons_container">
     <div class="visible_phone position_relative">
         <a class="mobile_header" href="/coupon_basket">My Basket <div class="basket_count">(
-                <span class="basket_number" style="color:#000;position: relative;
-    right: unset;
-    top: unset;">0</span>)</div></a>
+                <span class="basket_number" style="color:#000;position: relative; right: unset;top: unset;">0</span>)</div></a>
         <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
             Select Category <i class="fa fa-chevron-down visible_phone pull-right"></i>
         </a>
