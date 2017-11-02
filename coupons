@@ -260,7 +260,12 @@
                     });
                     console.log(is_inArray);
                     if(is_inArray.length > 0){
-                        
+                        $.each(coupons, function(i, val){
+                if(store_name == val.store_name){
+                    $("#"+val.id).show();
+                }
+            
+            });
                         $("#"+val.id).show();
                     }
                 }
