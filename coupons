@@ -118,7 +118,7 @@
                 console.log("value",value.id);
                 return (value.id == val.toString());
             });
-            selected_cats.push(temp);
+            selected_cats.push(temp[0]);
         });
         console.log("selected_cats",selected_cats);
         renderGeneral('#category_container, #category_container2', '#category_template', category_of_stores);
