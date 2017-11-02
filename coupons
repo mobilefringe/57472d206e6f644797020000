@@ -355,7 +355,7 @@
             var rendered = Mustache.render(template_html,val)
             if (val != null && val != undefined && val.total_published_coupons > 0){
                 if(val.categories !== null && val.categories !== undefined){
-                    category_of_stores = array1.concat(array2);//$.merge( val.categories, category_of_stores);
+                    category_of_stores =  val.categories.concat(array2);//$.merge( val.categories, category_of_stores);
                     console.log(val.name,val.categories);
                 }
                 
