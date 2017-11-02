@@ -255,7 +255,7 @@
                 // console.log(val);
                 if(val.categories !== null && val.categories !==undefined){
                     var is_inArray = $.grep(val.categories, function(i) {
-                        // console.log(i);
+                        console.log(i);
                         return i.toString() == cat_id;
                     });
                     console.log(is_inArray);
