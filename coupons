@@ -244,7 +244,7 @@
         $('.show_coupon_by_cats').click(function(e){
             console.log("show_coupon_by_cats")
             $("#coupon_container").children().show();
-            // coupons = getStoreCouponsListByStoreName();
+            coupons = getStoreCouponsListByStoreName();
             // var stores = getStoresList();
             var cat_id = $(this).attr('data-id');
             $('.active_cat').removeClass('active_cat');
@@ -260,7 +260,7 @@
                     });
                     console.log(is_inArray);
                     if(is_inArray.length > 0){
-                         coupons = getStoreCouponsListByStoreName();
+                        
                         $("#"+val.id).show();
                     }
                 }
