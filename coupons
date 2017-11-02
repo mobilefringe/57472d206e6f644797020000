@@ -257,10 +257,10 @@
                     return i.toString() == cat_id;
                 });
                 if(is_inArray.length > 0){
-                    coupons.push(val);
+                    $("#"+val.id).show();
                 }
                 if(cat_id == val.store_name){
-                    $("#"+val.id).show();
+                    
                 }
             
             });
