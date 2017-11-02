@@ -258,6 +258,7 @@
                         // console.log(i);
                         return i.toString() == cat_id;
                     });
+                    console.log(is_inArray);
                     if(is_inArray.length > 0){
                         $("#"+val.id).show();
                     }
