@@ -32,7 +32,7 @@
         loadMallDataCached(renderAll);
     });
     $(window).load(function(e){
-        setTimeout(function () { window.close(); }, 100);
+        setTimeout(function () { window.print(); }, 100);
         
         // setTimeout(window.close, 300);
         window.onfocus = function () { setTimeout(function () { window.close(); }, 100); }
