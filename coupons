@@ -248,7 +248,7 @@
             $('.active_cat').removeClass('active_cat');
             $(this).addClass('active_cat');
             $(".product.large").hide();
-          
+            console.log(coupons);
             $.each(coupons, function(i, val){
                 if(val.categories !== null && val.categories !==undefined){
                     var is_inArray = $.grep(val.categories, function(i) {
