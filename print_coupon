@@ -144,7 +144,6 @@
         
         $('.custom_backdrop').remove();
         $('.yield').fadeIn();
-       
     }
     
     function renderCoupons(container, template, collection){
