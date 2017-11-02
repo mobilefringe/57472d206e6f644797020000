@@ -250,6 +250,7 @@
             $('html, body').animate({scrollTop : 0},800);
             e.preventDefault();
         });
+        
         $('.show_coupon_by_cats').click(function(e){
             console.log("show_coupon_by_cats")
             $("#coupon_container").children().show();
