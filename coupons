@@ -115,7 +115,7 @@
         $.each(category_of_stores, function(key,val){
             console.log(val);
             var temp = $.grep(categories, function( value, i ) {
-                console.log("value",value)
+                console.log("value",value);
                 return (value.id !== val);
             });
             selected_cats.push(temp);
