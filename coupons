@@ -258,7 +258,7 @@
                         console.log("i",i,"cat_id",cat_id,i.toString() == cat_id);
                         return i.toString() == cat_id;
                     });
-                    console.log(is_inArray);
+                    // console.log(is_inArray);
                     if(is_inArray.length > 0){
                         $.each(coupons, function(i, value){
                             console.log("val.name",val.name,"value.store_name",value.store_name)
