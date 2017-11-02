@@ -17,7 +17,7 @@
                 <li class="show_coupon_by_cats show_cat_stores padding_5 uppercase" data-id="{{id}}">{{name}}</li>    
             </script>
         </ul>
-        <a class="mobile_header" href="#" id="store_dd2" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+        <a class="mobile_header" href="#" id="store_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
             Select Store <i class="fa fa-chevron-down visible_phone pull-right"></i>
         </a>
         <!--<ul id="store_list_container2" class="dropdown-menu" aria-labelledby="store_dd2">-->
