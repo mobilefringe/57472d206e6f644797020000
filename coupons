@@ -205,6 +205,7 @@
     		    }
     			//add updated coupon list to localstorage
                 $.cookie("coupon_ids",JSON.stringify(selected_coupon_id)); 
+                $(".basket_number").text((Object.keys(selected_coupon_id).length);
                 // console.log(JSON.stringify(selected_coupon_id), $.cookie());
     			console.log("cookie has" , $.cookie().coupon_ids);
     		});
