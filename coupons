@@ -245,7 +245,7 @@
             console.log("show_coupon_by_cats")
             $("#coupon_container").children().show();
             // coupons = getStoreCouponsListByStoreName();
-            var stores = getStoresList();
+            // var stores = getStoresList();
             var cat_id = $(this).attr('data-id');
             $('.active_cat').removeClass('active_cat');
             $(this).addClass('active_cat');
