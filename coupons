@@ -23,7 +23,7 @@
         </a>
         <ul id="store_list_container2" class="dropdown-menu" aria-labelledby="store_dd2">
             <script id="store_list_template" type="x-tmpl-mustache/text">
-                <li class="show_cat_stores padding_5 uppercase" data-id="{{id}}">{{name}}</li>    
+                <li class="show_coupon_by_stores show_cat_stores padding_5 uppercase" data-id="{{id}}">{{name}}</li>    
             </script>
             
         </ul>
