@@ -251,7 +251,7 @@
             $(this).addClass('active_cat');
             $(".product.large").hide();
             
-            $.each(stores, function(i, val){
+            $.each(sorted_stores, function(i, val){
                 // console.log(val);
                 if(val.categories !== null && val.categories !==undefined){
                     var is_inArray = $.grep(val.categories, function(i) {
