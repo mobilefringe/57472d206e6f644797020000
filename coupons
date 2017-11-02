@@ -90,29 +90,6 @@
                     </div>
                 </script>
             </div>
-            <!--<div id="store_coupon_container">-->
-            <!--    <script id="store_coupon_template" type="x-tmpl-mustache/text">-->
-            <!--       <div class="col-md-6">-->
-            <!--            <div class="product large" id="{{id}}" >-->
-            <!--                <div class="make3D col-md-6">-->
-            <!--                    <div class="product-front">-->
-            <!--                        <div class="shadow"></div>-->
-            <!--                        <img src="{{promo_image_url_abs}}" alt="" />-->
-            <!--                    </div>-->
-            <!--                </div>	-->
-            <!--                <div class="info-large col-md-6">-->
-            <!--                    <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508346683000/Basket@2x.png" class="basket_image add-to-basket" alt="" is_in_cart="false">-->
-            <!--            	    <p>{{store_name}}</p>-->
-            <!--                	<h4>{{name}}</h4>-->
-            <!--                	<p>{{dates}}</p>-->
-                          
-            <!--                    <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          -->
-                                             
-            <!--                </div>-->
-            <!--            </div> -->
-            <!--        </div>-->
-            <!--    </script>-->
-            <!--</div>-->
     </div>
 </div>
 </div>
