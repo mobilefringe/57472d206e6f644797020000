@@ -6,20 +6,20 @@
     </div>
 </div>
 <div class="main_container mobile_padding coupons_container hidden_phone">
-    <div class="visible_phone position_relative">
-        <a class="mobile_header" href="/map">Center Map</a>
-        <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Select Category <i class="fa fa-chevron-down visible_phone pull-right"></i>
-        </a>
-        <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2">
+    <!--<div class="visible_phone position_relative">-->
+    <!--    <a class="mobile_header" href="/map">Center Map</a>-->
+    <!--    <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+    <!--        Select Category <i class="fa fa-chevron-down visible_phone pull-right"></i>-->
+    <!--    </a>-->
+    <!--    <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2">-->
             <!--<li href="#" class="show_all_stores">All</li>-->
             <!--<li class="show_cat_stores" data-id="4016">Restaurant & Bars</li>-->
-            <script id="category_template" type="x-tmpl-mustache/text">
-                <li class="show_cat_stores padding_5 uppercase" data-id="{{id}}">{{name}}</li>    
-            </script>
+    <!--        <script id="category_template" type="x-tmpl-mustache/text">-->
+    <!--            <li class="show_cat_stores padding_5 uppercase" data-id="{{id}}">{{name}}</li>    -->
+    <!--        </script>-->
             
-        </ul>
-    </div>
+    <!--    </ul>-->
+    <!--</div>-->
     <div class="store_nav hidden_phone">
         <div class="row">
             <div class="col-md-3 col-xs-3">
