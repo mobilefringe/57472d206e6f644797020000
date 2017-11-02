@@ -251,7 +251,7 @@
             $(".product.large").hide();
             
             $.each(categories, function(i, val){
-                console.log(val);
+                // console.log(val);
                 if(val.categories !== null && val.categories !==undefined){
                     var is_inArray = $.grep(val.categories, function(i) {
                         console.log(i);
