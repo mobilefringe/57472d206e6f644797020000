@@ -112,7 +112,7 @@
         $('#store_list_container').prepend('<li href="#" class="show_all_coupons  padding_5 uppercase">All</li>');
         var categories = getStoreCategories();
         $.each(category_of_stores, function(val,index){
-            console.log(val)l
+            console.log(val);
         });
         console.log(category_of_stores);
         renderGeneral('#category_container, #category_container2', '#category_template', category_of_stores);
