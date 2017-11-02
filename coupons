@@ -263,7 +263,7 @@
                         $.each(coupons, function(i, value){
                             // console.log("val.name",val.name,"value.store_name",value.store_name)
                             if(val.name == value.store_name){
-                                console.log("showing",value);
+                                // console.log("showing",value);
                                 $("#"+value.id).show();
                             }
                 
