@@ -261,7 +261,7 @@
                     console.log(is_inArray);
                     if(is_inArray.length > 0){
                         $.each(coupons, function(i, value){
-                            if(store_name == val.store_name){
+                            if(store_name == value.store_name){
                                 $("#"+val.id).show();
                             }
                 
