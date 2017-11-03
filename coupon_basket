@@ -109,7 +109,7 @@
                     });
                 }
                 // console.log(new_arr);
-            })
+            });
             console.log(selected_coupon_id);
             
             // console.log(coupons);
