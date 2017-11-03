@@ -97,7 +97,19 @@
             all_coupons = getCouponsList();
             
             selected_coupon_id = JSON.parse(cache_coupon_ids);
-            
+            // do a chack to make sure that if expired coupon is in cookie, it gets removed
+            $.each(selected_coupon_id, function(i,val){
+                // console.log(val);
+                var new_arr = $.grep(coupons, function( value, i ) {
+                    return (value.id.toString() == val);
+                });
+                if(new_arr.length == 0){
+                    selected_coupon_id = $.grep(selected_coupon_id, function( value, i ) {
+                        return (value !== val);
+                    });
+                }
+                // console.log(new_arr);
+            })
             console.log(selected_coupon_id);
             
             // console.log(coupons);
