@@ -148,7 +148,7 @@
         if (cache_coupon_ids) {
             selected_coupon_id = JSON.parse(cache_coupon_ids);
             $.each(selected_coupon_id, function(i,val){
-                console.log(val);
+                // console.log(val);
                 var new_arr = $.grep(coupons, function( value, i ) {
                     return (value.id.toString() == val);
                 });
