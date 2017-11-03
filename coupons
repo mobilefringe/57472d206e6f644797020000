@@ -153,7 +153,9 @@
                     return (value.id.toString() == val);
                 });
                 if(new_arr.length == 0){
-                    
+                    selected_coupon_id = $.grep(selected_coupon_id, function( val, i ) {
+                        return (val !== current_coupon_id);
+                    });
                 }
                 console.log(new_arr);
             })
