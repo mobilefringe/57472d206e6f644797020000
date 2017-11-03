@@ -120,7 +120,7 @@
         init(e);
         loadMallDataCached(renderAll);
         var $animation_elements = $('.animation-element');
-var $window = $(window);
+        var $window = $(window);
     });
     function renderAll(){
        
