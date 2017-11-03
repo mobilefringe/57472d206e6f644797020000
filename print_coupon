@@ -12,7 +12,7 @@
                                         <img src="{{promo_image_url_abs}}" alt="" style="height:100%" />
                                     </div>
                                 </div>	
-                                <div class="info-large col-md-12">
+                                <div class="info-large col-xs-6">
                                     
                             	    <p>{{store_name}}</p>
                                 	<h4>{{name}}</h4>
