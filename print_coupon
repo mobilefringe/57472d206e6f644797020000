@@ -7,7 +7,7 @@
                     <script id="coupon_template" type="x-tmpl-mustache/text">
                        <div class="col-md-12">
                             <div class="product large" id="{{id}}" style="height:100%; background:#fafafa;">
-                                <div class="make3Dcol-xs-6">
+                                <div class="make3D col-xs-6">
                                     <div class="product-front">
                                         <img src="{{promo_image_url_abs}}" alt="" style="height:100%" />
                                     </div>
