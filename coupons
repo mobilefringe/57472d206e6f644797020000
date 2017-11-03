@@ -378,5 +378,9 @@
         $(container).show();
         $(container).html(item_rendered.join(''));
     }
+    $(window).load(function(){
+         var $animation_elements = $('.animation-element');
+        var $window = $(window);
+    })
 
 </script>
