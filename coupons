@@ -112,8 +112,6 @@
 <!--</div>-->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
 <!--<script src="menu.js"></script>-->
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
 
     var category_of_stores = [];
@@ -380,39 +378,5 @@
         $(container).show();
         $(container).html(item_rendered.join(''));
     }
-    $(window).load(function(){
-        var $animation_elements = $('.basket_image');
-        var $window = $(window);
-        $window.on('scroll resize', check_if_in_view);
-        $window.trigger('scroll');
-        
-        function check_if_in_view() {
-            var window_height = $window.height();
-            var window_top_position = $window.scrollTop();
-            var window_bottom_position = (window_top_position + window_height);
-            
-            $.each($animation_elements, function() {
-                var $element = $(this);
-                var element_height = $element.outerHeight();
-                var element_top_position = $element.offset().top;
-                var element_bottom_position = (element_top_position + element_height);
-                
-                //check to see if this current container is within viewport
-                if ((element_bottom_position >= window_top_position) &&
-                    (element_top_position <= window_bottom_position)) {
-                  $element.addClass('in-view');
-                  console.log($element, "is in view");
-                } else {
-                  $element.removeClass('in-view');
-                }
-                
-                 $( ".basket_number.in-view" ).effect( "bounce", {}, 500, function () {
-                      setTimeout(function() {
-                        $( ".basket_number.in-view" ).removeAttr( "style" ).hide().fadeIn();
-                      }, 1000 );
-                } );
-            });
-        }
-    })
 
 </script>
