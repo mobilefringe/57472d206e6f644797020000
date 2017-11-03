@@ -36,10 +36,10 @@
         loadMallDataCached(renderAll);
     });
     $(window).load(function(e){
-        // setTimeout(function () { window.print(); }, 500);
+        // setTimeout(function () { windo/w.print(); }, 500);
         
         // setTimeout(window.close, 300);
-        // window.onfocus = function () { setTimeout(function () { window.close(); }, 100); }
+        window.onfocus = function () { setTimeout(function () { window.close(); }, 100); }
     });
     function renderAll(){
         // var cache_coupon_ids = localStorage['coupon_ids'];
