@@ -184,16 +184,16 @@
     		});
     	})
 
-        function updatePage (){
-            // selected_coupon_id;
-             $(".basket_number").text(Object.keys(selected_coupon_id).length);
-            // $.each(selected_coupon_id, function(key,val){ 
-            //     $("#" +val + " .add-to-basket").attr("is_in_cart","true");
-    	       // $("#" +val + " .add-to-basket").attr("src","//codecloud.cdn.speedyrails.net/sites/59d7b1c56e6f64669e8d0000/image/png/1508347595000/CheckmarkGreen.png");
-    	       // $("#"+val).addClass("green_selected_box"); 
-            // })
+        // function updatePage (){
+        //     // selected_coupon_id;
+        //      $(".basket_number").text(Object.keys(selected_coupon_id).length);
+        //     // $.each(selected_coupon_id, function(key,val){ 
+        //     //     $("#" +val + " .add-to-basket").attr("is_in_cart","true");
+    	   //    // $("#" +val + " .add-to-basket").attr("src","//codecloud.cdn.speedyrails.net/sites/59d7b1c56e6f64669e8d0000/image/png/1508347595000/CheckmarkGreen.png");
+    	   //    // $("#"+val).addClass("green_selected_box"); 
+        //     // })
             
-        }
+        // }
     
         
         $('.custom_backdrop').remove();
