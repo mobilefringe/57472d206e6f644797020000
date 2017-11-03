@@ -119,6 +119,8 @@
     $(document).ready(function(e){
         init(e);
         loadMallDataCached(renderAll);
+        var $animation_elements = $('.animation-element');
+var $window = $(window);
     });
     function renderAll(){
        
