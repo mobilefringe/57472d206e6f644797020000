@@ -48,7 +48,7 @@
                                         <img src="{{promo_image_url_abs}}" alt="" />
                                     </div>
                                 </div>	
-                                <div class="info-large col-md-6 col-sm-6">
+                                <div class="info-large col-md-6 col-sm-6 ">
                                     <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508941759000/Close .png" class="basket_image add-to-basket" alt="" is_in_cart="false">
                             	    <p>{{store_name}}</p>
                                 	<h4>{{name}}</h4>
