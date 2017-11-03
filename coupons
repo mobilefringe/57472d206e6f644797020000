@@ -154,7 +154,7 @@
                 });
                 if(new_arr.length == 0){
                     selected_coupon_id = $.grep(selected_coupon_id, function( value, i ) {
-                        return (value !== current_coupon_id);
+                        return (value !== val);
                     });
                 }
                 // console.log(new_arr);
