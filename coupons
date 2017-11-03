@@ -379,7 +379,7 @@
         $(container).html(item_rendered.join(''));
     }
     $(window).load(function(){
-        var $animation_elements = $('.animation-element');
+        var $animation_elements = $('.basket_image');
         var $window = $(window);
     })
 
