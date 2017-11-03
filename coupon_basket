@@ -119,7 +119,7 @@
         }
         else {
             $("#no_coupon").show();
-            4(".print_page_btn")
+            4(".print_page_btn").hide()p
         }   
             
             
