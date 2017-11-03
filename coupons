@@ -405,7 +405,7 @@
                 
                  $( ".basket_number.in-view" ).effect( "bounce", {}, 500, function () {
                       setTimeout(function() {
-                        $( ".basket_number" ).removeAttr( "style" ).hide().fadeIn();
+                        $( ".basket_number.in-view" ).removeAttr( "style" ).hide().fadeIn();
                       }, 1000 );
                 } );
             });
