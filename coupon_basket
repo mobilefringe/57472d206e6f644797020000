@@ -15,11 +15,11 @@
     <div class="store_nav hidden_phone">
        <div class="store_nav hidden_phone">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-xs-3">
                 <a class="" href="/coupons">BACK TO COUPONS</a>
                 <!--active_store_nav-->
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-xs-3">
                 <a href="#" class="show_all_stores">MY BASKET</a> 
                 <div class="basket_count">
                 <span class="basket_number">0</span>
