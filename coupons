@@ -147,7 +147,7 @@
         var cache_coupon_ids = $.cookie().coupon_ids;
         if (cache_coupon_ids) {
             selected_coupon_id = JSON.parse(cache_coupon_ids);
-            $.each(selected_coupon_id, function(val,i){
+            $.each(selected_coupon_id, function(i,val){
                 console.log(val);
             })
             console.log("selected_coupon_id cookie" ,selected_coupon_id);
