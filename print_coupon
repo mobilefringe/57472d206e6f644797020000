@@ -9,7 +9,6 @@
                             <div class="product large" id="{{id}}" style="height:100%; background:#fafafa;">
                                 <div class="make3D col-md-6 col-xs-12">
                                     <div class="product-front">
-                                        <!--<div class="shadow"></div>-->
                                         <img src="{{promo_image_url_abs}}" alt="" />
                                     </div>
                                 </div>	
