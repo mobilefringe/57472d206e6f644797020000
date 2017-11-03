@@ -5,7 +5,7 @@
         <h4 class="header_banner_heading">Coupons</h4>
     </div>
 </div>
-<div class="main_container mobile_padding coupons_container hidden_phone">
+<div class="main_container mobile_padding coupons_container">
     <!--<div class="visible_phone position_relative">-->
     <!--    <a class="mobile_header" href="/map">Center Map</a>-->
     <!--    <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
