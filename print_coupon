@@ -9,7 +9,7 @@
                             <div class="product large" id="{{id}}" style="height:100%; background:#fafafa;">
                                 <div class="make3D  col-xs-6">
                                     <div class="product-front" style="position: relative;top: initial;left: initial;transform: initial;">
-                                        <img src="{{promo_image_url_abs}}" alt="" />
+                                        <img src="{{promo_image_url_abs}}" alt="" style="position: relative;top: initial;left: initial;transform: initial;">/>
                                     </div>
                                 </div>	
                                 <div class="info-large col-xs-6">
