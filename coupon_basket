@@ -113,6 +113,7 @@
             }
             else {
                 $("#no_coupon").show();
+                $(".print_page_btn").hide();
             }
             
             $(".basket_number").text(Object.keys(selected_coupon_id).length);
