@@ -369,7 +369,7 @@
             if (val != null && val != undefined && val.total_published_coupons > 0){
                 if(val.categories !== null && val.categories !== undefined){
                     category_of_stores =  val.categories.concat(category_of_stores);//$.merge( val.categories, category_of_stores);
-                    console.log(val.name,val.categories);
+                    // console.log(val.name,val.categories);
                 }
                 
                 // console.log(val.total_published_coupons);
