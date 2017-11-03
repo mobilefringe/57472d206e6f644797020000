@@ -152,7 +152,7 @@
                 var new_arr = $.grep(coupons, function( value, i ) {
                     return (value.id.toString() == val);
                 });
-                if(new_arr.length==0){
+                if(new_arr.length == 0){
                     
                 }
                 console.log(new_arr);
