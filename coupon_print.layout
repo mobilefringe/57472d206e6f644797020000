@@ -179,46 +179,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!--        </div>-->
     <!--    </div>-->
     <!--</section>-->
-    <section class="copyright_footer main_container">
-        <div class="text-center visible_phone">
-            <p class="footer_text">
-                © Copyright 2016 The District at Tustin Legacy
-            </p>
-            <p class="footer_text">
-                2437 Park Avenue, Tustin, California 92782
-            </p>
-            <p class="footer_text">
-                <a href="tel:7142599090">714.259.9090</a> | <a href="	/pages/district-privacy-policy">Privacy Policy | </a> <a href="/jobs">Jobs</a> | Vestar Property
-            </p>
-          <a href="//www.vestar.com/" target="_blank">
-                <img src="//codecloud.cdn.speedyrails.net/sites/574609776e6f645e19040000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt=""> </a>
-            <p class="footer_text">
-                Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>
-            </p>
-        </div>
-        <div class="row hidden_phone">
-            <div class="col-md-6">
-                <p class="footer_text">
-                    © Copyright 2016 The District at Tustin Legacy 
-                </p>
-                <p class="footer_text">
-                    Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>
-                </p>
-            </div>
-            <div class="col-md-6 text-right ">
-                <a href="//www.vestar.com/" target="_blank">
-                <img src="//codecloud.cdn.speedyrails.net/sites/574609776e6f645e19040000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt=""> </a>
-                <div>
-                    <p class="footer_text">
-                        2437 Park Avenue, Tustin, California 92782
-                    </p>
-                    <p class="footer_text">
+    <!--<section class="copyright_footer main_container">-->
+    <!--    <div class="text-center visible_phone">-->
+    <!--        <p class="footer_text">-->
+    <!--            © Copyright 2016 The District at Tustin Legacy-->
+    <!--        </p>-->
+    <!--        <p class="footer_text">-->
+    <!--            2437 Park Avenue, Tustin, California 92782-->
+    <!--        </p>-->
+    <!--        <p class="footer_text">-->
+    <!--            <a href="tel:7142599090">714.259.9090</a> | <a href="	/pages/district-privacy-policy">Privacy Policy | </a> <a href="/jobs">Jobs</a> | Vestar Property-->
+    <!--        </p>-->
+    <!--      <a href="//www.vestar.com/" target="_blank">-->
+    <!--            <img src="//codecloud.cdn.speedyrails.net/sites/574609776e6f645e19040000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt=""> </a>-->
+    <!--        <p class="footer_text">-->
+    <!--            Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>-->
+    <!--        </p>-->
+    <!--    </div>-->
+    <!--    <div class="row hidden_phone">-->
+    <!--        <div class="col-md-6">-->
+    <!--            <p class="footer_text">-->
+    <!--                © Copyright 2016 The District at Tustin Legacy -->
+    <!--            </p>-->
+    <!--            <p class="footer_text">-->
+    <!--                Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>-->
+    <!--            </p>-->
+    <!--        </div>-->
+    <!--        <div class="col-md-6 text-right ">-->
+    <!--            <a href="//www.vestar.com/" target="_blank">-->
+    <!--            <img src="//codecloud.cdn.speedyrails.net/sites/574609776e6f645e19040000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt=""> </a>-->
+    <!--            <div>-->
+    <!--                <p class="footer_text">-->
+    <!--                    2437 Park Avenue, Tustin, California 92782-->
+    <!--                </p>-->
+    <!--                <p class="footer_text">-->
                 <!--<a href="tel:7142599090">714.259.9090</a> | <a href="/pages/district-privacy-policy">Privacy Policy | </a> <a href="/jobs">Jobs</a> | Vestar Property-->
-            </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--        </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6LGVN5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
