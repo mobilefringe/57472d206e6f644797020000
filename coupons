@@ -160,6 +160,8 @@
                 // console.log(new_arr);
             })
             console.log("selected_coupon_id cookie" ,selected_coupon_id);
+            $.cookie("coupon_ids",JSON.stringify(selected_coupon_id)); 
+                $(".basket_number").text((Object.keys(selected_coupon_id).length));
             updatePage();
         }
             
