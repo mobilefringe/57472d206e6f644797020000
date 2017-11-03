@@ -402,6 +402,12 @@
                 } else {
                   $element.removeClass('in-view');
                 }
+                
+                 $( ".basket_number" ).effect( "bounce", {}, 500, function () {
+                      setTimeout(function() {
+                        $( ".basket_number" ).removeAttr( "style" ).hide().fadeIn();
+                      }, 1000 );
+                } );
             });
         }
     })
