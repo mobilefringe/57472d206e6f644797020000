@@ -150,7 +150,7 @@
             $.each(selected_coupon_id, function(i,val){
                 console.log(val);
                 var new_arr = $.grep(coupons, function( value, i ) {
-                    return (value.id.toString() == current_coupon_id);
+                    return (value.id.toString() == val);
                 });
                 console.log(new_arr);
             })
