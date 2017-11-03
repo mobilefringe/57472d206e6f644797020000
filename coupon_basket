@@ -114,7 +114,7 @@
                 $("#no_coupon").show();
             }
             
-            updatePage();
+            $(".basket_number").text(Object.keys(selected_coupon_id).length);
         }
             
             
