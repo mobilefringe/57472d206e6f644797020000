@@ -150,8 +150,8 @@
             $.each(selected_coupon_id, function(i,val){
                 console.log(val);
                 var new_arr = $.grep(selected_coupon_id, function( val, i ) {
-                        return (val !== current_coupon_id);
-                    });
+                    return (val !== current_coupon_id);
+                });
             })
             console.log("selected_coupon_id cookie" ,selected_coupon_id);
             updatePage();
