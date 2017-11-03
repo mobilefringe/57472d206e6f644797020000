@@ -116,7 +116,9 @@
             
             $(".basket_number").text(Object.keys(selected_coupon_id).length);
         }
-            
+        else {
+            $("#no_coupon").show();
+        }   
             
             
     	$(".largeGrid").click(function(){											
