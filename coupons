@@ -379,6 +379,7 @@
         $(container).html(item_rendered.join(''));
     }
     $(window).load(function(){
+        $window.trigger('scroll');
         var $animation_elements = $('.basket_image');
         var $window = $(window);
         $window.on('scroll resize', check_if_in_view);
