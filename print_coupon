@@ -1,7 +1,6 @@
 <link href="../coupons.css" rel="stylesheet">
 <div id="wrapper" class="main_container">
-
-        <div id="grid" class="row">
+    <div id="grid" class="row">
         
             <div id="coupon_container" class="coupons_container">
                     <script id="coupon_template" type="x-tmpl-mustache/text">
