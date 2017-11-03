@@ -2,27 +2,27 @@
 <div id="wrapper" class="main_container">
     <div id="grid" class="row">
         <div id="coupon_container" class="coupons_container">
-                <script id="coupon_template" type="x-tmpl-mustache/text">
-                   <div class="col-md-12">
-                        <div class="product large" id="{{id}}" style="height:100%; background:#fafafa;">
-                            <div class="make3D  col-xs-6">
-                                <div class="product-front" style="text-align:center">
-                                    <img src="{{promo_image_url_abs}}" alt="" style="position: relative;top: initial;left: initial;transform: initial;"/>
-                                </div>
-                            </div>	
-                            <div class="info-large col-xs-6">
-                                
-                        	    <p>{{store_name}}</p>
-                            	<h4>{{name}}</h4>
-                            	<p>{{dates}}</p>
-                                
-                                <p>{{{description}}}</p>                          
-                                             
+            <script id="coupon_template" type="x-tmpl-mustache/text">
+               <div class="col-md-12">
+                    <div class="product large" id="{{id}}" style="height:100%; background:#fafafa;">
+                        <div class="make3D  col-xs-6">
+                            <div class="product-front" style="text-align:center">
+                                <img src="{{promo_image_url_abs}}" alt="" style="position: relative;top: initial;left: initial;transform: initial;"/>
                             </div>
-                        </div> 
-                    </div>
-                    <hr/>
-                </script>
+                        </div>	
+                        <div class="info-large col-xs-6">
+                            
+                    	    <p>{{store_name}}</p>
+                        	<h4>{{name}}</h4>
+                        	<p>{{dates}}</p>
+                            
+                            <p>{{{description}}}</p>                          
+                                         
+                        </div>
+                    </div> 
+                </div>
+                <hr/>
+            </script>
         </div>
     </div>
 </div>
