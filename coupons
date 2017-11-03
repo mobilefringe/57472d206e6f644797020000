@@ -239,7 +239,6 @@
 
         function updatePage (){
             // selected_coupon_id;
-             
             $(".basket_number").text((Object.keys(selected_coupon_id).length));
             $.each(selected_coupon_id, function(key,val){ 
                 $("#" +val + " .add-to-basket").attr("is_in_cart","true");
