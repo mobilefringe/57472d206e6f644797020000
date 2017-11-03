@@ -150,7 +150,7 @@
             $.each(selected_coupon_id, function(i,val){
                 console.log(val);
                 var new_arr = $.grep(coupons, function( val, i ) {
-                    return (val.id !== current_coupon_id);
+                    return (val.id.toString() !== current_coupon_id);
                 });
             })
             console.log("selected_coupon_id cookie" ,selected_coupon_id);
