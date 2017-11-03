@@ -323,7 +323,8 @@
             if (val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.promo_image_url_abs  = site_json.default_image ;
                 // val.promo_image = "display:none";
-                // val.full_width = "width:100%"
+                // val.full_ var $animation_elements = $('.animation-element');
+        var $window = $(window);width = "width:100%"
             }
             if (val.description.length > 200){
                 val.description_short = val.description.substring(0, 200) + "..."
