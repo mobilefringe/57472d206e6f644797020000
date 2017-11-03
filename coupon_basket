@@ -9,7 +9,7 @@
     <div class="visible_phone position_relative">
         <a class="mobile_header" href="/coupon_basket">My Basket <div class="basket_count">(
                 <span class="basket_number" style="color:#000;position: relative; right: unset;top: unset;">0</span>)</div><i class="fa fa-chevron-right visible_phone pull-right"></i></a>
-        <a class="mobile_header" href="/coupons">Back to Coupons<i class="fa fa-chevron-left visible_phone pull-left"></i></a>
+        <a class="mobile_header" href="/coupons">Back to Coupons<i class="fa fa-chevron-left visible_phone pull-right"></i></a>
         <a class="mobile_header" href="/print_coupon" target="_blank">Print Coupons</a>
     </div>
     <div class="store_nav hidden_phone">
