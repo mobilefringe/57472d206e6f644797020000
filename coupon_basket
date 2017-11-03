@@ -42,7 +42,7 @@
                     <script id="coupon_template" type="x-tmpl-mustache/text">
                        <div class="col-md-6 col-sm-6 ">
                             <div class="product large" id="{{id}}">
-                                <div class="make3D col-md-6">
+                                <div class="make3D col-md-6 col-sm-6">
                                     <div class="product-front">
                                         <!--<div class="shadow"></div>-->
                                         <img src="{{promo_image_url_abs}}" alt="" />
