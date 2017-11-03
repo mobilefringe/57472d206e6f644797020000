@@ -374,8 +374,6 @@
                     val.alt_store_front_url = getImageURL(val.store_front_url);    
                 }
             }
-            
-            
             var rendered = Mustache.render(template_html,val)
             if (val != null && val != undefined && val.total_published_coupons > 0){
                 if(val.categories !== null && val.categories !== undefined){
