@@ -98,7 +98,7 @@
             selected_coupon_id = JSON.parse(cache_coupon_ids);
             
             console.log(selected_coupon_id);
-            var coupons = [];
+            
             // console.log(coupons);
             
             
