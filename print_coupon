@@ -36,7 +36,7 @@
         loadMallDataCached(renderAll);
     });
     $(window).load(function(e){
-        // setTimeout(function () { windo/w.print(); }, 500);
+        setTimeout(function () { window.print(); }, 500);
         
         // setTimeout(window.close, 300);
         window.onfocus = function () { setTimeout(function () { window.close(); }, 100); }
