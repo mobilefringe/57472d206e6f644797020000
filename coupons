@@ -152,6 +152,7 @@
                 var new_arr = $.grep(coupons, function( val, i ) {
                     return (val.id.toString() == current_coupon_id);
                 });
+                console.log(new_arr);
             })
             console.log("selected_coupon_id cookie" ,selected_coupon_id);
             updatePage();
