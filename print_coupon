@@ -11,13 +11,10 @@
                             </div>
                         </div>	
                         <div class="info-large col-xs-6">
-                            
                     	    <p>{{store_name}}</p>
                         	<h4>{{name}}</h4>
                         	<p>{{dates}}</p>
-                            
-                            <p>{{{description}}}</p>                          
-                                         
+                            <p>{{{description}}}</p>
                         </div>
                     </div> 
                 </div>
