@@ -100,7 +100,7 @@
             // do a chack to make sure that if expired coupon is in cookie, it gets removed
             $.each(selected_coupon_id, function(i,val){
                 // console.log(val);
-                var new_arr = $.grep(coupons, function( value, i ) {
+                var new_arr = $.grep(all_coupons, function( value, i ) {
                     return (value.id.toString() == val);
                 });
                 if(new_arr.length == 0){
