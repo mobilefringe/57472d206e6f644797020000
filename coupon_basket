@@ -64,7 +64,7 @@
     <div class="hidden_now" id="no_coupon" style="padding: 20px 0 30px; font-size: 20px;">
         <hr class="visible_phone">
         <div class="product large" id="{{id}}">
-            <div class="info-large hidden_phone col-md-6 col-sm-6 ">                        
+            <div class="info-large  col-md-6 col-sm-6 ">                        
                 <h2 class="empty_basket_title">
                     Your Basket is empty at the moment!
                 </h2>   
