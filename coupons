@@ -334,6 +334,7 @@
             }
             else {
                 val.store_name = site_json.name;
+                val.image_url = default_image;
             }
             if (val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.promo_image_url_abs  = site_json.default_image ;
