@@ -190,7 +190,7 @@
 			       console.log($.cookie("coupon_ids"));
 			     if(Object.keys(selected_coupon_id).length == 0) {
 			         $("#no_coupon").show();
-            $(".print_page_btn").hide();
+                    $(".print_page_btn").hide();
 			     }
     		});
     	})
