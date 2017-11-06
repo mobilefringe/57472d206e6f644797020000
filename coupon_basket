@@ -81,7 +81,7 @@
             <div class="make3D col-md-6 col-sm-6">
                 <div class="product-front">
                     <!--<div class="shadow"></div>-->
-                    <img src="{{image_url}}" alt="" />
+                    <img src="//codecloud.cdn.speedyrails.net/sites/594a86296e6f644aad7d0100/image/png/1509994062000/emptybasket.png" alt="" />
                 </div>
             </div>	
             
