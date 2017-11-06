@@ -27,7 +27,7 @@
             </div>
             <div class="col-md-6 coupon_dets_btns" style="height:10px">
                 <!--<a class="dets_btn">Share Coupons</a>-->
-                <a class="dets_btn print_btn" href="/print_coupon" target="_blank">Print Coupons</a>
+                <a class="dets_btn print_btn print_page_btn" href="/print_coupon" target="_blank">Print Coupons</a>
             </div>
             <!--<div class="col-md-3"></div>-->
         </div>
