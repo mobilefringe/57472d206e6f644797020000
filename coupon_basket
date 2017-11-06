@@ -219,9 +219,11 @@
                 var store_details = getStoreDetailsByID(val.promotionable_id);
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
+                val.image_url = "//mallmaverick.com"+store_details.store_front_url;
             }
             else {
                 val.store_name = site_json.name;
+                val.image_url = site_json.default_image;
             }
             if (val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.promo_image_url_abs  = site_json.default_image ;
