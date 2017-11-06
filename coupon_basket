@@ -64,13 +64,7 @@
     <div class="hidden_now" id="no_coupon" style="padding: 20px 0 30px; font-size: 20px;">
         <hr class="visible_phone">
         <div class="product large" id="{{id}}">
-            <div class="make3D col-md-6 col-sm-6">
-                <div class="product-front">
-                    <!--<div class="shadow"></div>-->
-                    <!--<img src="{{image_url}}" alt="" />-->
-                </div>
-            </div>	
-            <div class="info-large col-md-6 col-sm-6 ">
+        <div class="info-large col-md-6 col-sm-6 ">
              <!--   <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508941759000/Close .png" class="basket_image add-to-basket" alt="" is_in_cart="false">-->
         	    <!--<p>{{store_name}}</p>-->
             	<!--<h4>{{name}}</h4>-->
@@ -79,6 +73,13 @@
              <!--   <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          -->
                              
             </div>
+            <div class="make3D col-md-6 col-sm-6">
+                <div class="product-front">
+                    <!--<div class="shadow"></div>-->
+                    <!--<img src="{{image_url}}" alt="" />-->
+                </div>
+            </div>	
+            
         </div> 
         You have not selected any coupons yet! <br/>Go back to select your coupons before printing them! 
     <div>
