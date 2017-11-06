@@ -74,7 +74,9 @@
                 <h2 class="empty_basket_title">
                     Your Basket is empty at the moment!
                 </h2>   
-                <p></p>
+                <p>
+                    Go back to the Coupo
+                </p>
             </div>
             <div class="make3D col-md-6 col-sm-6">
                 <div class="product-front">
