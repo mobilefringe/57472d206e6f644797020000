@@ -74,7 +74,7 @@
                 <h2 class="empty_basket_title">
                     Your Basket is empty at the moment!
                 </h2>   
-                <p>
+                <p class="empty_basket_dets">
                     Go back to the Coupons page to add coupons to your printing list.
                 </p>
             </div>
