@@ -82,7 +82,18 @@
                     <img src="//codecloud.cdn.speedyrails.net/sites/594a86296e6f644aad7d0100/image/png/1509994062000/emptybasket.png" alt="" />
                 </div>
             </div>	
-            
+            <div class="info-large hidden_phone col-md-6 col-sm-6 ">                        -->
+                <h2 class="empty_basket_title">
+                    Your Basket is empty at the moment!
+                </h2>   
+                <p id="empty_basket_dets">
+                    Go back to the Coupons page to add coupons to your printing list.
+                </p>
+                <div class="coupon_dets_btns">
+                    <a href="/coupons" class="dets_btn add_to_basket" style="">Coupons Page</a>
+                </div>
+                 
+            </div>
         </div> 
     <div>
     
