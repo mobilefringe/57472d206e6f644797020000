@@ -71,7 +71,9 @@
             	<!--<p>{{dates}}</p>-->
           
              <!--   <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          -->
-                <h2></h2>         
+                <h2>
+                    
+                </h2>         
             </div>
             <div class="make3D col-md-6 col-sm-6">
                 <div class="product-front">
