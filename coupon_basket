@@ -13,7 +13,6 @@
         <a class="mobile_header" href="/coupons">Back to Coupons<i class="fa fa-chevron-left visible_phone pull-right"></i></a>
     </div>
     <div class="store_nav hidden_phone">
-       <div class="store_nav hidden_phone">
         <div class="row">
             <div class="col-md-3 col-xs-3">
                 <a class="" href="/coupons">BACK TO COUPONS</a>
