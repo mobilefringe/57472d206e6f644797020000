@@ -82,7 +82,7 @@
                     <img src="//codecloud.cdn.speedyrails.net/sites/594a86296e6f644aad7d0100/image/png/1509994062000/emptybasket.png" alt="" />
                 </div>
             </div>	
-            <div class="info-large hidden_phone col-md-6 col-sm-6 ">                        -->
+            <div class="info-large visible_phone col-md-6 col-sm-6 ">                        -->
                 <h2 class="empty_basket_title">
                     Your Basket is empty at the moment!
                 </h2>   
