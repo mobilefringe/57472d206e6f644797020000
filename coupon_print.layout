@@ -89,7 +89,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!--</div>-->
         <div class="row">
             <div class="logo_container">
-                <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/png/undefined/dtl_600x180_logo.png" class="main_logo" /></a>
+                <a href=""><img src="//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/png/undefined/dtl_600x180_logo.png" class="main_logo" /></a>
             </div>
             
             <!--<div class="nav_container hidden_phone">-->
