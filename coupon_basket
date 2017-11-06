@@ -64,13 +64,7 @@
     <div class="hidden_now" id="no_coupon" style="padding: 20px 0 30px; font-size: 20px;">
         <hr class="visible_phone">
         <div class="product large" id="{{id}}">
-            <div class="info-large hidden_phone col-md-6 col-sm-6 ">
-             <!--   <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508941759000/Close .png" class="basket_image add-to-basket" alt="" is_in_cart="false">-->
-        	    <!--<p>{{store_name}}</p>-->
-            	<!--<h4>{{name}}</h4>-->
-            	<!--<p>{{dates}}</p>-->
-          
-             <!--   <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          -->
+            <div class="info-large hidden_phone col-md-6 col-sm-6 ">                        -->
                 <h2 class="empty_basket_title">
                     Your Basket is empty at the moment!
                 </h2>   
