@@ -71,7 +71,7 @@
             	<!--<p>{{dates}}</p>-->
           
              <!--   <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          -->
-                <h2>
+                <h2 class="empty_basket">
                     Your Basket is empty at the moment
                 </h2>         
             </div>
