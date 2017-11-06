@@ -62,6 +62,7 @@
             
     </div>
     <div class="hidden_now" id="no_coupon" style="padding: 20px 0 30px; font-size: 20px;">
+    <hr class="visible_phone"/>
         You have not selected any coupons yet! <br/>Go back to select your coupons before printing them! 
     <div>
     
