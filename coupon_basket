@@ -25,7 +25,7 @@
                     <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508351635000/Rectangle Copy 12@2x.png" class="" alt="">
                 </div>
             </div>
-            <div class="col-md-6 coupon_dets_btns">
+            <div class="col-md-6 coupon_dets_btns" style="height:10px">
                 <!--<a class="dets_btn">Share Coupons</a>-->
                 <a class="dets_btn print_btn" href="/print_coupon" target="_blank">Print Coupons</a>
             </div>
