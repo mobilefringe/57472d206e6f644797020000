@@ -72,7 +72,7 @@
           
              <!--   <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          -->
                 <h2 class="empty_basket_title">
-                    Your Basket is empty at the moment
+                    Your Basket is empty at the moment!
                 </h2>         
             </div>
             <div class="make3D col-md-6 col-sm-6">
