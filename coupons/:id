@@ -1,0 +1,283 @@
+<link href="../coupons.css" rel="stylesheet">
+<style>
+    .basket_image {
+        position: absolute;
+        width: 25px;
+        right: 0;
+        top: 0;
+    }
+    .green_selected_box {
+        border: 4px solid #31897E;
+    }
+    .basket_count{
+        /*background:url("http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508351635000/Rectangle Copy 12@2x.png");*/
+        /*background-size:contain;*/
+        /*background-repeat:no-repeat;*/
+        display:inline;
+    }
+    .basket_count img{
+        width: 25px;
+        position: absolute;
+        right: 30px;
+        top: -2px;
+    }
+    .basket_count .basket_number{
+        color:#fff;
+        z-index:3;
+        position: absolute;
+        right: 38px;
+        top: 0px;
+        margin:0;
+    }
+</style>
+
+<div class="header_banner events_banner">
+    <div class="main_container">
+        <h4 class="header_banner_heading">Coupon Details</h4>
+    </div>
+</div>
+<div class="main_container mobile_padding coupons_dets_container">
+    <div class="visible_phone position_relative">
+        <a class="mobile_header" href="/coupon_basket">My Basket <div class="basket_count">(
+                <span class="basket_number">0</span>)</div><i class="fa fa-chevron-right visible_phone pull-right"></i></a>
+        <a class="mobile_header" href="/coupons"><i class="fa fa-chevron-left visible_phone pull-left"></i>Back to Coupons</a>
+    </div>
+    <div class="store_nav hidden_phone">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="" href="/coupons">BACK TO COUPONS</a>
+                <!--active_store_nav-->
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <a href="/coupon_basket" class="show_all_stores">MY BASKET</a> 
+                <div class="basket_count">
+                <span class="basket_number">0</span>
+                    <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508351635000/Rectangle Copy 12@2x.png" class="" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="details_col_3 hidden_phone">
+            <a href="/events">
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_events.jpg"/></a>
+        </div>
+        <div class="details_col_9" id="coupon_details_container">
+            <script id="coupon_details_template" type="x-tmpl-mustache/text">
+                <!--<a href="/events" class="back_to_list"><i class="fa fa-chevron-left"></i> &nbsp;Back to Events</a>-->
+                <div class=" coupon_image">
+                    <!--  <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1507313420000/Lole_logo.png" alt="" />-->
+                    <img src="{{promo_image_url_abs}}" class="full_border" style="{{promo_image}}" />
+                </div>
+                <div class="coupon_detail" id="product_1">
+                    <div class="row ">
+                        
+                        <div class="col-md-12 col-xs-12 coupon_dets_btns hidden_phone">
+                            <a class="dets_btn add_to_basket" style="{{show_add_to_basket}}">Add to Basket</a>
+                            <a class="dets_btn remove_from_basket" style="{{show_remove_from_basket}}">Remove from Basket</a>
+                            <a class="dets_btn print_btn">Print Coupon</a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 col-xs-12 coupon_title">
+                            <h4>{{name}}</h4>
+                        </div>
+                    </div>
+                    <div class="row coupon_store_date hidden_phone">
+                        <p>{{store_name}} | {{dates}}</p>
+                    </div>
+                    <div class="row coupon_store_date visible_phone">
+                        <p>{{store_name}} <br/> {{dates}}</p>
+                    </div>
+                    <div class="row coupon_info">
+                           {{{description}}}
+                    </div>
+                    <div class="col-md-8 col-xs-12 coupon_dets_btns visible_phone">
+                        <a class="dets_btn add_to_basket" style="{{show_add_to_basket_m}}">Add to Basket</a>
+                        <a class="dets_btn remove_from_basket" style="{{show_remove_from_basket_m}}">Remove from Basket</a>
+                        <a class="dets_btn print_btn">Print Coupon</a>
+                    </div>
+                    <div class="row social_icons">
+                        <p><b>Share this Coupon</b></p>
+                        <a href="http://www.facebook.com/sharer.php?u=http://preview-59d7b1c56e6f64669e8d0000.codecloudapp.com/coupon_detail" target="_blank"><div class="social share_fb"></div></a>
+                        <a href="http://twitter.com/?status=Check%20out%20this%20Coupon%21%20http://preview-59d7b1c56e6f64669e8d0000.codecloudapp.com/coupon_detail" target="_blank"><div class="social share_tw"></div></a>
+                        <a href="mailto:?subject=Buy 1 get 1 Free&body=Check%20out%20this%20Coupon%21%20http://preview-59d7b1c56e6f64669e8d0000.codecloudapp.com/coupon_detail"><div class="social share_link"></div></a>
+                      
+                    </div>
+                </div>
+                
+                <!--<p class="colored_link">{{name}}</p>-->
+                <!--<h3 class="publish_date"><span class="promo_parent">{{store_name}} | </span>{{dates}}</h3>-->
+                <!--<div class="details_desc">{{{rich_description}}}</div>-->
+            </script>
+        </div>
+</div>
+<!--<div class="main_container mobile_padding coupons_container visible_phone">-->
+<!--    Sorry, this page is only available on Desktops-->
+<!--</div>-->
+<!--<div class="main_container mobile_padding">-->
+<!--    <div class="details_row">-->
+        
+<!--    </div>-->
+<!--</div>-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script>
+    $(document).ready(function(e){
+        init(e);
+        //get the current coupons details
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var coupons = getCouponDetailsBySlug(slug);
+        
+        console.log(coupons);
+        selected_coupon_id = [];
+        // var cache_coupon_ids = localStorage['coupon_ids'];
+        var cache_coupon_ids = $.cookie().coupon_ids;
+        if (cache_coupon_ids) {
+            selected_coupon_id = JSON.parse(cache_coupon_ids);
+            console.log("selected_coupon_id cookie" ,selected_coupon_id);
+            $.cookie("coupon_ids",JSON.stringify(selected_coupon_id));
+            console.log(selected_coupon_id);
+            $(".basket_number").text(Object.keys(selected_coupon_id).length);
+            
+            var is_inArray =$.inArray(coupons.id.toString(),selected_coupon_id);
+            // $.grep(Object.keys(selected_coupon_id), function(i) {
+            //         // console.log(value);
+            //     return coupons.id.toString() == selected_coupon_id[i];
+            // });
+            console.log("is_inArray",is_inArray);
+            if(is_inArray > -1) {
+                coupons.show_add_to_basket="display:none";
+                coupons.show_remove_from_basket="display:inline-block";
+                coupons.show_add_to_basket_m="display:none";
+                coupons.show_remove_from_basket_m="display:block";
+                console.log("is in array",coupons);
+            }
+            else {
+                coupons.show_add_to_basket="display:inline-block";
+                coupons.show_remove_from_basket="display:none";
+                coupons.show_add_to_basket_m="display:block";
+                coupons.show_remove_from_basket_m="display:none";
+                console.log("is not in array");
+            }
+        }
+        else {
+                coupons.show_add_to_basket="display:inline";
+                coupons.show_remove_from_basket="display:none";
+                coupons.show_add_to_basket_m="display:block";
+                coupons.show_remove_from_basket_m="display:none";
+                console.log("is not in array");
+            }
+        renderCouponDetails('#coupon_details_container', '#coupon_details_template', coupons);
+        $(".print_btn").click(function(e){
+            printPage();
+        });
+        $(".add_to_basket").click(function(e){
+            selected_coupon_id.push(coupons.id);
+            $(".remove_from_basket").show();
+            $(".add_to_basket").hide();
+            // var current_coupon_id = $(".coupon_detail").attr("id");
+            // $( ".basket_number" ).effect( "bounce", {}, 500, function () {
+            //     setTimeout(function() {
+            //         $( ".basket_number" ).removeAttr( "style" ).hide().fadeIn();
+            //     }, 1000 );
+            // });
+            $.cookie("coupon_ids",JSON.stringify(selected_coupon_id));
+            $(".basket_number").text((Object.keys(selected_coupon_id).length));
+			console.log($.cookie().coupon_ids,(Object.keys(selected_coupon_id).length));
+        });
+        $(".remove_from_basket").click(function(e){
+	        selected_coupon_id = $.grep(selected_coupon_id, function( val, i ) {
+                return (val !== coupons.id.toString());
+            });
+            $(".remove_from_basket").hide();
+            $(".add_to_basket").show();
+			$.cookie("coupon_ids",JSON.stringify(selected_coupon_id)); 
+			$(".basket_number").text((Object.keys(selected_coupon_id).length));
+			console.log($.cookie().coupon_ids,(Object.keys(selected_coupon_id).length));
+        });
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        // var pathArray = window.location.pathname.split( '/' );
+        // var slug = pathArray[pathArray.length-1];
+        // event_details = getEventDetailsBySlug(slug);
+        // renderEventDetails('#event_details_container', '#event_details_template', event_details)
+        show_content();
+    }
+    function printPage() {
+        var w = window.open();
+    
+        var headers = $(".coupon_title").html();
+        var field= $(".coupon_image").html();
+        var field2= $(".coupon_store_date").html();
+        var field3= $(".coupon_info").html();
+        
+        var html = "<!DOCTYPE HTML>";
+        html += '<html lang="en-us">';
+        html += '<head><style>body{text-align:center; border:solid 1px #000;}</style></head>';
+        html += "<body><img src='http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/jpeg/undefined/dtl_500x500_logo.jpg'>";
+    
+        //check to see if they are null so "undefined" doesnt print on the page. <br>s optional, just to give space
+        if(headers != null) html += headers + "<br/><br/>";
+        if(field != null) html += field + "<br/><br/>";
+        if(field2 != null) html += field2 + "<br/><br/>";
+        if(field3 != null) html += field3 + "<br/><br/>";
+        html += "</body>";
+        w.document.write(html);
+        w.window.print();
+        w.document.close();
+    }
+    function renderCouponDetails(container, template, collection){
+        var item_list = [];
+        var item_rendered = [];
+        var template_html = $(template).html();
+        Mustache.parse(template_html); 
+        item_list.push(collection);
+        $.each( item_list , function( key, val ) {
+            if (val.promotionable_type == "Store") {
+                var store_details = getStoreDetailsByID(val.promotionable_id);
+                val.store_detail_btn = store_details.slug ;
+                val.store_name = store_details.name;
+            }
+            else {
+                val.store_name = site_json.name;
+            }
+            if (val.promo_image_url_abs.indexOf('missing.png') > 0){
+                val.promo_image_url_abs  = site_json.default_image ;
+                val.promo_image = "display:none";
+                val.full_width = "width:100%"
+            }
+            if (val.promo_image_url_abs.indexOf('missing.png') > -1){
+                val.promo_image_show="display:none";
+            }
+            // var show_date = new Date (val.show_on_web_date + site_json.time_zone);
+            // start = new Date (val.start_date + site_json.time_zone);
+            // end = new Date (val.end_date + site_json.time_zone);
+            // if (start.toDateString() == end.toDateString()) {
+            //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
+            // } else {
+            //     val.dates = "Starts " + (get_month(start.getMonth()))+" "+(start.getDate())+" - Ends "+get_month(end.getMonth())+" "+end.getDate();    
+            // }
+            
+            var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            if (start.format("DMY") == end.format("DMY")){
+            	val.dates = start.format("MMM D");
+            }
+            else {
+            	val.dates = "Starts " + start.format("MMM D") + " - Ends " + end.format("MMM D");
+            }
+            val.main_host= getPropertyDetails().mm_host;
+            var rendered = Mustache.render(template_html,val);
+            item_rendered.push(rendered);
+        });
+        $(container).html(item_rendered.join(''));
+    }
+</script>
