@@ -209,6 +209,7 @@
     });
     
     function updateCookie (selected_coupon_id) {
+        $(".basket_number").text((Object.keys(selected_coupon_id).length));
         $.cookie("coupon_ids",JSON.stringify(selected_coupon_id));
     }
     
