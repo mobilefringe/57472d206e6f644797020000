@@ -191,7 +191,7 @@
 //             console.log("cookie has" , $.cookie().coupon_ids);
             
 // 			console.log($.cookie(),(Object.keys(selected_coupon_id).length));
-			updateCookie();
+			updateCookie(selected_coupon_id);
         });
         $(".remove_from_basket").click(function(e){
 	        selected_coupon_id = $.grep(selected_coupon_id, function( val, i ) {
@@ -204,7 +204,7 @@
 //             console.log("cookie has" , $.cookie().coupon_ids);
 //             $(".basket_number").text((Object.keys(selected_coupon_id).length));
 // 			console.log($.cookie(),(Object.keys(selected_coupon_id).length));
-        	updateCookie();
+        	updateCookie(selected_coupon_id);
         });
         loadMallDataCached(renderPage);
     });
