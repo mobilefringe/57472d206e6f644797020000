@@ -186,11 +186,11 @@
             //         $( ".basket_number" ).removeAttr( "style" ).hide().fadeIn();
             //     }, 1000 );
             // });
-            console.log("selected_coupon_id",selected_coupon_id);
-            $.cookie("coupon_ids",JSON.stringify(selected_coupon_id));
-            console.log("cookie has" , $.cookie().coupon_ids);
+//             console.log("selected_coupon_id",selected_coupon_id);
+//             $.cookie("coupon_ids",JSON.stringify(selected_coupon_id));
+//             console.log("cookie has" , $.cookie().coupon_ids);
             
-			console.log($.cookie(),(Object.keys(selected_coupon_id).length));
+// 			console.log($.cookie(),(Object.keys(selected_coupon_id).length));
 			updateCookie();
         });
         $(".remove_from_basket").click(function(e){
