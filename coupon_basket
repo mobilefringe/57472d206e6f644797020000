@@ -155,7 +155,7 @@
             $("#no_coupon").show();
             $(".print_page_btn").hide();
         }   
-            
+         console.log("cookie has" , $.cookie().coupon_ids);   
             
     	$(".largeGrid").click(function(){											
             $(this).find('a').addClass('active');
