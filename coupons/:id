@@ -209,7 +209,7 @@
     });
     
     function updateCookie () {
-        
+        $.cookie("coupon_ids",JSON.stringify(selected_coupon_id));
     }
     
     function renderPage(){
