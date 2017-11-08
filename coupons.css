@@ -1325,7 +1325,7 @@ div.floating-cart.moveToCart{
             right: initial;
             left:0px;
             top: initial;//130px;
-            bottom:0px;
+            bottom: -5px;
         }
         .info-large {
             p:nth-child(4){
