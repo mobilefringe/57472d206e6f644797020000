@@ -170,7 +170,7 @@
             coupons.show_remove_from_basket="display:none";
             coupons.show_add_to_basket_m="display:block";
             coupons.show_remove_from_basket_m="display:none";
-            console.log("is not in array");
+            console.log("no coupons in cookies");
         }
         renderCouponDetails('#coupon_details_container', '#coupon_details_template', coupons);
         $(".print_btn").click(function(e){
