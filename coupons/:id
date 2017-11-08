@@ -206,8 +206,11 @@
 			console.log($.cookie(),(Object.keys(selected_coupon_id).length));
         });
         loadMallDataCached(renderPage);
-    })
+    });
     
+    function updateCookie () {
+        
+    }
     function renderPage(){
         // var pathArray = window.location.pathname.split( '/' );
         // var slug = pathArray[pathArray.length-1];
