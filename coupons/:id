@@ -166,12 +166,12 @@
             }
         }
         else {
-                coupons.show_add_to_basket="display:inline";
-                coupons.show_remove_from_basket="display:none";
-                coupons.show_add_to_basket_m="display:block";
-                coupons.show_remove_from_basket_m="display:none";
-                console.log("is not in array");
-            }
+            coupons.show_add_to_basket="display:inline";
+            coupons.show_remove_from_basket="display:none";
+            coupons.show_add_to_basket_m="display:block";
+            coupons.show_remove_from_basket_m="display:none";
+            console.log("is not in array");
+        }
         renderCouponDetails('#coupon_details_container', '#coupon_details_template', coupons);
         $(".print_btn").click(function(e){
             printPage();
