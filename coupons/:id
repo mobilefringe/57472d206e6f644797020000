@@ -200,7 +200,7 @@
             $(".remove_from_basket").hide();
             $(".add_to_basket").show();
 			console.log("selected_coupon_id",selected_coupon_id);
-            $.cookie("coupon_ids",JSON.stringify(selected_coupon_id));
+            
             console.log("cookie has" , $.cookie().coupon_ids);
             $(".basket_number").text((Object.keys(selected_coupon_id).length));
 			console.log($.cookie(),(Object.keys(selected_coupon_id).length));
