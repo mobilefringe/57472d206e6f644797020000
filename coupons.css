@@ -1321,6 +1321,7 @@ div.floating-cart.moveToCart{
             transform: initial;
         }
         .basket_image {
+            width: 35px;
             right: initial;
             left:0px;
             top: initial;//130px;
