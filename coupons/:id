@@ -138,7 +138,7 @@
         // var cache_coupon_ids = localStorage['coupon_ids'];
         var cache_coupon_ids = $.cookie().coupon_ids;
         if (cache_coupon_ids) {
-            // selected_coupon_id = JSON.parse(cache_coupon_ids);
+            selected_coupon_id = JSON.parse(cache_coupon_ids);
             // console.log("selected_coupon_id cookie" ,selected_coupon_id);
             // $.cookie("coupon_ids",JSON.stringify(selected_coupon_id));
             // console.log(selected_coupon_id);
