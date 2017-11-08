@@ -109,7 +109,7 @@
         loadMallDataCached(renderAll);
     });
     function renderAll(){
-        var cache_coupon_ids = $.cookie("coupon_ids");//$.cookie().coupon_ids;
+        var cache_coupon_ids = $.cookie().coupon_ids;
         if (cache_coupon_ids) {
             var coupons = [];
             all_coupons = getCouponsList();
