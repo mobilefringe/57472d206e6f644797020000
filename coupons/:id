@@ -124,7 +124,7 @@
 <!--</div>-->
 <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
 <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/1.5.1/js.cookie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
