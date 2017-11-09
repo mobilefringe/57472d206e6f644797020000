@@ -237,7 +237,7 @@
         
         var html = "<!DOCTYPE HTML>";
         html += '<html lang="en-us">';
-        html += '<head><style>body{text-align:center; border:solid 1px #000;} body img{width:200px;}</style></head>';
+        html += '<head><style>body{text-align:center; border:solid 1px #000;} body img{width:150px;}</style></head>';
         html += "<body>";
     
         //check to see if they are null so "undefined" doesnt print on the page. <br>s optional, just to give space
