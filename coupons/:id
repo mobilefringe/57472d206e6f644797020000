@@ -237,7 +237,7 @@
         
         var html = "<!DOCTYPE HTML>";
         html += '<html lang="en-us">';
-        html += '<head><style>body{text-align:center; border:solid 1px #000;} .coupon_image{width:300px;}</style></head>';
+        html += '<head><style>body{text-align:center; border:solid 1px #000;} body img{width:300px;}</style></head>';
         html += "<body><img src='http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/jpeg/undefined/dtl_500x500_logo.jpg'>";
     
         //check to see if they are null so "undefined" doesnt print on the page. <br>s optional, just to give space
