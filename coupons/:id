@@ -259,7 +259,6 @@
         $.each( item_list , function( key, val ) {
             var store_details = getStoreDetailsByID(val.promotionable_id);
             if (val.promotionable_type == "Store") {
-                
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
             }
