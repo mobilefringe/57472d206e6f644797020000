@@ -248,7 +248,7 @@
         html += "</body>";
         w.document.write(html);
         
-        setTimeout(function () { window.print(); }, 500);
+        setTimeout(function () { w.window.print(); }, 500);
         w.document.close();
     }
     function renderCouponDetails(container, template, collection){
