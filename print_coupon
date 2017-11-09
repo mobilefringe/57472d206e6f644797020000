@@ -3,7 +3,7 @@
     <div id="grid" class="row">
         <div id="coupon_container" class="coupons_container">
             <script id="coupon_template" type="x-tmpl-mustache/text">
-               <div class="col-md-12 full_border">
+               <div class="col-md-12 ">
                     <div class="product large" id="{{id}}" style="height:100%; background:#fafafa;">
                         <div class="make3D  col-xs-6">
                             <div class="product-front" style="text-align:center">
