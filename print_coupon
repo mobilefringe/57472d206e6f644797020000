@@ -70,18 +70,22 @@
         var template_html = $(template).html();
         Mustache.parse(template_html); 
         $.each( collection , function( key, val ) {
+            var store_details = getStoreDetailsByID(val.promotionable_id);
             if (val.promotionable_type == "Store") {
-                var store_details = getStoreDetailsByID(val.promotionable_id);
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
             }
             else {
                 val.store_name = site_json.name;
             }
-            if (val.promo_image_url_abs.indexOf('missing.png') > 0){
-                val.promo_image_url_abs  = site_json.default_image ;
+            if (val.promo_image_url_abs.indexOf('missing.png') > -1){
+                val.promo_image_url_abs  = store_details.store_front_url_abs;
                 // val.promo_image = "display:none";
                 // val.full_width = "width:100%"
+            }
+            if (val.promo_image_url_abs.indexOf('missing.png') > -1){
+                // val.promo_image_show="display:none";
+                val.promo_image_url_abs  = te_json.default_image ;
             }
             if (val.description.length > 200){
                 val.description_short = val.description.substring(0, 200) + "..."
