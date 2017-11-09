@@ -265,7 +265,7 @@
             else {
                 val.store_name = site_json.name;
             }
-            if (val.promo_image_url_abs.indexOf('missing.png') > 0-1
+            if (val.promo_image_url_abs.indexOf('missing.png') > -1){
                 val.promo_image_url_abs  = store_front_url_abs;site_json.default_image ;
                 // val.promo_image = "display:none";
                 // val.full_width = "width:100%"
