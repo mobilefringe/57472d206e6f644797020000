@@ -266,12 +266,13 @@
                 val.store_name = site_json.name;
             }
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                val.promo_image_url_abs  = store_front_url_abs;site_json.default_image ;
+                val.promo_image_url_abs  = store_front_url_abs;
                 // val.promo_image = "display:none";
                 // val.full_width = "width:100%"
             }
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                val.promo_image_show="display:none";
+                // val.promo_image_show="display:none";
+                val.promo_image_url_abs  = te_json.default_image ;
             }
             // var show_date = new Date (val.show_on_web_date + site_json.time_zone);
             // start = new Date (val.start_date + site_json.time_zone);
