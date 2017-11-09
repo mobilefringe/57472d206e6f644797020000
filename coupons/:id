@@ -242,8 +242,8 @@
     
         //check to see if they are null so "undefined" doesnt print on the page. <br>s optional, just to give space
         
-        if(field != null) html += "<br/><br/>" +field + "<br/><br/>";
-        if(headers != null) html += headers + "<br/>";
+        if(field != null) html += "<br/><br/>" +field + "";
+        if(headers != null) html += headers + "";
         if(field2 != null) html += field2 + "";
         if(field3 != null) html += field3 + "<br/>";
         html += "</body>";
