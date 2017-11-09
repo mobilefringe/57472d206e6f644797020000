@@ -247,7 +247,8 @@
         if(field3 != null) html += field3 + "<br/><br/>";
         html += "</body>";
         w.document.write(html);
-        w.window.print();
+        
+        setTimeout(function () { window.print(); }, 500);
         w.document.close();
     }
     function renderCouponDetails(container, template, collection){
