@@ -257,8 +257,9 @@
         Mustache.parse(template_html); 
         item_list.push(collection);
         $.each( item_list , function( key, val ) {
+            var store_details = getStoreDetailsByID(val.promotionable_id);
             if (val.promotionable_type == "Store") {
-                var store_details = getStoreDetailsByID(val.promotionable_id);
+                
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
             }
@@ -266,7 +267,7 @@
                 val.store_name = site_json.name;
             }
             if (val.promo_image_url_abs.indexOf('missing.png') > 0){
-                val.promo_image_url_abs  = site_json.default_image ;
+                val.promo_image_url_abs  = store_front_url_abs;site_json.default_image ;
                 // val.promo_image = "display:none";
                 // val.full_width = "width:100%"
             }
