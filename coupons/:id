@@ -244,7 +244,7 @@
         
         if(field != null) html += "<br/><br/>" +field + "<br/><br/>";
         if(headers != null) html += headers + "<br/>";
-        if(field2 != null) html += field2 + "<br/>";
+        if(field2 != null) html += field2 + "";
         if(field3 != null) html += field3 + "<br/>";
         html += "</body>";
         w.document.write(html);
