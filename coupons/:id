@@ -242,10 +242,10 @@
     
         //check to see if they are null so "undefined" doesnt print on the page. <br>s optional, just to give space
         
-        if(field != null) html += field + "<br/><br/>";
-        if(headers != null) html += headers + "<br/><br/>";
-        if(field2 != null) html += field2 + "<br/><br/>";
-        if(field3 != null) html += field3 + "<br/><br/>";
+        if(field != null) html += "<br/" +field + "<br/><br/>";
+        if(headers != null) html += headers + "<br/>";
+        if(field2 != null) html += field2 + "<br/>";
+        if(field3 != null) html += field3 + "<br/>";
         html += "</body>";
         w.document.write(html);
         
