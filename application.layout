@@ -168,7 +168,7 @@
     <section class="copyright_footer main_container">
         <div class="text-center visible_phone">
             <p class="footer_text">
-                &copy; Copyright <span id="current_year"></span> The District at Tustin Legacy
+                &copy; Copyright <span id="current_year"  class="current_year"></span> The District at Tustin Legacy
             </p>
             <p class="footer_text">
                 2437 Park Avenue, Tustin, California 92782
