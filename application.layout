@@ -168,7 +168,7 @@
     <section class="copyright_footer main_container">
         <div class="text-center visible_phone">
             <p class="footer_text">
-                © Copyright 2016 The District at Tustin Legacy
+                &copy; Copyright <span id="current_year"></span> The District at Tustin Legacy
             </p>
             <p class="footer_text">
                 2437 Park Avenue, Tustin, California 92782
@@ -185,7 +185,7 @@
         <div class="row hidden_phone">
             <div class="col-md-6">
                 <p class="footer_text">
-                    © Copyright 2016 The District at Tustin Legacy 
+                    &copy; Copyright <span id="current_year"></span> The District at Tustin Legacy 
                 </p>
                 <p class="footer_text">
                     Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>
