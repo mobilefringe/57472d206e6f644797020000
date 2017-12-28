@@ -1,4 +1,6 @@
 /*****COUPONS PAGE*******/
+
+$theme_colour : #778447;
 .padding_5 {
     padding: 5px;
 }
@@ -1034,8 +1036,8 @@ div.floating-cart.moveToCart{
         transition: all 200ms ease-out;
     }
     .add-cart-large:hover{
-    	color: #f89d54;
-    	border-color:#f89d54;
+    	color: $theme_colour;
+    	border-color:$theme_colour;
     	-webkit-transition: all 200ms ease-out;
     	   -moz-transition: all 200ms ease-out;
     		-ms-transition: all 200ms ease-out;
@@ -1136,8 +1138,8 @@ div.floating-cart.moveToCart{
         
         .remove_from_basket {
             background: #fff;
-            color:#f89d54;
-            border: 1px solid #f89d54;
+            color:$theme_colour;
+            border: 1px solid $theme_colour;
             &:hover{
             // background: #fff;
             color: #000;
@@ -1210,8 +1212,8 @@ div.floating-cart.moveToCart{
 }
 .dets_btn:hover{
     text-decoration:none;
-	color: #f89d54;
-	border-color:#f89d54;
+	color: $theme_colour;
+	border-color:$theme_colour;
 	-webkit-transition: all 200ms ease-out;
 	   -moz-transition: all 200ms ease-out;
 		-ms-transition: all 200ms ease-out;
@@ -1220,12 +1222,12 @@ div.floating-cart.moveToCart{
 			cursor:pointer;
 }
 .print_btn {
-    background: #f89d54;
+    background: $theme_colour;
     color:#fff!important;
-    border: 1px solid #f89d54;
+    border: 1px solid $theme_colour;
     &:hover{
     background: #fff;
-    color: #f89d54!important;
+    color: $theme_colour!important;
     }
 }
 .social_icons{
@@ -1244,20 +1246,20 @@ div.floating-cart.moveToCart{
         display:inline;
     }
     .share_fb {
-        background-image: url('http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508432752000/social_fb_orange.png');
+        background-image: url('http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508433003000/social_fb_org.png');
     }
     .share_fb:hover {
         background-image: url('http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508433003000/social_fb_org.png');
     }
     .share_tw {
-        background-image: url('http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508432272000/social_twitter_orange.png');
+        background-image: url('http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508433249000/social_twitter_org.png');
         
     }
     .share_tw:hover {
         background-image: url('http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508433249000/social_twitter_org.png');
     }
     .share_link {
-        background-image: url('http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508432468000/social_link_orange.png');
+        background-image: url('http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508433186000/social_link_org.png');
       
     }
     .share_link:hover {
