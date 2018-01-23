@@ -1,102 +1,100 @@
 <link href="../coupons.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 <div class="header_banner location_banner">
-    <div class="main_container">
-        <h4 class="header_banner_heading">Coupons</h4>
-    </div>
+	<div class="main_container">
+		<h4 class="header_banner_heading">Coupons</h4>
+	</div>
 </div>
 <div class="main_container mobile_padding coupons_container">
-    <div class="visible_phone position_relative">
-        <a class="mobile_header" href="">My Basket <div class="basket_count">(
-                <span class="basket_number" style="color:#000;position: relative; right: unset;top: unset;">0</span>)</div></a>
-        <a class="mobile_header print_page_btn" href="/print_coupon" target="_blank">Print Coupons<i class="fa fa-chevron-right visible_phone pull-right"></i></a>
-        <a class="mobile_header" href="/coupons">Back to Coupons<i class="fa fa-chevron-left visible_phone pull-right"></i></a>
-    </div>
-    <div class="store_nav hidden_phone">
-        <div class="row">
-            <div class="col-md-3 col-xs-3">
-                <a class="" href="/coupons">BACK TO COUPONS</a>
-                <!--active_store_nav-->
-            </div>
-            <div class="col-md-3 col-xs-3">
-                <a href="#" class="show_all_stores">MY BASKET</a> 
-                <div class="basket_count">
-                <span class="basket_number">0</span>
-                    <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508351635000/Rectangle Copy 12@2x.png" class="" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 coupon_dets_btns" style="height:10px">
-                <!--<a class="dets_btn">Share Coupons</a>-->
-                <a class="dets_btn print_btn print_page_btn" href="/print_coupon" target="_blank">Print Coupons</a>
-            </div>
-            <!--<div class="col-md-3"></div>-->
-        </div>
-    </div>
-    <div id="wrapper">
-
-        <div id="grid" class="row">
-        
-            <div id="coupon_container">
-                <script id="coupon_template" type="x-tmpl-mustache/text">
-                   <div class="col-md-6 col-sm-6 ">
-                        <div class="product large" id="{{id}}">
-                            <div class="make3D col-md-6 col-sm-6">
-                                <div class="product-front">
-                                    <!--<div class="shadow"></div>-->
-                                    <img src="{{image_url}}" alt="" />
-                                </div>
-                            </div>	
-                            <div class="info-large col-md-6 col-sm-6 ">
-                                <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508941759000/Close .png" class="basket_image add-to-basket" alt="" is_in_cart="false">
-                        	    <p>{{store_name}}</p>
-                            	<h4>{{name}}</h4>
-                            	<p>{{dates}}</p>
-                          
-                                <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          
-                                             
-                            </div>
-                        </div> 
-                    </div>
-                </script>
-            </div>
-            
-    </div>
-    <div class="hidden_now" id="no_coupon" style="padding: 20px 0 30px; font-size: 20px;">
-        <hr class="visible_phone">
-        <div class="product large" id="{{id}}">
-            <div class="info-large  col-md-6 col-sm-6 hidden_phone">                        
-                <h2 class="empty_basket_title">
-                    Your Basket is empty at the moment!
-                </h2>   
-                <p id="empty_basket_dets">
-                    Go back to the Coupons page to add coupons to your printing list.
-                </p>
-                <div class="coupon_dets_btns">
-                    <a href="/coupons" class="dets_btn add_to_basket" style="">Coupons Page</a>
-                </div>
-                 
-            </div>
-            <div class="make3D col-md-6 col-sm-6">
-                <div class="product-front">
-                    <!--<div class="shadow"></div>-->
-                    <img src="//codecloud.cdn.speedyrails.net/sites/594a86296e6f644aad7d0100/image/png/1509994062000/emptybasket.png" alt="" />
-                </div>
-            </div>	
-            <div class="info-large visible_phone col-md-6 col-sm-6 ">                       
-                <h2 class="empty_basket_title">
-                    Your Basket is empty at the moment!
-                </h2>   
-                <p id="empty_basket_dets">
-                    Go back to the Coupons page to add coupons to your printing list.
-                </p>
-                <div class="coupon_dets_btns">
-                    <a href="/coupons" class="dets_btn add_to_basket" style="">Coupons Page</a>
-                </div>
-                 
-            </div>
-        </div> 
-    <div>
-    
+<div class="visible_phone position_relative">
+	<a class="mobile_header" href="">
+		My Basket 
+		<div class="basket_count">(
+			<span class="basket_number" style="color:#000;position: relative; right: unset;top: unset;">0</span>)
+		</div>
+	</a>
+	<a class="mobile_header print_page_btn" href="/print_coupon" target="_blank">Print Coupons<i class="fa fa-chevron-right visible_phone pull-right"></i></a>
+	<a class="mobile_header" href="/coupons">Back to Coupons<i class="fa fa-chevron-left visible_phone pull-right"></i></a>
+</div>
+<div class="store_nav hidden_phone">
+	<div class="row">
+		<div class="col-md-3 col-xs-3">
+			<a class="" href="/coupons">BACK TO COUPONS</a>
+			<!--active_store_nav-->
+		</div>
+		<div class="col-md-3 col-xs-3">
+			<a href="#" class="show_all_stores">MY BASKET</a> 
+			<div class="basket_count">
+				<span class="basket_number">0</span>
+				<img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508351635000/Rectangle Copy 12@2x.png" class="" alt="">
+			</div>
+		</div>
+		<div class="col-md-6 coupon_dets_btns" style="height:10px">
+			<!--<a class="dets_btn">Share Coupons</a>-->
+			<a class="dets_btn print_btn print_page_btn" href="/print_coupon" target="_blank">Print Coupons</a>
+		</div>
+		<!--<div class="col-md-3"></div>-->
+	</div>
+</div>
+<div id="wrapper">
+<div id="grid" class="row">
+	<div id="coupon_container">
+		<script id="coupon_template" type="x-tmpl-mustache/text">
+			<div class="col-md-6 col-sm-6 ">
+			     <div class="product large" id="{{id}}">
+			         <div class="make3D col-md-6 col-sm-6">
+			             <div class="product-front">
+			                 <!--<div class="shadow"></div>-->
+			                 <img src="{{image_url}}" alt="" />
+			             </div>
+			         </div>	
+			         <div class="info-large col-md-6 col-sm-6 ">
+			             <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508941759000/Close .png" class="basket_image add-to-basket" alt="" is_in_cart="false">
+			     	    <p>{{store_name}}</p>
+			         	<h4>{{name}}</h4>
+			         	<p>{{dates}}</p>
+			       
+			             <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          
+			                          
+			         </div>
+			     </div> 
+			 </div>
+		</script>
+	</div>
+</div>
+<div class="hidden_now" id="no_coupon" style="padding: 20px 0 30px; font-size: 20px;">
+<hr class="visible_phone">
+<div class="product large" id="{{id}}">
+	<div class="info-large  col-md-6 col-sm-6 hidden_phone">
+		<h2 class="empty_basket_title">
+			Your Basket is empty at the moment!
+		</h2>
+		<p id="empty_basket_dets">
+			Go back to the Coupons page to add coupons to your printing list.
+		</p>
+		<div class="coupon_dets_btns">
+			<a href="/coupons" class="dets_btn add_to_basket" style="">Coupons Page</a>
+		</div>
+	</div>
+	<div class="make3D col-md-6 col-sm-6">
+		<div class="product-front">
+			<!--<div class="shadow"></div>-->
+			<img src="//codecloud.cdn.speedyrails.net/sites/594a86296e6f644aad7d0100/image/png/1509994062000/emptybasket.png" alt="" />
+		</div>
+	</div>
+	<div class="info-large visible_phone col-md-6 col-sm-6 ">
+		<h2 class="empty_basket_title">
+			Your Basket is empty at the moment!
+		</h2>
+		<p id="empty_basket_dets">
+			Go back to the Coupons page to add coupons to your printing list.
+		</p>
+		<div class="coupon_dets_btns">
+			<a href="/coupons" class="dets_btn add_to_basket" style="">Coupons Page</a>
+		</div>
+	</div>
+</div>
+<div>
 </div>
 
 <script>
