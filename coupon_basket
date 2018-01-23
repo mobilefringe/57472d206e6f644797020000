@@ -36,65 +36,65 @@
     		<!--<div class="col-md-3"></div>-->
     	</div>
     </div>
-<div id="wrapper">
-<div id="grid" class="row">
-	<div id="coupon_container">
-		<script id="coupon_template" type="x-tmpl-mustache/text">
-			<div class="col-md-6 col-sm-6 ">
-			     <div class="product large" id="{{id}}">
-			         <div class="make3D col-md-6 col-sm-6">
-			             <div class="product-front">
-			                 <!--<div class="shadow"></div>-->
-			                 <img src="{{image_url}}" alt="" />
-			             </div>
-			         </div>	
-			         <div class="info-large col-md-6 col-sm-6 ">
-			             <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508941759000/Close .png" class="basket_image add-to-basket" alt="" is_in_cart="false">
-			     	    <p>{{store_name}}</p>
-			         	<h4>{{name}}</h4>
-			         	<p>{{dates}}</p>
-			       
-			             <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          
-			                          
-			         </div>
-			     </div> 
-			 </div>
-		</script>
-	</div>
-</div>
-<div class="hidden_now" id="no_coupon" style="padding: 20px 0 30px; font-size: 20px;">
-<hr class="visible_phone">
-<div class="product large" id="{{id}}">
-	<div class="info-large  col-md-6 col-sm-6 hidden_phone">
-		<h2 class="empty_basket_title">
-			Your Basket is empty at the moment!
-		</h2>
-		<p id="empty_basket_dets">
-			Go back to the Coupons page to add coupons to your printing list.
-		</p>
-		<div class="coupon_dets_btns">
-			<a href="/coupons" class="dets_btn add_to_basket" style="">Coupons Page</a>
-		</div>
-	</div>
-	<div class="make3D col-md-6 col-sm-6">
-		<div class="product-front">
-			<!--<div class="shadow"></div>-->
-			<img src="//codecloud.cdn.speedyrails.net/sites/594a86296e6f644aad7d0100/image/png/1509994062000/emptybasket.png" alt="" />
-		</div>
-	</div>
-	<div class="info-large visible_phone col-md-6 col-sm-6 ">
-		<h2 class="empty_basket_title">
-			Your Basket is empty at the moment!
-		</h2>
-		<p id="empty_basket_dets">
-			Go back to the Coupons page to add coupons to your printing list.
-		</p>
-		<div class="coupon_dets_btns">
-			<a href="/coupons" class="dets_btn add_to_basket" style="">Coupons Page</a>
-		</div>
-	</div>
-</div>
-<div>
+    <div id="wrapper">
+        <div id="grid" class="row">
+        	<div id="coupon_container">
+        		<script id="coupon_template" type="x-tmpl-mustache/text">
+        			<div class="col-md-6 col-sm-6 ">
+        			     <div class="product large" id="{{id}}">
+        			         <div class="make3D col-md-6 col-sm-6">
+        			             <div class="product-front">
+        			                 <!--<div class="shadow"></div>-->
+        			                 <img src="{{image_url}}" alt="" />
+        			             </div>
+        			         </div>	
+        			         <div class="info-large col-md-6 col-sm-6 ">
+        			             <img src="http://assets.codecloudapp.com/sites/59d7b1c56e6f64669e8d0000/image/png/1508941759000/Close .png" class="basket_image add-to-basket" alt="" is_in_cart="false">
+        			     	    <p>{{store_name}}</p>
+        			         	<h4>{{name}}</h4>
+        			         	<p>{{dates}}</p>
+        			       
+        			             <a class="add-cart-large" href="/coupons/{{slug}}">View Details</a>                          
+        			                          
+        			         </div>
+        			     </div> 
+        			 </div>
+        		</script>
+        	</div>
+        </div>
+        <div class="hidden_now" id="no_coupon" style="padding: 20px 0 30px; font-size: 20px;">
+        <hr class="visible_phone">
+        <div class="product large" id="{{id}}">
+        	<div class="info-large  col-md-6 col-sm-6 hidden_phone">
+        		<h2 class="empty_basket_title">
+        			Your Basket is empty at the moment!
+        		</h2>
+        		<p id="empty_basket_dets">
+        			Go back to the Coupons page to add coupons to your printing list.
+        		</p>
+        		<div class="coupon_dets_btns">
+        			<a href="/coupons" class="dets_btn add_to_basket" style="">Coupons Page</a>
+        		</div>
+        	</div>
+        	<div class="make3D col-md-6 col-sm-6">
+        		<div class="product-front">
+        			<!--<div class="shadow"></div>-->
+        			<img src="//codecloud.cdn.speedyrails.net/sites/594a86296e6f644aad7d0100/image/png/1509994062000/emptybasket.png" alt="" />
+        		</div>
+        	</div>
+        	<div class="info-large visible_phone col-md-6 col-sm-6 ">
+        		<h2 class="empty_basket_title">
+        			Your Basket is empty at the moment!
+        		</h2>
+        		<p id="empty_basket_dets">
+        			Go back to the Coupons page to add coupons to your printing list.
+        		</p>
+        		<div class="coupon_dets_btns">
+        			<a href="/coupons" class="dets_btn add_to_basket" style="">Coupons Page</a>
+        		</div>
+        	</div>
+        </div>
+    <div>
 </div>
 
 <script>
