@@ -10,7 +10,7 @@
                                 <img src="{{promo_image_url_abs}}" alt="" style="position: relative;top: initial;left: initial;transform: initial;"/>
                             </div>
                         </div>	
-                        <div class="info-large col-xs-6 text-left" style="text-align:left">
+                        <div class="info-large col-xs-6" style="text-align:left">
                     	    <p>{{store_name}}</p>
                         	<h4>{{name}}</h4>
                         	<p>{{dates}}</p>
