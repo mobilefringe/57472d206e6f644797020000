@@ -98,8 +98,7 @@
     <div>
     
 </div>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
-<!--<script src="menu.js"></script>-->
+
 <script>
 
     var selected_coupon_id = [];
@@ -115,7 +114,7 @@
             all_coupons = getCouponsList();
             
             selected_coupon_id = JSON.parse(cache_coupon_ids);
-            // do a chack to make sure that if expired coupon is in cookie, it gets removed
+            // do a check to make sure that if expired coupon is in cookie, it gets removed
             $.each(selected_coupon_id, function(i,val){
                 // console.log(val);
                 var new_arr = $.grep(all_coupons, function( value, i ) {
@@ -126,7 +125,6 @@
                         return (value !== val);
                     });
                 }
-                // console.log(new_arr);
             });
             console.log(selected_coupon_id);
             
@@ -193,29 +191,18 @@
     	});
       
         $('.colors-large a').click(function(){return false;});
-        
-        // $(".print_btn").click(function(e){
-            // printPage();
-        // });
+       
     	$('.add-to-basket').each(function(i, el){
-    	   // console.log("baskets", $(el));
     		$(el).click(function(){
-    		  //  console.log("clicked", $(el));
     		    var current_coupon_id = $(el).parent().parent().attr("id");
     		    console.log(current_coupon_id);
     		  
-    		  //  $(".basket_number").text(parseInt($(".basket_number").text())-1);
     		        $("#"+current_coupon_id).parent().hide();
     		        //remove coupon from list variable
     		        selected_coupon_id = $.grep(selected_coupon_id, function( val, i ) {
                         return (val !== current_coupon_id);
                     });
-    		    //getting the logo image
-    		  //  console.log($("#"+$(el).parent().parent().attr("id") +" .product-front"));
-    		    
-    			//add updated coupon list to localstorage
-    // 			localStorage['coupon_ids'] = JSON.stringify(selected_coupon_id);
-    // 			console.log(localStorage['coupon_ids']);
+
                 $.cookie("coupon_ids",JSON.stringify(selected_coupon_id)); 
                 $(".basket_number").text((Object.keys(selected_coupon_id).length));
 			       console.log($.cookie("coupon_ids"));
