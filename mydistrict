@@ -26,6 +26,7 @@
                             <p class="publish-date">{{published_on}}</p>
                         </div>
                     </script>
+                </div>
             </div>
         </div>
     </div>
