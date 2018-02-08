@@ -80,6 +80,12 @@
     color: #222;
 }
 
+.post_body{
+    img{
+        max-width:100%;
+    }
+}
+
 .uploaded-img-responsive{
     max-width:100%;
 }
