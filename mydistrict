@@ -6,7 +6,7 @@
     </h5>
     <div class="details_row">
         <div class="details_col_3 hidden_phone">
-            <ul>
+            <ul class="side-blog-nav">
                 <li>BEAUTY</li>
                 <li>ENTERTAINMENT</li>
                 <li>FAMILY</li>
