@@ -1,5 +1,6 @@
 <link href="../blog.css" rel="stylesheet">
 <div class="main_container mobile_padding">
+    <h5 class="main-subheader"></h5>
     <div class="details_row">
         <div class="details_col_3 hidden_phone">
             <ul class="side-blog-nav">
