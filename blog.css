@@ -41,7 +41,7 @@
     flex-wrap: wrap;
 }
 
-.post-list--landing .post-item:first-child {
+.post-list-landing .post-item:first-child {
     width: 100%;
     padding-top: 0;
 }
