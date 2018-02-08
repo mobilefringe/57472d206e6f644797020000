@@ -10,22 +10,22 @@
                 <li>FOOD</li>
                 <li>LIFESTYLE</li>
                 <li>TRAVEL</li>
-	            <li class="social-sharing__item">
+	            <li class="social-sharing-item">
 		            <a href="https://www.facebook.com/sharer/sharer.php?u=" class="social-sharing__link" target="_blank">
 			            <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115806000/facebook-dark.png" class="" alt="">
 		            </a>
 	            </li>
-            	<li class="social-sharing__item">
+            	<li class="social-sharing-item">
             		<a href="https://twitter.com/home" class="social-sharing__link" target="_blank">
             			<img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115813000/twitter-dark.png" class="" alt="">
             		</a>
             	</li>
-			    <li class="social-sharing__item">
+			    <li class="social-sharing-item">
 			        <a href="https://pinterest.com/pin/create/button/?url=" target="_blank">
 				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115818000/pinterest-dark.png" class="" alt="">
 			        </a>
 		        </li>
-		        <li class="social-sharing__item">
+		        <li class="social-sharing-item">
 			        <a href="mailto:" target="_blank">
 				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115824000/mail-dark.png" class="" alt="">
 			        </a>
