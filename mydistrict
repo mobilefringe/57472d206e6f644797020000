@@ -1,7 +1,17 @@
 <link href="../blog.css" rel="stylesheet">
 <div class="main_container mobile_padding">
     <h4 class="main-header">DISCOVER</h4>
+    <div class="details_row">
+        <div class="details_col_3 hidden_phone">
+            <a href="/events-and-promotions">
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_440x1200_side_events.jpg" /></a>
+        </div>
+        <div class="details_col_9">
+        </div>
+    </div>
 </div>
+
+
 
 <script>
     $(document).ready(function(e){
