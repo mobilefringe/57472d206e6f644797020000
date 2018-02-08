@@ -19,7 +19,7 @@
                         <div class="post-item">
                             <h3 class="feature_text text-center"><a href="/posts/{{slug}}">{{title}}</a></h3>
                             <a href="/posts/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
-                            <p class="blog_description description">{{description}}</p>
+                            <p class="blog_description description">{{{body}}}</p>
                             <p class="publish-date">{{published_on}}</p>
                         </div>
                     </script>
