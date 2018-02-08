@@ -17,8 +17,8 @@
                 <div class="post-list post-list-landing" id="post_container">
                     <script id="post_template" type="x-tmpl-mustache/text">
                         <div class="post-item">
-                            <a href="/posts/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
                             <h3 class="feature_text"><a href="/posts/{{slug}}">{{title}}</a></h3>
+                            <a href="/posts/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
                             <p class="blog_description description">{{description}}</p>
                             <p class="publish-date">{{published_on}}</p>
                         </div>
