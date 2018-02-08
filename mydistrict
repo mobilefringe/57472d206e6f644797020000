@@ -19,6 +19,7 @@
             <div class="blog-wrapper-main" id="trending_container">
                 <script id="trending_template" type="x-tmpl-mustache/text">
                     <div class="post-list post-list-landing">
+                        
                     </div>
                 </script>
             </div>
