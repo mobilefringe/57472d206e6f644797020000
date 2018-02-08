@@ -16,7 +16,7 @@
             </ul>
         </div>
         <div class="details_col_9">
-            <div class="blog-wrapper-main" id="trending_container">
+            <div class="blog-wrapper-main" id="blog_container">
                 <script id="trending_template" type="x-tmpl-mustache/text">
                     <div class="post-list post-list-landing" id="show_{{counter}}">
                         <a href="/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
