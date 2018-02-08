@@ -40,6 +40,8 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-left:-20px;
+    margin-left:-20px;
     a{
         display: block;
         width: 100%;
