@@ -76,7 +76,7 @@
         $('#num_loaded').val(i);
     }
     
-    function load_more(num){
+    function load_more2(num){
         var n = parseInt(num);
         for(i=n; i < n+10; i++){
             
