@@ -1,9 +1,5 @@
 <link href="../blog.css" rel="stylesheet">
 <div class="main_container mobile_padding">
-    <h4 class="main-header">DISCOVER</h4>
-    <h5 class="main-subheader">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-    </h5>
     <div class="details_row">
         <div class="details_col_3 hidden_phone">
             <ul class="side-blog-nav">
