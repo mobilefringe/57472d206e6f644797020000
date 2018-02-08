@@ -40,6 +40,10 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    a{
+        display: block;
+        width: 100%;
+    }
 }
 
 .post-list-landing .post-item:first-child {
