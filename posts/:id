@@ -1,0 +1,123 @@
+<link href="../coupons.css" rel="stylesheet">
+<div id="wrapper" class="main_container">
+    <div id="grid" class="row">
+        <div id="coupon_container" class="coupons_container">
+            <script id="coupon_template" type="x-tmpl-mustache/text">
+               <div class="col-md-12 ">
+                    <div class="product large" id="{{id}}" style="height:100%; background:#fafafa;">
+                        <div class="make3D  col-xs-4">
+                            <div class="product-front" style="text-align:center">
+                                <img src="{{promo_image_url_abs}}" alt="" style="position: relative;top: initial;left: initial;transform: initial;width:200px;"/>
+                            </div>
+                        </div>	
+                        <div class="info-large col-xs-8" style="text-align:left">
+                    	    <p>{{store_name}}</p>
+                        	<h4>{{name}}</h4>
+                        	<p>{{dates}}</p>
+                            <p>{{{description}}}</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">
+                <hr style="height:2px;width:100%;"/>
+                <div/>
+            </script>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script>
+
+    var selected_coupon_id = [];
+    
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderAll);
+    });
+    $(window).load(function(e){
+        setTimeout(function () { window.print(); }, 500);
+        
+        // setTimeout(window.close, 300);
+        window.onfocus = function () { setTimeout(function () { window.close(); }, 100); }
+    });
+    function renderAll(){
+        // var cache_coupon_ids = localStorage['coupon_ids'];
+        var cache_coupon_ids = $.cookie().coupon_ids;
+        if (cache_coupon_ids) {
+            selected_coupon_id = JSON.parse(cache_coupon_ids);
+            console.log(selected_coupon_id);
+            var coupons = [];
+            // console.log(coupons);
+            all_coupons = getCouponsList();
+            
+            $.each(all_coupons , function (index, val){
+                var is_inArray = $.grep(Object.keys(selected_coupon_id), function(i) {
+                    // console.log(value);
+                    return val.id.toString() ==selected_coupon_id[i];
+                });
+                if(is_inArray.length > 0){
+                    coupons.push(val);
+                }
+            });
+            renderCoupons('#coupon_container','#coupon_template', coupons);
+            // updatePage();
+        }
+        $('.custom_backdrop').remove();
+        $('.yield').fadeIn();
+    }
+    
+    function renderCoupons(container, template, collection){
+        var item_list = [];
+        var item_rendered = [];
+        var template_html = $(template).html();
+        Mustache.parse(template_html); 
+        $.each( collection , function( key, val ) {
+            var store_details = getStoreDetailsByID(val.promotionable_id);
+            if (val.promotionable_type == "Store") {
+                val.store_detail_btn = store_details.slug ;
+                val.store_name = store_details.name;
+            }
+            else {
+                val.store_name = site_json.name;
+            }
+            if (val.promo_image_url_abs.indexOf('missing.png') > -1){
+                val.promo_image_url_abs  = store_details.store_front_url_abs;
+                // val.promo_image = "display:none";
+                // val.full_width = "width:100%"
+            }
+            if (val.promo_image_url_abs.indexOf('missing.png') > -1){
+                // val.promo_image_show="display:none";
+                val.promo_image_url_abs  = te_json.default_image ;
+            }
+            if (val.description.length > 200){
+                val.description_short = val.description.substring(0, 200) + "..."
+            }
+            else {
+                val.description_short = val.description
+            }
+            // var show_date = new Date (val.show_on_web_date + site_json.time_zone);
+            // start = new Date (val.start_date + site_json.time_zone);
+            // end = new Date (val.end_date + site_json.time_zone);
+            // if (start.toDateString() == end.toDateString()) {
+            //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
+            // } else {
+            //     val.dates = "Starts " + (get_month(start.getMonth()))+" "+(start.getDate())+" - Ends "+get_month(end.getMonth())+" "+end.getDate();    
+            // }
+            
+            var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            if (start.format("DMY") == end.format("DMY")){
+            	val.dates = start.format("MMM D");
+            }
+            else {
+            	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+            }
+            var rendered = Mustache.render(template_html,val);
+            item_rendered.push(rendered);
+        });
+        $(container).html(item_rendered.join(''));
+    }
+    
+
+</script>
