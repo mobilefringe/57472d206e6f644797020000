@@ -81,7 +81,9 @@
 }
 
 @media(max-width:768px){
-    .post-item: 100%;
+    .post-item{
+        width:100%;
+    }
 }
 
 
