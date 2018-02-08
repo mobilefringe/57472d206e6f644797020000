@@ -38,7 +38,7 @@
                     <script id="post_template" type="x-tmpl-mustache/text">
                         <div class="post-item">
                             <h3 class="feature_text text-center"><a href="/posts/{{slug}}">{{title}}</a></h3>
-                            <a href="/posts/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
+                            <img alt="blog" class="width_100" src="{{post_image}}" />
                             <p class="publish-date">{{published_on}}</p>
                             <div class="post_body">{{{html_body}}}</div>
                         </div>
