@@ -41,7 +41,7 @@
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         var post = getPublishedPostDetailsBySlug(slug);
-        
+        renderPostDetails("#post_container", "#post_template", post);
         show_content();
     }
     
