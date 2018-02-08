@@ -57,6 +57,20 @@
         load_more(1);
     }
     
+    function load_more(num){
+    var n = parseInt(num);
+    for(i=n; i < n+5; i++){
+        
+        var id = i.toString();
+        $('#show_' + id ).fadeIn();
+    }
+    if(i >= getAllPublishedPosts().length+1){
+        $('#loaded_posts').hide();
+        $('#all_loaded').show();
+    }
+    $('#num_loaded').val(i);
+}
+    
     function renderPosts(container, template, collection){
         var item_list = [];
         var item_rendered = [];
