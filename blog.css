@@ -68,7 +68,9 @@
 }
 
 .feature_text{
-    color: #000;
+    a{
+        color: #000;
+    }
 }
 
 
