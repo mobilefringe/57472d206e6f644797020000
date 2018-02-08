@@ -20,7 +20,7 @@
                             <h3 class="feature_text text-center"><a href="/posts/{{slug}}">{{title}}</a></h3>
                             <a href="/posts/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
                             <p class="publish-date">{{published_on}}</p>
-                            <p class="blog_description description">{{{body}}}</p>
+                            <p class="blog_description description">{{{html_body}}}</p>
                         </div>
                     </script>
                 </div>
