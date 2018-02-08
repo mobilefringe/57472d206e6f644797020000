@@ -98,6 +98,10 @@
     max-width:100%;
 }
 
+.social-sharing-image {
+    width: 22px;
+}
+
 @media(max-width:768px){
     .main-subheader{
         width:100%;
