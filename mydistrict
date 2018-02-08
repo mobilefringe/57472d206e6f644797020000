@@ -6,7 +6,14 @@
     </h5>
     <div class="details_row">
         <div class="details_col_3 hidden_phone">
-            
+            <ul>
+                <li>BEAUTY</li>
+                <li>ENTERTAINMENT</li>
+                <li>FAMILY</li>
+                <li>FOOD</li>
+                <li>LIFESTYLE</li>
+                <li>TRAVEL</li>
+            </ul>
         </div>
         <div class="details_col_9">
         </div>
