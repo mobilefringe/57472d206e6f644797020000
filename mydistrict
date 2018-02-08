@@ -41,34 +41,34 @@
     }
     
     function renderPosts(container, template, collection){
-    var item_list = [];
-    var item_rendered = [];
-    var template_html = $(template).html();
-    var counter = 1;
-    Mustache.parse(template_html);   // optional, speeds up future uses
-    $.each( collection , function( key, val ) {
-        if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
-        } else {
-            val.post_image = val.image_url;
-        }
+        var item_list = [];
+        var item_rendered = [];
+        var template_html = $(template).html();
+        var counter = 1;
+        Mustache.parse(template_html);   // optional, speeds up future uses
+        $.each( collection , function( key, val ) {
+            if (val.image_url.indexOf('missing.png') > -1) {
+                val.post_image = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
+            } else {
+                val.post_image = val.image_url;
+            }
+            
+            if(val.body.length > 100){
+                val.description_short = val.body.substring(0,100) + "...";
+            } else {
+                val.description_short = val.body;
+            }
+            
+            val.counter = counter;
+            var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
+            val.published_on = date_blog.format('MMM DD, YYYY');
+            
+            var rendered = Mustache.render(template_html,val);
+            item_rendered.push(rendered);
+            counter = counter+1;
+        });
         
-        if(val.body.length > 100){
-            val.description_short = val.body.substring(0,100) + "...";
-        } else {
-            val.description_short = val.body;
-        }
-        
-        val.counter = counter;
-        var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
-        val.published_on = date_blog.format('MMM DD, YYYY');
-        
-        var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
-        counter = counter+1;
-    });
-    
-    $(container).show();
-    $(container).html(item_rendered.join(''));
-}
+        $(container).show();
+        $(container).html(item_rendered.join(''));
+    }
 </script>
