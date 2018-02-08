@@ -62,6 +62,10 @@ $animation_color: #a5afb0;
     width: 220px;    
 }
 
+.nav_container{
+    width: calc(100% - 220px);
+}
+
 /* *** CALENDAR PAGE *** */
 .event_calendar_header {
     position: absolute;
