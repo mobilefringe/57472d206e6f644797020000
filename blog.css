@@ -23,7 +23,7 @@
     }
 }
 
-.blog-wrapper--list .blog-wrapper__container .blog-wrapper__main {
+.blog-wrapper-main {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
