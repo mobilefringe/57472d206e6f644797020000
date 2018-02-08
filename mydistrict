@@ -21,7 +21,7 @@
                     <script id="blog_template" type="x-tmpl-mustache/text">
                         <div class="post-item hidden_now" id="show_{{counter}}">
                             <a href="/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
-                            <h3 class="feature_text"><a href="/{{slug}}">{{title}}</a></h3>
+                            <h3 class="feature_text"><a href="/posts/{{slug}}">{{title}}</a></h3>
                             <p class="blog_description description">{{description_short}}</p>
                             <p class="publish-date">{{published_on}}</p>
                         </div>
