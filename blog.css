@@ -81,6 +81,9 @@
 }
 
 @media(max-width:768px){
+    .main-subheader{
+        width:100%;
+    }
     .post-item{
         width:100%;
     }
