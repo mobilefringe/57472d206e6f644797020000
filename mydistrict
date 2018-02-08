@@ -16,16 +16,16 @@
             </ul>
         </div>
         <div class="details_col_9 blog-right">
-            <div class="blog-wrapper-main" id="blog_container">
-                
-                <script id="blog_template" type="x-tmpl-mustache/text">
-                    <div class="post-item">
-                        <a href="/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
-                        <h3 class="feature_text"><a href="/{{slug}}">{{title}}</a></h3>
-                        <p class="blog_description description">{{description_short}}</p>
-                        <p class="publish-date">{{published_on}}</p>
-                    </div>
-                </script>
+            <div class="blog-wrapper-main">
+                <div class="post-list post-list--landing" id="blog_container">
+                    <script id="blog_template" type="x-tmpl-mustache/text">
+                        <div class="post-item">
+                            <a href="/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
+                            <h3 class="feature_text"><a href="/{{slug}}">{{title}}</a></h3>
+                            <p class="blog_description description">{{description_short}}</p>
+                            <p class="publish-date">{{published_on}}</p>
+                        </div>
+                    </script>
             </div>
         </div>
     </div>
