@@ -80,6 +80,10 @@
     color: #222;
 }
 
+.uploaded-img-responsive{
+    max-width:100%;
+}
+
 @media(max-width:768px){
     .main-subheader{
         width:100%;
