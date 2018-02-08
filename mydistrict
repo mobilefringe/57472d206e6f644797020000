@@ -36,6 +36,7 @@
     function renderPage(){
         var posts = getAllPublishedPosts();
         var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
+        renderPosts("#blog_container", "#blog_template", published_posts);
         show_content();
     }
 </script>
