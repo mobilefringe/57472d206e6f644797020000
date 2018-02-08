@@ -17,7 +17,7 @@
         </div>
         <div class="details_col_9 blog-right">
             <div class="blog-wrapper-main">
-                <div class="post-list post-list--landing" id="blog_container">
+                <div class="post-list post-list-landing" id="blog_container">
                     <script id="blog_template" type="x-tmpl-mustache/text">
                         <div class="post-item">
                             <a href="/{{slug}}"><img alt="blog" class="width_100" src="{{post_image}}" /></a>
