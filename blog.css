@@ -86,6 +86,10 @@
     }
 }
 
+.publish-date{
+    margin-top:20px;
+}
+
 .uploaded-img-responsive{
     max-width:100%;
 }
