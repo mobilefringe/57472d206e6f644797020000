@@ -98,6 +98,9 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .col-md-2{
+        border-right: 1px solid;
+    }
 }
 
 .publish-date{
