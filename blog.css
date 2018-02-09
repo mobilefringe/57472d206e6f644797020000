@@ -50,6 +50,11 @@
     }
 }
 
+.feature_text{
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+
 .post-item:first-child {
     width: 100%;
     padding-top: 0;
