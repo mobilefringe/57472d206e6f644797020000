@@ -5,6 +5,11 @@
     margin-bottom:20px;
 }
 
+.auto-width{
+    width:auto
+}
+}
+
 .main-subheader{
     font-size:20px;
     text-align: center;
