@@ -43,10 +43,10 @@
                                 <div class="col-md-12">
                                     <div class="bordered-box">
                                         <div class="row">
-                                            <div class="col-md-2">
+                                            <div class="col-md-2 details_desc">
                                                 Author
                                             </div>
-                                            <div class="col-md-10">
+                                            <div class="col-md-10 details_desc">
                                                 <p class="publish-date">{{published_on}}</p>
                                             </div>
                                         </div>
