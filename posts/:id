@@ -44,7 +44,7 @@
                                     <div class="bordered-box">
                                         <div class="row">
                                             <div class="col-md-2 details_desc auto-width">
-                                                Author
+                                                The District at Tustin Legacy
                                             </div>
                                             <div class="col-md-10 details_desc auto-width">
                                                 <p class="publish-date">{{published_on}}</p>
