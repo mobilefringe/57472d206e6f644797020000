@@ -37,7 +37,7 @@
                 <div class="post-list post-list-landing" id="post_container">
                     <script id="post_template" type="x-tmpl-mustache/text">
                         <div class="post-item">
-                            <h3 class="feature_text text-center"><a href="/posts/{{slug}}">{{title}}</a></h3>
+                            <h3 class="feature_text text-center">{{title}}</h3>
                             <img alt="blog" class="width_100" src="{{post_image}}" />
                             <div class="row">
                                 <div class="col-md-12">
