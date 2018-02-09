@@ -5,11 +5,11 @@
         <div class="details_col_3 hidden_phone">
             <ul class="side-blog-nav">
                 <li><a href="#" class="colored_link">Beauty</a></li>
-                <li><a href="#" class="colored_link">ENTERTAINMENT</a></li>
-                <li><a href="#" class="colored_link">FAMILY</a></li>
-                <li><a href="#" class="colored_link">FOOD</a></li>
-                <li><a href="#" class="colored_link">LIFESTYLE</a></li>
-                <li><a href="#" class="colored_link">TRAVEL</a></li>
+                <li><a href="#" class="colored_link">Entertainment</a></li>
+                <li><a href="#" class="colored_link">Family</a></li>
+                <li><a href="#" class="colored_link">Food</a></li>
+                <li><a href="#" class="colored_link">Lifestyle</a></li>
+                <li><a href="#" class="colored_link">Travel</a></li>
 	            <li class="social-sharing-item">
 		            <a href="https://www.facebook.com/sharer/sharer.php?u=" class="social-sharing__link" target="_blank">
 			            <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115806000/facebook-dark.png" class="" alt="">
