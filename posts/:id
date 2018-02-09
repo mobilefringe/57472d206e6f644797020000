@@ -40,7 +40,7 @@
                             <h3 class="feature_text text-center"><a href="/posts/{{slug}}">{{title}}</a></h3>
                             <img alt="blog" class="width_100" src="{{post_image}}" />
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 bordered-box">
                                     <div class="row">
                                         <div class="col-md-2"></div>
                                         <div class="col-md-10">
