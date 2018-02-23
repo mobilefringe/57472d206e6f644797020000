@@ -126,7 +126,7 @@ function load_more(num, posts){
     var posts = posts.length
     console.log("i ",i)
     console.log("posts ", posts)
-    if(i >= posts){
+    if(i <= posts){
         console.log(i)
         console.log(posts)
         $('#loaded_posts').hide();
