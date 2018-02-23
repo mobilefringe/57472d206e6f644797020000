@@ -119,11 +119,10 @@ function load_more(num, posts){
     var n = parseInt(num);
     for(i=n; i < n + 5; i++){
         var id = i.toString();
-        console.log(id)
         $('#show_' + id ).fadeIn();
     }
     console.log(i)
-    console.log(getAllPublishedPosts().length)
+    console.log(posts)
     if(i >= posts){
         $('#loaded_posts').hide();
         $('#all_loaded').show();
