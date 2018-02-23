@@ -2,7 +2,7 @@ function renderPostsPageData(){
     //check if tag is attached to path
     var query = window.location.search;
     if(query !== "") {
-        $(".load_more").hide();
+        $("#loaded_posts").hide();
   
         var tag_name = query.split('=')[1];
         tag_name = tag_name.replace("%20", " ");
