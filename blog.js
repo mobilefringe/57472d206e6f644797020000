@@ -123,7 +123,7 @@ function load_more(num, posts){
         var id = i.toString();
         $('#show_' + id ).fadeIn();
     }
-    var posts = posts.length
+    var posts = posts.length + 1
     console.log("i ",i)
     console.log("posts ", posts)
     if(i >= posts){
