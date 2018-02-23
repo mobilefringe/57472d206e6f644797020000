@@ -100,6 +100,7 @@ function renderSearchPosts(container, template, collection, search){
     
     if(item_rendered.length === 0) {
         $("#no_posts").show();
+        $("#all_loaded").hide();
     }
     
     $(container).show();
