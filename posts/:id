@@ -2,8 +2,8 @@
 <div class="main_container mobile_padding">
     <h5 class="main-subheader"></h5>
     <div class="details_row">
-        <div class="details_col_3 hidden_phone">
-            <ul class="side-blog-nav">
+        <div class="details_col_3 ">
+            <ul class="side-blog-nav hidden_phone">
                 <li><a href="/posts?tag=beauty" class="colored_link">Beauty</a></li>
                 <li><a href="/posts?tag=entertainment" class="colored_link">Entertainment</a></li>
                 <li><a href="/posts?tag=family" class="colored_link">Family</a></li>
@@ -31,6 +31,18 @@
 			        </a>
 		        </li>
             </ul>
+            <div class="position_relative visible_phone">
+                <select class="mobile_blog_select ">
+                    <option value="/posts">All</option>
+                    <option value="/posts?tag=beauty">Beauty</option>
+                    <option value="/posts?tag=entertainment">Entertainment</option>
+                    <option value="/posts?tag=family">Family</option>
+                    <option value="/posts?tag=food">Food</option>
+                    <option value="/posts?tag=lifestyle">Lifestyle</option>
+                    <option value="/posts?tag=travel">Travel</option>    
+                </select>
+                <span class="mobile_blog_select_arrow"></span>
+            </div>
         </div>
         <div class="details_col_9 blog-right">
             <div class="blog-wrapper-main">
