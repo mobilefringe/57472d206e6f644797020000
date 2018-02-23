@@ -107,7 +107,7 @@ function renderSearchPosts(container, template, collection, search){
     $(container).html(item_rendered.join(''));
 }
 
-function load_more(num){
+function load_more(num, posts){
     var n = parseInt(num);
     for(i=n; i < n + 4; i++){
         var id = i.toString();
@@ -115,7 +115,7 @@ function load_more(num){
     }
     console.log(i)
     console.log(getAllPublishedPosts().length)
-    if(i >= getAllPublishedPosts().length + 1){
+    if(i >= posts){
         $('#loaded_posts').hide();
         $('#all_loaded').show();
     }
