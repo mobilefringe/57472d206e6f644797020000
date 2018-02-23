@@ -21,7 +21,8 @@ function renderPostsPageData(){
 
 function regularPostList () {
     var posts = getAllPublishedPosts();
-    var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
+    var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) })
+    // .reverse();
     console.log(published_posts)
     renderPosts("#blog_container", "#blog_template", published_posts);
     load_more(1, published_posts);
