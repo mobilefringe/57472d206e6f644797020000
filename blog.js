@@ -115,15 +115,13 @@ function renderSearchPosts(container, template, collection, search){
     $(container).html(item_rendered.join(''));
 }
 
-function load_more(num, posts){
+function load_more(num, blog_posts){
     var n = parseInt(num);
     for(i=n; i < n + 5; i++){
-        console.log(i)
-        console.log(id)
         var id = i.toString();
         $('#show_' + id ).fadeIn();
     }
-    var posts = posts.length + 1
+    var posts = blog_posts.length + 1
     console.log("i ",i)
     console.log("posts ", posts)
     if(i >= posts){
