@@ -109,11 +109,11 @@ function renderSearchPosts(container, template, collection, search){
 
 function load_more(num){
     var n = parseInt(num);
-    for(i=n; i < n+11; i++){
+    for(i=n; i < n + 5; i++){
         var id = i.toString();
         $('#show_' + id ).fadeIn();
     }
-    if(i >= getAllPublishedPosts().length+1){
+    if(i >= getAllPublishedPosts().length + 1){
         $('#loaded_posts').hide();
         $('#all_loaded').show();
     }
