@@ -87,7 +87,7 @@
         </div>
         <div class="row">
             <div class="logo_container">
-                <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/png/undefined/dtl_600x180_logo.png" class="main_logo" /></a>
+                <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1519417888000/dtl_600x180_logo.png" class="main_logo" /></a>
             </div>
             <div class="nav_container hidden_phone">
                 <div class="social_links">
@@ -109,13 +109,14 @@
                     <a href="/location">Location</a>
                     <a href="/posts">#MYDISTRICT</a>
                     <div class="dropdown">
-                        <a href="#" type="button" id="dropdownMenuCenterInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Center Information</a>
+                        <a href="#" type="button" id="dropdownMenuCenterInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Center Information
+                        </a>
                         <ul class="dropdown-menu center_info_dd" aria-labelledby="dropdownMenuCenterInfo">
-                             <li><a href="/pages/district-services">SERVICES</a></li>
-                <li><a href="/pages/district-contact-us">CONTACT</a></li>
+                            <li><a href="/pages/district-services">SERVICES</a></li>
+                            <li><a href="/pages/district-contact-us">CONTACT</a></li>
                         </ul>
                     </div>
-                    
                     <div class="clearfix"></div>
                 </div>
             </div>
