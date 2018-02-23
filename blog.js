@@ -17,11 +17,11 @@ function renderPostsPageData(){
     
     show_content();
     
-    $('#load_more_posts').click(function(e){
-        var i = $('#num_loaded').val();
-        load_more(i, published_posts);
-        e.preventDefault();
-    });
+    // $('#load_more_posts').click(function(e){
+    //     var i = $('#num_loaded').val();
+    //     load_more(i, published_posts);
+    //     e.preventDefault();
+    // });
 }
 
 function regularPostList () {
