@@ -125,6 +125,7 @@ function load_more(num, posts){
     }
     console.log(posts)
     var posts = posts.length
+    console.log(posts)
     if(i >= posts){
         $('#loaded_posts').hide();
         $('#all_loaded').show();
