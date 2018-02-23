@@ -123,9 +123,8 @@ function load_more(num, posts){
         var id = i.toString();
         $('#show_' + id ).fadeIn();
     }
-    console.log(i)
     console.log(posts)
-    if(i >= posts.length){
+    if(i >= posts.length + 1){
         $('#loaded_posts').hide();
         $('#all_loaded').show();
     }
