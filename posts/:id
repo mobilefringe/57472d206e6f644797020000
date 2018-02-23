@@ -62,8 +62,6 @@
     </div>
 </div>
 
-
-
 <script>
     $(document).ready(function(e){
         init(e);
