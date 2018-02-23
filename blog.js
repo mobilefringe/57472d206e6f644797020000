@@ -10,7 +10,7 @@ function renderPostsPageData(){
         var posts = getAllPublishedPosts();
         var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
         renderSearchPosts("#blog_container", "#blog_template", published_posts, tag_name);
-        load_more(1, posts);
+        load_more(1, published_posts);
     } else {
         regularPostList();
     }
@@ -19,7 +19,7 @@ function renderPostsPageData(){
     
     $('#load_more_posts').click(function(e){
         var i = $('#num_loaded').val();
-        load_more(i, posts);
+        load_more(i, published_posts);
         e.preventDefault();
     });
 }
