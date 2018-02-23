@@ -91,4 +91,9 @@ $animation_color: #a5afb0;
     float: left;
 }
 
+@media (max-width: 768px)
+.logo_container {
+    margin-left: auto;
+    margin-right: auto;
+}
 
