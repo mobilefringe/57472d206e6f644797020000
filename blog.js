@@ -40,7 +40,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = site_json.default_image;
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1519416315000/Background.png";
         } else {
             val.post_image = val.image_url;
         }
@@ -73,7 +73,7 @@ function renderSearchPosts(container, template, collection, search){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = site_json.default_image;
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1519416315000/Background.png";
         } else {
             val.post_image = val.image_url;
         }
