@@ -67,7 +67,7 @@
     
     <!-- Site data -->
     <script>
-        setEndPoint('//stc.mallmaverick.com/api/v4/stc/all.json');
+        setEndPoint('//thedistrict.mallmaverick.com/api/v4/district/all.json');
     </script>
 </head>
 
