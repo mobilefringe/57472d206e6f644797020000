@@ -2,7 +2,7 @@ function renderPostsPageData(){
     //check if tag is attached to path
     var query = window.location.search;
     if(query !== "") {
-        $("#loaded_posts").hide();
+        // $("#loaded_posts").hide();
   
         var tag_name = query.split('=')[1];
         tag_name = tag_name.replace("%20", " ");
@@ -103,6 +103,8 @@ function renderSearchPosts(container, template, collection, search){
             });
         }
     });
+    
+    $("#loaded_posts").hide();
     
     if(item_rendered.length === 0) {
         $("#no_posts").show();
