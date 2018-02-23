@@ -117,7 +117,7 @@ function renderSearchPosts(container, template, collection, search){
 
 function load_more(num, posts){
     var n = parseInt(num);
-    for(i=n; i < n + 6; i++){
+    for(i=n; i < n + 5; i++){
         var id = i.toString();
         console.log(id)
         $('#show_' + id ).fadeIn();
