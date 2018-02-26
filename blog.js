@@ -119,11 +119,7 @@ function load_more(num, blog_posts){
         $('#show_' + id ).fadeIn();
     }
     var posts = blog_posts.length + 1
-    console.log("i ",i)
-    console.log("posts ", posts)
     if(i >= blog_posts.length + 1){
-        console.log(i)
-        console.log(posts)
         $('#loaded_posts').hide();
         $('#all_loaded').show();
     }
