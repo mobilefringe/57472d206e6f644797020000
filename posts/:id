@@ -144,6 +144,8 @@
                 val.tag_list = val.tag.join(', ');
             }
             
+            var hashtag = '&#x0023;';
+            console.log(hashtag)
             val.twitter_title = val.title + " via '&#x0023;'thedistricttustin";
             
             var rendered = Mustache.render(template_html,val);
