@@ -6,11 +6,8 @@
             <ul class="side-blog-nav hidden_phone">
                 <li><a href="/posts" class="colored_link">All</a></li>
                 <li><a href="/posts?tag=beauty" class="colored_link">Beauty</a></li>
-                <li><a href="/posts?tag=entertainment" class="colored_link">Entertainment</a></li>
-                <li><a href="/posts?tag=family" class="colored_link">Family</a></li>
                 <li><a href="/posts?tag=food" class="colored_link">Food</a></li>
                 <li><a href="/posts?tag=lifestyle" class="colored_link">Lifestyle</a></li>
-                <li><a href="/posts?tag=travel" class="colored_link">Travel</a></li>
                 <div id="post_share_container">
                     <script id="post_share_template" type="x-tmpl-mustache/text">
         	            <li class="social-sharing-item">
@@ -41,11 +38,8 @@
                     <option selected>Select a Category</option>
                     <option value="/posts">All</option>
                     <option value="/posts?tag=beauty">Beauty</option>
-                    <option value="/posts?tag=entertainment">Entertainment</option>
-                    <option value="/posts?tag=family">Family</option>
                     <option value="/posts?tag=food">Food</option>
                     <option value="/posts?tag=lifestyle">Lifestyle</option>
-                    <option value="/posts?tag=travel">Travel</option>    
                 </select>
                 <span class="mobile_blog_select_arrow"></span>
             </div>
