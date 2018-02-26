@@ -11,26 +11,30 @@
                 <li><a href="/posts?tag=food" class="colored_link">Food</a></li>
                 <li><a href="/posts?tag=lifestyle" class="colored_link">Lifestyle</a></li>
                 <li><a href="/posts?tag=travel" class="colored_link">Travel</a></li>
-	            <li class="social-sharing-item">
-		            <a href="https://www.facebook.com/sharer/sharer.php?u=" class="social-sharing__link" target="_blank">
-			            <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115806000/facebook-dark.png" class="" alt="">
-		            </a>
-	            </li>
-            	<li class="social-sharing-item">
-            		<a href="https://twitter.com/home" class="social-sharing__link" target="_blank">
-            			<img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115813000/twitter-dark.png" class="" alt="">
-            		</a>
-            	</li>
-			    <li class="social-sharing-item">
-			        <a href="https://pinterest.com/pin/create/button/?url=" target="_blank">
-				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115818000/pinterest-dark.png" class="" alt="">
-			        </a>
-		        </li>
-		        <li class="social-sharing-item">
-			        <a href="mailto:" target="_blank">
-				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115824000/mail-dark.png" class="" alt="">
-			        </a>
-		        </li>
+                <div id="post_share_container">
+                    <script id="post_share_template" type="x-tmpl-mustache/text">
+        	            <li class="social-sharing-item">
+        		            <a href="https://www.facebook.com/sharer/sharer.php?u=" class="social-sharing__link" target="_blank">
+        			            <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115806000/facebook-dark.png" class="" alt="">
+        		            </a>
+        	            </li>
+                    	<li class="social-sharing-item">
+                    		<a href="https://twitter.com/home" class="social-sharing__link" target="_blank">
+                    			<img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115813000/twitter-dark.png" class="" alt="">
+                    		</a>
+                    	</li>
+        			    <li class="social-sharing-item">
+        			        <a href="https://pinterest.com/pin/create/button/?url=" target="_blank">
+        				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115818000/pinterest-dark.png" class="" alt="">
+        			        </a>
+        		        </li>
+        		        <li class="social-sharing-item">
+        			        <a href="mailto:" target="_blank">
+        				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115824000/mail-dark.png" class="" alt="">
+        			        </a>
+        		        </li>
+        		    </script>        
+        	    </div>
             </ul>
             <div class="position_relative visible_phone">
                 <select class="mobile_blog_select ">
@@ -111,6 +115,7 @@
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         var post = getPublishedPostDetailsBySlug(slug);
+        renderPostDetails("#post_share_container", "#post_share_template", post);
         renderPostDetails("#post_container", "#post_template", post);
         
         show_content();
