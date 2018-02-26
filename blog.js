@@ -90,7 +90,7 @@ function renderSearchPosts(container, template, collection, search){
                     search = search.toLowerCase();
                     // console.log(key, "tag is", tag , "search is", search);
                     if(tag.indexOf(search) > -1 || search.indexOf(tag) > -1) {
-                        console.log("tag is", tag , "search is", search);
+                        // console.log("tag is", tag , "search is", search);
                         var rendered = Mustache.render(template_html,val);
                         item_rendered.push(rendered);
                         counter = counter + 1;
