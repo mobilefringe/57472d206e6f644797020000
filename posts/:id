@@ -144,8 +144,7 @@
                 val.tag_list = val.tag.join(', ');
             }
             
-            var twitter_hash = "#thedistricttustin";
-            val.twitter_title = val.title + " via " + twitter_hash;
+            val.twitter_title = val.title + " via &#x0023thedistricttustin";
             
             var rendered = Mustache.render(template_html,val);
             item_rendered.push(rendered);
