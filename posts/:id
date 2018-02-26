@@ -70,6 +70,7 @@
                             <div class="post_body details_desc">{{{html_body}}}</div>
                             <div class="mobile_social_share">
                                 <ul>
+                                    <li class="social-sharing-item">Share: </li>
                                     <li class="social-sharing-item">
                     		            <a href="https://www.facebook.com/sharer/sharer.php?u=" class="social-sharing__link" target="_blank">
                     			            <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115806000/facebook-dark.png" class="" alt="">
