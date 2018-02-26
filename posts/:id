@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="post_body details_desc">{{{html_body}}}</div>
-                            <div class="mobile_social_share">
+                            <div class="mobile_social_share visible_phone">
                                 <ul>
                                     <li class="social-sharing-item">Share: </li>
                                     <li class="social-sharing-item">
