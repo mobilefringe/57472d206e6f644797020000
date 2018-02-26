@@ -24,7 +24,7 @@
                     		</a>
                     	</li>
         			    <li class="social-sharing-item">
-        			        <a href="https://pinterest.com/pin/create/button/?url=http://www.thedistricttl.com/posts/{{slug}}" target="_blank">
+        			        <a onclick="pinIt()">
         				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115818000/pinterest-dark.png" class="" alt="">
         			        </a>
         		        </li>
