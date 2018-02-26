@@ -22,12 +22,13 @@
             <li class="show_cat_stores" data-id="5651">Grocery</li>
             <li class="show_cat_stores" data-id="5650">Halal</li>
             <li class="show_cat_stores" data-id="5639">Hawaiian</li>
-            <li class="show_cat_stores" data-id="5640">Irish</li>
+            <li class="show_cat_stores" data-id="5641">Irish</li>
             <li class="show_cat_stores" data-id="5647">Italian</li>
              <li class="show_cat_stores" data-id="5649">Mediterranean</li>
              <li class="show_cat_stores" data-id="5644">Seafood</li>
+             <li class="show_cat_stores" data-id="5643">Tea</li>
             <li class="show_cat_stores" data-id="5637">Thai</li>
-            <li class="show_cat_stores" data-id="5643">Tea</li>
+            
             
         </ul>
     </div>
@@ -50,7 +51,22 @@
                 </a>
                 <ul id="category_container" class="dropdown-menu" aria-labelledby="cat_dd">
                     <li href="#" class="show_all_stores">All</li>
-                    <li class="show_cat_stores" data-id="4016">Restaurants & Bars</li>
+                      <li class="show_cat_stores" data-id="5642">American</li>
+            <li class="show_cat_stores" data-id="5646">Asian</li>
+            <li class="show_cat_stores" data-id="5640">Bar</li>
+             <li class="show_cat_stores" data-id="5638">Bar-b-que</li>
+             <li class="show_cat_stores" data-id="5648">Coffee/Juice</li>
+            <li class="show_cat_stores" data-id="5636">Dessert/Specialty</li>
+            <li class="show_cat_stores" data-id="5645">Greek</li>
+            <li class="show_cat_stores" data-id="5651">Grocery</li>
+            <li class="show_cat_stores" data-id="5650">Halal</li>
+            <li class="show_cat_stores" data-id="5639">Hawaiian</li>
+            <li class="show_cat_stores" data-id="5640">Irish</li>
+            <li class="show_cat_stores" data-id="5647">Italian</li>
+             <li class="show_cat_stores" data-id="5649">Mediterranean</li>
+             <li class="show_cat_stores" data-id="5644">Seafood</li>
+             <li class="show_cat_stores" data-id="5643">Tea</li>
+            <li class="show_cat_stores" data-id="5637">Thai</li>
                     
                 </ul>
             </div>
@@ -102,9 +118,39 @@
     
     function renderPage(){
         var stores = [];
-        var s1 = getStoresListByCategoryID(4016)
+        var s1 = getStoresListByCategoryID(5642)
+        var s2 = getStoresListByCategoryID(5640)
+        var s3 = getStoresListByCategoryID(5638)
+        var s4 = getStoresListByCategoryID(5648)
+        var s5 = getStoresListByCategoryID(5636)
+        var s6 = getStoresListByCategoryID(5645)
+        var s7 = getStoresListByCategoryID(5651)
+        var s8 = getStoresListByCategoryID(5650)
+        var s9 = getStoresListByCategoryID(5639)
+        var s10 = getStoresListByCategoryID(5640)
+        var s11 = getStoresListByCategoryID(5641)
+        var s12 = getStoresListByCategoryID(5647)
+        var s13 = getStoresListByCategoryID(5649)
+        var s14 = getStoresListByCategoryID(5644)
+        var s15 = getStoresListByCategoryID(5643)
+        var s16 = getStoresListByCategoryID(5637)
    
         stores = stores.concat(s1)
+        stores = stores.concat(s2)
+        stores = stores.concat(s3)
+        stores = stores.concat(s4)
+        stores = stores.concat(s5)
+        stores = stores.concat(s6)
+        stores = stores.concat(s7)
+        stores = stores.concat(s8)
+        stores = stores.concat(s9)
+        stores = stores.concat(s10)
+        stores = stores.concat(s11)
+        stores = stores.concat(s12)
+        stores = stores.concat(s13)
+        stores = stores.concat(s14)
+        stores = stores.concat(s15)
+        stores = stores.concat(s16)
     
         var newarr = [];
         var unique = {};
