@@ -85,7 +85,13 @@
         var slug = pathArray[pathArray.length-1];
         var post = getPublishedPostDetailsBySlug(slug);
         renderPostDetails("#post_container", "#post_template", post);
+        
         show_content();
+        
+        $('.mobile_blog_select').change(function(e){
+            var href = this.value;
+            document.location.href = href;
+        });
     }
     
     function renderPostDetails(container, template, collection){
