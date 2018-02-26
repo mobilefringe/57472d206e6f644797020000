@@ -29,7 +29,7 @@
         			        </a>
         		        </li>
         		        <li class="social-sharing-item">
-        			        <a href="mailto:?subject={{title}}&body=Check out this post from #MYDISTRICT {{post_url}}">
+        			        <a href="mailto:?subject={{title}}&body=Check out this post from #MYDISTRICT <a href='{{post_url}}'>{{title}}</a>">
         				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115824000/mail-dark.png" class="" alt="">
         			        </a>
         		        </li>
@@ -146,7 +146,7 @@
 
             val.twitter_title = val.title + " via The District Tustin";
             var post_url = val.slug
-            val.post_url = "<a href='http://www.thedistricttl.com/posts/' + val.slug +'> + val.title + </a>"
+            val.post_url = "http://www.thedistricttl.com/posts/" + val.slug
             var rendered = Mustache.render(template_html,val);
             item_rendered.push(rendered);
         });
