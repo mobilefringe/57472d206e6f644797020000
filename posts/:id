@@ -146,7 +146,7 @@
             
             // var hashtag = &#x0023;
             // console.log(hashtag)
-            val.twitter_title = val.title + " via &copy;thedistricttustin";
+            val.twitter_title = val.title + " via The District Tustin";
             
             var rendered = Mustache.render(template_html,val);
             item_rendered.push(rendered);
