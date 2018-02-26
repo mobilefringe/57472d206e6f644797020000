@@ -76,22 +76,22 @@
                                 <ul>
                                     <li class="social-sharing-item">Share: </li>
                                     <li class="social-sharing-item">
-                    		            <a href="https://www.facebook.com/sharer/sharer.php?u=" class="social-sharing__link" target="_blank">
+                    		            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.thedistricttl.com/posts/{{slug}}" class="social-sharing__link" target="_blank">
                     			            <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115806000/facebook-dark.png" class="" alt="">
                     		            </a>
                     	            </li>
                                 	<li class="social-sharing-item">
-                                		<a href="https://twitter.com/home" class="social-sharing__link" target="_blank">
+                                		<a href="http://twitter.com/share?text={{twitter_title}}&url=http://www.thedistricttl.com/posts/{{slug}}" class="social-sharing__link" target="_blank">
                                 			<img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115813000/twitter-dark.png" class="" alt="">
                                 		</a>
                                 	</li>
                     			    <li class="social-sharing-item">
-                    			        <a href="https://pinterest.com/pin/create/button/?url=" target="_blank">
+                    			        <a onclick="pinIt()">
                     				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115818000/pinterest-dark.png" class="" alt="">
                     			        </a>
                     		        </li>
                     		        <li class="social-sharing-item">
-                    			        <a href="mailto:" target="_blank">
+                    			        <a href="mailto:?subject={{title}}&body=Check out this post from #MYDISTRICT {{post_url}}">
                     				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115824000/mail-dark.png" class="" alt="">
                     			        </a>
                     		        </li>
