@@ -33,6 +33,7 @@
             </ul>
             <div class="position_relative visible_phone">
                 <select class="mobile_blog_select ">
+                    <option selected>Select a Category</option>
                     <option value="/posts">All</option>
                     <option value="/posts?tag=beauty">Beauty</option>
                     <option value="/posts?tag=entertainment">Entertainment</option>
