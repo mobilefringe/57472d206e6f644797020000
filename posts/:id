@@ -145,7 +145,8 @@
             }
 
             val.twitter_title = val.title + " via The District Tustin";
-            val.post_url = "http://www.thedistricttl.com/posts" + val.slug
+            var post_url = val.slug
+            val.post_url = "<a href='http://www.thedistricttl.com/posts/' + val.slug +' target="_blank"> + val.title + </a>"
             var rendered = Mustache.render(template_html,val);
             item_rendered.push(rendered);
         });
