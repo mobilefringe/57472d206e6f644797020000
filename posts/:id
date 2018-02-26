@@ -14,7 +14,7 @@
                 <div id="post_share_container">
                     <script id="post_share_template" type="x-tmpl-mustache/text">
         	            <li class="social-sharing-item">
-        		            <a href="https://www.facebook.com/sharer/sharer.php?u=" class="social-sharing__link" target="_blank">
+        		            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.thedistricttl.com/posts/{{slug}}" class="social-sharing__link" target="_blank">
         			            <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115806000/facebook-dark.png" class="" alt="">
         		            </a>
         	            </li>
