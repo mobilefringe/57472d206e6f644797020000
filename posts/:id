@@ -29,7 +29,7 @@
         			        </a>
         		        </li>
         		        <li class="social-sharing-item">
-        			        <a href="mailto:?subject={{title}}&body=Check out this post from #MYDISTRICT <a href='{{post_url}}'>{{title}}</a>">
+        			        <a href="mailto:?subject={{title}}&body=Check out this post from #MYDISTRICT {{post_url}}">
         				        <img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115824000/mail-dark.png" class="" alt="">
         			        </a>
         		        </li>
