@@ -19,7 +19,7 @@
         		            </a>
         	            </li>
                     	<li class="social-sharing-item">
-                    		<a href="https://twitter.com/home" class="social-sharing__link" target="_blank">
+                    		<a href="http://twitter.com/share?text={{twitter_title}}&url=http://www.thedistricttl.com/posts/{{slug}}" class="social-sharing__link" target="_blank">
                     			<img src="//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1518115813000/twitter-dark.png" class="" alt="">
                     		</a>
                     	</li>
