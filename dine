@@ -20,7 +20,9 @@
             <li class="show_cat_stores" data-id="5636">Dessert/Specialty</li>
             <li class="show_cat_stores" data-id="5645">Greek</li>
             <li class="show_cat_stores" data-id="5651">Grocery</li>
+            <li class="show_cat_stores" data-id="5639">Hawaiian</li>
             <li class="show_cat_stores" data-id="5640">Irish</li>
+            <li class="show_cat_stores" data-id="5647">Italian</li>
             <li class="show_cat_stores" data-id="5637">Thai</li>
             <li class="show_cat_stores" data-id="5643">Tea</li>
             
