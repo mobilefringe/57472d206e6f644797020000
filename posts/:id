@@ -4,6 +4,7 @@
     <div class="details_row">
         <div class="details_col_3">
             <ul class="side-blog-nav hidden_phone">
+                <li><a href="/posts" class="colored_link">All</a></li>
                 <li><a href="/posts?tag=beauty" class="colored_link">Beauty</a></li>
                 <li><a href="/posts?tag=entertainment" class="colored_link">Entertainment</a></li>
                 <li><a href="/posts?tag=family" class="colored_link">Family</a></li>
