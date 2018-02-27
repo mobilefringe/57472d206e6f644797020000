@@ -102,13 +102,18 @@
         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "M");
         renderStoreList('#store_list_container2','#store_list_template2', stores, "stores","N", "Z" );
         renderStoreList('#numbered_store_list_container','#numbered_store_list_template', stores, "stores","#", "#" );
+        
         var categories = getStoreCategories();
         var category_list = [];
         $.each( categories, function( key, val ){
             if (val.store_ids != null) {
-                category_list.push(val);
+                var cat_id = val.id;
+                if(cat_id != 5642 && cat_id != 5646 && cat_id != 56 && cat_id != 5624 && cat_id != 5623 && cat_id != 5606 && cat_id != 5616 && cat_id != 5621 && cat_id != 5622 && cat_id != 5617 && cat_id != 5617)) {
+                    category_list.push(val);
+                }
             } 
         });
+        
         renderGeneral('#category_container, #category_container2', '#category_template', category_list);
         $('#category_container, #category_container2').prepend('<li href="#" class="show_all_stores">All</li>');
         show_content();
