@@ -108,7 +108,7 @@
         $.each( categories, function( key, val ){
             if (val.store_ids != null) {
                 var cat_id = val.id;
-                if(cat_id != 5642 && cat_id != 5646 && cat_id != 56 && cat_id != 5624 && cat_id != 5623 && cat_id != 5606 && cat_id != 5616 && cat_id != 5621 && cat_id != 5622 && cat_id != 5617 && cat_id != 5617)) {
+                if(cat_id != 5642 && cat_id != 5646 && cat_id != 5640 && cat_id != 5638 && cat_id != 5648 && cat_id != 5636 && cat_id != 5645 && cat_id != 5651 && cat_id != 5650 && cat_id != 5639 && cat_id != 5641 && cat_id != 5647 && cat_id != 5649 && cat_id != 5644 && cat_id != 5643 && cat_id != 5637)) {
                     category_list.push(val);
                 }
             } 
