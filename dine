@@ -25,6 +25,8 @@
             <li class="show_cat_stores" data-id="5641">IRISH</li>
             <li class="show_cat_stores" data-id="5647">ITALIAN</li>
              <li class="show_cat_stores" data-id="5649">MEDITERRANEAN</li>
+             <li class="show_cat_stores" data-id="5652">RESTAURANTS - CASUAL</li>
+             <li class="show_cat_stores" data-id="5653">RESTAURANTS - FULL SERVICE</li>
              <li class="show_cat_stores" data-id="5644">SEAFOOD</li>
              <li class="show_cat_stores" data-id="5643">TEA</li>
             <li class="show_cat_stores" data-id="5637">THAI</li>
@@ -64,6 +66,8 @@
             <li class="show_cat_stores" data-id="5641">IRISH</li>
             <li class="show_cat_stores" data-id="5647">ITALIAN</li>
              <li class="show_cat_stores" data-id="5649">MEDITERRANEAN</li>
+             <li class="show_cat_stores" data-id="5652">RESTAURANTS - CASUAL</li>
+             <li class="show_cat_stores" data-id="5653">RESTAURANTS - FULL SERVICE</li>
              <li class="show_cat_stores" data-id="5644">SEAFOOD</li>
              <li class="show_cat_stores" data-id="5643">TEA</li>
             <li class="show_cat_stores" data-id="5637">THAI</li>
@@ -131,6 +135,8 @@
         var s11 = getStoresListByCategoryID(5641)
         var s12 = getStoresListByCategoryID(5647)
         var s13 = getStoresListByCategoryID(5649)
+        var s17 = getStoresListByCategoryID(5652)
+        var s18 = getStoresListByCategoryID(5653)
         var s14 = getStoresListByCategoryID(5644)
         var s15 = getStoresListByCategoryID(5643)
         var s16 = getStoresListByCategoryID(5637)
@@ -149,6 +155,8 @@
         stores = stores.concat(s12)
         stores = stores.concat(s13)
         stores = stores.concat(s14)
+        stores = stores.concat(s17)
+        stores = stores.concat(s18)
         stores = stores.concat(s15)
         stores = stores.concat(s16)
     
