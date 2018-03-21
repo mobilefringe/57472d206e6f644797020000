@@ -7,7 +7,11 @@
                 <li><a href="/posts" class="colored_link">All</a></li>
                 <li><a href="/posts?tag=beauty" class="colored_link">Beauty</a></li>
                 <li><a href="/posts?tag=food" class="colored_link">Food</a></li>
+                <li><a href="/posts?tag=entertainment" class="colored_link">Entertainment</a></li>
+                <li><a href="/posts?tag=family" class="colored_link">Family</a></li>
+                <li><a href="/posts?tag=home" class="colored_link">Home</a></li>
                 <li><a href="/posts?tag=lifestyle" class="colored_link">Lifestyle</a></li>
+                <li><a href="/posts?tag=pets" class="colored_link">Pets</a></li>
                 <div id="post_share_container">
                     <script id="post_share_template" type="x-tmpl-mustache/text">
         	            <li class="social-sharing-item">
