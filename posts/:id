@@ -39,7 +39,11 @@
                     <option value="/posts">All</option>
                     <option value="/posts?tag=beauty">Beauty</option>
                     <option value="/posts?tag=food">Food</option>
+                    <option value="/posts?tag=entertainment">Entertainment</option>
+                    <option value="/posts?tag=family">Family</option>
+                    <option value="/posts?tag=home">Home</option>
                     <option value="/posts?tag=lifestyle">Lifestyle</option>
+                    <option value="/posts?tag=pets">Pets</option>
                 </select>
                 <span class="mobile_blog_select_arrow"></span>
             </div>
