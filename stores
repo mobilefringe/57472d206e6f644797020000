@@ -102,7 +102,8 @@
         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "L");
         renderStoreList('#store_list_container2','#store_list_template2', stores, "stores","M", "Z" );
         renderStoreList('#numbered_store_list_container','#numbered_store_list_template', stores, "stores","#", "#" );
-         var categories = getStoreCategories();
+        
+        var categories = getStoreCategories();
         var category_list = [];
         $.each( categories, function( key, val ){
             if (val.store_ids != null) {
@@ -112,6 +113,7 @@
                 }
             } 
         });
+        
         renderGeneral('#category_container, #category_container2', '#category_template', category_list);
         $('#category_container, #category_container2').prepend('<li href="#" class="show_all_stores">All</li>');
         show_content();
