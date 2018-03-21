@@ -169,8 +169,8 @@
             }
         })
         
-        renderStoreList('#store_list_container','#store_list_template', newarr.sortBy(function(o){ return o.name }), "stores", "A", "L");
-        renderStoreList('#store_list_container2','#store_list_template2', newarr.sortBy(function(o){ return o.name }), "stores","M", "Z" );
+        renderStoreList('#store_list_container','#store_list_template', newarr.sortBy(function(o){ return o.name }), "stores", "A", "K");
+        renderStoreList('#store_list_container2','#store_list_template2', newarr.sortBy(function(o){ return o.name }), "stores","L", "Z" );
         // var categories = getStoreCategories();
         // renderGeneral('#category_container, #category_container2', '#category_template', categories);
         show_content();
