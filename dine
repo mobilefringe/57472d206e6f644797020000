@@ -12,11 +12,11 @@
         </a>
         <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2">
             <li href="#" class="show_all_stores">ALL</li>
-             <li class="show_cat_stores" data-id="5642">AMERICAN</li>
+            <li class="show_cat_stores" data-id="5642">AMERICAN</li>
             <li class="show_cat_stores" data-id="5646">ASIAN</li>
             <li class="show_cat_stores" data-id="5640">BAR</li>
-             <li class="show_cat_stores" data-id="5638">BAR-B-QUE</li>
-             <li class="show_cat_stores" data-id="5648">COFFEE/JUICE</li>
+            <li class="show_cat_stores" data-id="5638">BAR-B-QUE</li>
+            <li class="show_cat_stores" data-id="5648">COFFEE/JUICE</li>
             <li class="show_cat_stores" data-id="5636">DESSERT/SPECIALTY</li>
             <li class="show_cat_stores" data-id="5645">GREEK</li>
             <li class="show_cat_stores" data-id="5651">GROCERY</li>
@@ -24,14 +24,12 @@
             <li class="show_cat_stores" data-id="5639">HAWAIIAN</li>
             <li class="show_cat_stores" data-id="5641">IRISH</li>
             <li class="show_cat_stores" data-id="5647">ITALIAN</li>
-             <li class="show_cat_stores" data-id="5649">MEDITERRANEAN</li>
-             <li class="show_cat_stores" data-id="5652">RESTAURANTS - CASUAL</li>
-             <li class="show_cat_stores" data-id="5653">RESTAURANTS - FULL SERVICE</li>
-             <li class="show_cat_stores" data-id="5644">SEAFOOD</li>
-             <li class="show_cat_stores" data-id="5643">TEA</li>
+            <li class="show_cat_stores" data-id="5649">MEDITERRANEAN</li>
+            <li class="show_cat_stores" data-id="5652">RESTAURANTS - CASUAL</li>
+            <li class="show_cat_stores" data-id="5653">RESTAURANTS - FULL SERVICE</li>
+            <li class="show_cat_stores" data-id="5644">SEAFOOD</li>
+            <li class="show_cat_stores" data-id="5643">TEA</li>
             <li class="show_cat_stores" data-id="5637">THAI</li>
-            
-            
         </ul>
     </div>
     <div class="store_nav hidden_phone">
@@ -53,25 +51,24 @@
                 </a>
                 <ul id="category_container" class="dropdown-menu" aria-labelledby="cat_dd">
                     <li href="#" class="show_all_stores">ALL</li>
-             <li class="show_cat_stores" data-id="5642">AMERICAN</li>
-            <li class="show_cat_stores" data-id="5646">ASIAN</li>
-            <li class="show_cat_stores" data-id="5640">BAR</li>
-             <li class="show_cat_stores" data-id="5638">BAR-B-QUE</li>
-             <li class="show_cat_stores" data-id="5648">COFFEE/JUICE</li>
-            <li class="show_cat_stores" data-id="5636">DESSERT/SPECIALTY</li>
-            <li class="show_cat_stores" data-id="5645">GREEK</li>
-            <li class="show_cat_stores" data-id="5651">GROCERY</li>
-            <li class="show_cat_stores" data-id="5650">HALAL</li>
-            <li class="show_cat_stores" data-id="5639">HAWAIIAN</li>
-            <li class="show_cat_stores" data-id="5641">IRISH</li>
-            <li class="show_cat_stores" data-id="5647">ITALIAN</li>
-             <li class="show_cat_stores" data-id="5649">MEDITERRANEAN</li>
-             <li class="show_cat_stores" data-id="5652">RESTAURANTS - CASUAL</li>
-             <li class="show_cat_stores" data-id="5653">RESTAURANTS - FULL SERVICE</li>
-             <li class="show_cat_stores" data-id="5644">SEAFOOD</li>
-             <li class="show_cat_stores" data-id="5643">TEA</li>
-            <li class="show_cat_stores" data-id="5637">THAI</li>
-                    
+                    <li class="show_cat_stores" data-id="5642">AMERICAN</li>
+                    <li class="show_cat_stores" data-id="5646">ASIAN</li>
+                    <li class="show_cat_stores" data-id="5640">BAR</li>
+                    <li class="show_cat_stores" data-id="5638">BAR-B-QUE</li>
+                    <li class="show_cat_stores" data-id="5648">COFFEE/JUICE</li>
+                    <li class="show_cat_stores" data-id="5636">DESSERT/SPECIALTY</li>
+                    <li class="show_cat_stores" data-id="5645">GREEK</li>
+                    <li class="show_cat_stores" data-id="5651">GROCERY</li>
+                    <li class="show_cat_stores" data-id="5650">HALAL</li>
+                    <li class="show_cat_stores" data-id="5639">HAWAIIAN</li>
+                    <li class="show_cat_stores" data-id="5641">IRISH</li>
+                    <li class="show_cat_stores" data-id="5647">ITALIAN</li>
+                    <li class="show_cat_stores" data-id="5649">MEDITERRANEAN</li>
+                    <li class="show_cat_stores" data-id="5652">RESTAURANTS - CASUAL</li>
+                    <li class="show_cat_stores" data-id="5653">RESTAURANTS - FULL SERVICE</li>
+                    <li class="show_cat_stores" data-id="5644">SEAFOOD</li>
+                    <li class="show_cat_stores" data-id="5643">TEA</li>
+                    <li class="show_cat_stores" data-id="5637">THAI</li>
                 </ul>
             </div>
         </div>
