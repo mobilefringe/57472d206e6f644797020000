@@ -6,8 +6,9 @@
 <div class="main_container mobile_padding">
     <div class="details_row">
         <div class="details_col_3 hidden_phone">
-           <a href="/events-and-promotions">
-            <img src="//codecloud.cdn.speedyrails.net/sites/59b15cb26e6f64357b090000/image/png/1521648021000/eventsside.png"/></a>
+            <a href="/events-and-promotions">
+                <img src="//codecloud.cdn.speedyrails.net/sites/59b15cb26e6f64357b090000/image/png/1521648021000/eventsside.png"/>
+            </a>
         </div>
         <div class="details_col_9" id="promotion_details_container">
             <script id="promotion_details_template" type="x-tmpl-mustache/text">
