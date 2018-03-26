@@ -66,7 +66,6 @@
     </div>
 </div>
 
-
 <script>
     $(document).ready(function(e){
         init(e);
@@ -77,9 +76,6 @@
         var events = getEventsList().sortBy(function(o){ return o.start_date });
         var published_events = [];
         $.each( events , function( key, val ){
-            // today = new Date();
-            // webDate = new Date(val.show_on_web_date)
-            
             today = moment();
             webDate = moment(val.show_on_web_date);
             if (today >= webDate) {
@@ -89,8 +85,7 @@
         if (published_events.length > 0){
             renderEvents("#events_container","#events_template", published_events);
             $('#no_events').hide()
-        }
-        else {
+        } else {
             $('#events_header').click();
             $('#events_header').find('i').toggleClass('fa-chevron-down fa-chevron-up');
         }
@@ -98,9 +93,6 @@
         var promos = getPromotionsList().sortBy(function(o){ return o.start_date });
         var published_promos = [];
         $.each( promos , function( key, val ){
-            // today = new Date();
-            // webDate = new Date(val.show_on_web_date)
-            
             today = moment();
             webDate = moment(val.show_on_web_date);
             if (today >= webDate) {
@@ -110,8 +102,7 @@
         if (published_promos.length > 0){
             renderPromotions("#promos_container","#promos_template", published_promos);
             $('#no_promotions').hide()
-        }
-        else {
+        } else {
             $('#promotions_header').click();
             $('#promotions_header').find('i').toggleClass('fa-chevron-down fa-chevron-up');
         }
