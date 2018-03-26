@@ -79,8 +79,8 @@
                 <li><a href="/stores">DIRECTORY</a></li>
                 <li><a href="/events-and-promotions">EVENTS & PROMOTIONS</a></li>
                 <li><a href="/dine">DINE</a></li>
-                <li><a href="/location">LOCATION</a></li>
                 <li><a href="/posts">#MYDISTRICT</a></li>
+                <li><a href="/location">LOCATION</a></li>
                 <li><a href="#" id="mobile_dd">CENTER INFORMATION</a></li>
                 <li class="hidden_now mobile_menu_dd"><a href="/pages/district-services">SERVICES</a></li>
                 <li class="hidden_now mobile_menu_dd"><a href="/pages/district-contact-us">CONTACT</a></li>
@@ -107,8 +107,8 @@
                     <a href="/stores">Directory</a>
                     <a href="/events-and-promotions">Events & Promotions</a>
                     <a href="/dine">Dine</a>
-                    <a href="/location">Location</a>
                     <a href="/posts">#MYDISTRICT</a>
+                    <a href="/location">Location</a>
                     <div class="dropdown">
                         <a href="#" type="button" id="dropdownMenuCenterInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Center Information
