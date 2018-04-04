@@ -5,7 +5,7 @@ function renderPostsPageData(){
         var tag_name = query.split('=')[1];
         tag_name = tag_name.replace("%20", " ");
         var posts = getAllPublishedPosts();
-        var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) });
+        var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
         console.log(published_posts)
         renderSearchPosts("#blog_container", "#blog_template", published_posts, tag_name);
         load_more(1, published_posts);
