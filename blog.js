@@ -37,6 +37,7 @@ function renderPosts(container, template, collection){
     var counter = 1;
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
+        console.log(collection)
         if (val.image_url.indexOf('missing.png') > -1) {
             val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1519416315000/Background.png";
         } else {
