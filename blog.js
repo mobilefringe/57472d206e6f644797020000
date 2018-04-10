@@ -44,8 +44,8 @@ function renderPosts(container, template, collection){
             val.post_image = val.image_url;
         }
         
-        if(val.html_body.length > 100){
-            val.description_short = val.html_body.substring(0,100) + "...";
+        if(val.html_body.length > 150){
+            val.description_short = val.html_body.substring(0,150) + "...";
         } else {
             val.description_short = val.html_body;
         }
