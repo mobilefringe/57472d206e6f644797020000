@@ -107,7 +107,7 @@
                     <a href="/stores">Directory</a>
                     <a href="/events-and-promotions">Events & Promotions</a>
                     <a href="/dine">Dine</a>
-                    <a href="/posts">#MYDISTRICT</a>
+                    <a href="/posts">#MyDistrict</a>
                     <a href="/location">Location</a>
                     <div class="dropdown">
                         <a href="#" type="button" id="dropdownMenuCenterInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
