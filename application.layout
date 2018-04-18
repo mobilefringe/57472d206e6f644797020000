@@ -79,7 +79,7 @@
                 <li><a href="/stores">DIRECTORY</a></li>
                 <li><a href="/events-and-promotions">EVENTS & PROMOTIONS</a></li>
                 <li><a href="/dine">DINE</a></li>
-                <li><a href="/posts">#MyDistrict</a></li>
+                <li><a href="/posts" class="initial">#MyDistrict</a></li>
                 <li><a href="/location">LOCATION</a></li>
                 <li><a href="#" id="mobile_dd">CENTER INFORMATION</a></li>
                 <li class="hidden_now mobile_menu_dd"><a href="/pages/district-services">SERVICES</a></li>
