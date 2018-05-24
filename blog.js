@@ -45,9 +45,9 @@ function renderPosts(container, template, collection){
         }
         
         if(val.html_body.length > 150){
-            val.description_short = val.html_body.substring(0,150) + "...";
+            val.description_short = val.body.substring(0,150) + "...";
         } else {
-            val.description_short = val.html_body;
+            val.description_short = val.body;
         }
         
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
@@ -78,9 +78,9 @@ function renderSearchPosts(container, template, collection, search){
         }
         
         if(val.html_body.length > 150){
-            val.description_short = val.html_body.substring(0,150) + "...";
+            val.description_short = val.body.substring(0,150) + "...";
         } else {
-            val.description_short = val.html_body;
+            val.description_short = val.body;
         }
 
         val.counter = counter;
