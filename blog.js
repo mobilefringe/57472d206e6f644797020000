@@ -6,7 +6,6 @@ function renderPostsPageData(){
         tag_name = tag_name.replace("%20", " ");
         var posts = getAllPublishedPosts();
         var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
-        console.log(published_posts)
         renderSearchPosts("#blog_container", "#blog_template", published_posts, tag_name);
         load_more(1, published_posts);
     } else {
@@ -19,7 +18,6 @@ function renderPostsPageData(){
 function regularPostList () {
     var posts = getAllPublishedPosts();
     var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
-    console.log(published_posts)
     renderPosts("#blog_container", "#blog_template", published_posts);
     load_more(1, published_posts);
     
@@ -37,7 +35,6 @@ function renderPosts(container, template, collection){
     var counter = 1;
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
-        console.log(collection)
         if (val.image_url.indexOf('missing.png') > -1) {
             val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1519416315000/Background.png";
         } else {
@@ -91,9 +88,7 @@ function renderSearchPosts(container, template, collection, search){
                 if(!added_val){
                     tag = tag.toLowerCase();
                     search = search.toLowerCase();
-                    // console.log(key, "tag is", tag , "search is", search);
                     if(tag.indexOf(search) > -1 || search.indexOf(tag) > -1) {
-                        // console.log("tag is", tag , "search is", search);
                         var rendered = Mustache.render(template_html,val);
                         item_rendered.push(rendered);
                         counter = counter + 1;
