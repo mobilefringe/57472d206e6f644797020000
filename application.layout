@@ -153,7 +153,7 @@
                         <input name="cm-ulqyh-ulqyh" type="text" placeholder="Subscribe to Newsletter" class="newsletter_control" required />
                         <button class="newsletter_btn animated_btn">Subscribe</button>
                         <label class="newsletter_label">
-                            <input id="newsletter_agree" type="checkbox" />
+                            <input id="newsletter_agree" type="checkbox" required />
                             I agree to receive newsletters from The District at Tustin Legacy.
                         </label>
                         <p class="hidden_now" id="success_subscribe">
