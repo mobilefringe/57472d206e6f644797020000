@@ -1,0 +1,243 @@
+<div class="header_banner dine_banner">
+    <div class="main_container">
+        <h4 class="header_banner_heading">Dining</h4>
+    </div>
+</div>
+
+<div class="main_container mobile_padding" id="dining_container">
+    <div class="visible_phone position_relative">
+        <a class="mobile_header" href="/map">Center Map</a>
+        <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select Category <i class="fa fa-chevron-down visible_phone pull-right"></i>
+        </a>
+        <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2">
+            <li href="#" class="show_all_stores">All Cuisine</li>
+           
+        </ul>
+    </div>
+    <div class="store_nav hidden_phone">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#" id="cat_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="text-uppercase" id="current_category">ALL CUISINE</span>
+                    <img src="//codecloud.cdn.speedyrails.net/sites/57f503036e6f6454f2010000/image/png/1463153622000/chevron_down.png" class="category_icon" alt="">
+                </a>
+                <ul id="category_container" class="dropdown-menu" aria-labelledby="cat_dd">
+                    <li href="#" class="active show_all_stores">All Cuisine</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row content_container">
+        <div id="store_list_container">
+            <script id="store_list_template" type="x-tmpl-mustache/text">
+                <div class="cats_row open_{{data_initial}} col-sm-3" data-cat="{{subcat_list}}">
+                    <div class="store_container">
+                        {{#is_new_store}}<img class="new_store_tag" src="//codecloud.cdn.speedyrails.net/sites/5b5a39ff6e6f64136f3c0000/image/png/1532704917337/tag-new.png"/>{{/is_new_store}}
+                        <div class="store_logo_container">
+                            <img src="{{alt_store_front_url}}" style="{{show_main_image}}" class="store_list_logo" />
+                        </div>
+                        <div class="store_data_container">
+                            <p class="store_list_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                            <p class="today_store_hours" id="today_store_hour_{{id}}">{{hour_string}}</p>
+                        </div>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+</div>
+
+<script id="category_template" type="x-tmpl-mustache/text">
+    <li class="show_cat_stores" data-id="{{id}}">{{name}}</li>    
+</script>
+
+<style>
+    #category_container {
+        left: 10px;
+        right: auto;
+    }
+    #category_container li.active {
+        color: #79a185;
+    }
+</style>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+        show_cat_stores();
+    })
+    
+    function renderPage(){
+        var dining_cat = getCategoryDetailsByName('Dining');
+        var subcategories = [];
+        if (dining_cat !== null && dining_cat !== undefined) {
+           subcategories = getSubcategoriesByParentID(dining_cat.id);
+        }
+        // add subcategories to dropdown
+        $.each( subcategories , function( key, val ){
+            $("#category_container").append("<li class='show_cat_stores' data-id='"+val.id+"'>"+val.name+"</li>");
+            $("#category_container2").append("<li class='show_cat_stores' data-id='"+val.id+"'>"+val.name+"</li>");
+        });
+        
+        var stores = getStoresListBySubcategory();
+        
+        stores.sortBy(function(o){ return o.name })
+        renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
+        
+        $.each(stores, function(key, val){
+             //get today's hours per store
+            var hour_ids = val.store_hours;
+            if (hour_ids != null){
+                if (val.hour_string === "Closed Today"){
+                    $('#today_store_hour_'+val.id).addClass("red");
+                } else {
+                    $('#today_store_hour_'+val.id).removeClass("red");
+                } 
+            } else {
+                $('#today_store_hour_'+val.id).hide();
+            }
+            
+            
+        });
+        
+        
+        show_content();
+        show_cat_stores();
+    }
+    function show_cat_stores(){
+        $('.show_cat_stores').click(function(e){
+            var cat_id = $(this).attr('data-id');
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+            var rows = $('.cats_row');
+            rows.hide();
+            $('.store_initial').hide();
+            $('#current_category').text($(this).text());
+            // $('#cat_name').css('display', 'block');
+            $('#store_list_container').addClass("full_width");
+            $.each(rows, function(i, val){
+                var cat_array = val.getAttribute('data-cat').split(',');
+                if ($.inArray(cat_id, cat_array) >= 0){
+                    $(val).show();
+                }
+            });
+            $('html, body').animate({scrollTop : 0},800);
+            e.preventDefault();
+        });
+        $('.show_all_stores').click(function(e){
+            $('#store_list_container').removeClass("full_width");
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+            $('#current_category').text($(this).text());
+            var rows = $('.cats_row');
+            if ($(window).width() > 768){
+                rows.show();
+            }
+            else{
+                rows.hide();
+            }
+            $.each($('.store_initial'), function(i, val){
+               if ($(val).text().trim().length > 0){
+                   $(val).show();
+               } 
+            });
+            
+            $('#cat_name').hide();
+            e.preventDefault();
+        });
+        
+    }
+    function renderStoreList(container, template, collection, type, starter, breaker){
+        var item_list = [];
+        var item_rendered = [];
+        var template_html = $(template).html();
+        Mustache.parse(template_html);   // optional, speeds up future uses
+        var store_initial="";
+        $.each( collection , function( key, val ) {
+            //check if there's image for store, if not assign default
+            if (type == "stores" || type == "category_stores"){
+                if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
+                    val.alt_store_front_url = site_json.default_image;
+                    console.log("alt_store_front_url", val.alt_store_front_url)
+                } else {
+                    val.alt_store_front_url = getImageURL(val.store_front_url);    
+                }
+            }
+            if (val.total_published_promos > 0){
+                val.promo_exist = "display:inline"
+            }
+            else {
+                val.promo_exist = "display:none"
+            }
+            
+            //get today's hours per store
+            var hour_ids = val.store_hours;
+            if (hour_ids != null){
+                var hours = getHoursForStoreSlug(val.slug).sortBy(function(o){ return o.day_of_week });
+                today_day_of_week = moment().day();
+                var todays_hour = hours.filter(function(o){ return today_day_of_week === o.day_of_week; })[0];
+                var open_time = moment(todays_hour.open_time).tz(getPropertyTimeZone());
+                var close_time = moment(todays_hour.close_time).tz(getPropertyTimeZone());
+                if (todays_hour.is_closed == true){
+                    val.hour_string = "Closed Today"
+                    $('#today_store_hour_'+val.id).addClass("red");
+                    console.log("hello" ,$('#today_store_hour_'+val.id));
+                } else {
+                    val.hour_string = "Hours: " + open_time.format("h:mma") + " - " + close_time.format("h:mma");
+                    $('#today_store_hour_'+val.id).removeClass("red");
+                } 
+            } else {
+                $('#today_store_hour_'+val.id).hide();
+            }
+            
+            //create a subcat list
+            if(val.subcategories != null && val.subcategories != undefined){
+                val.subcat_list = val.subcategories.join(',');
+            }
+            
+            var current_initial = val.name[0];
+            if(val.categories != null && val.categories != undefined){
+                val.cat_list = val.categories.join(',');
+            }
+            if(store_initial.toLowerCase() == current_initial.toLowerCase()){
+                val.data_initial = current_initial;
+                store_initial = current_initial;
+                val.initial = "";
+                val.show = "display:none;";
+            }
+            else {
+                val.data_initial = current_initial;
+                val.initial = current_initial;
+                store_initial = current_initial;
+                val.show = "display:block;";
+            }
+            if (val.is_coming_soon_store == true){
+                val.coming_soon_store = "display:inline";
+            }
+            else {
+                val.coming_soon_store = "display:none";
+            }
+            if (val.is_new_store == true){
+                val.new_store = "display:inline";
+            }
+            else {
+                val.new_store = "display:none";
+            }
+            val.map_x = val.x_coordinate - 19;
+            val.map_y = val.y_coordinate - 58;
+            val.block = current_initial + '-block';
+            var rendered = Mustache.render(template_html,val);
+            var upper_current_initial = current_initial.toUpperCase();
+            if(starter == '#' && breaker == '#' && isInt(upper_current_initial)){
+                item_rendered.push(rendered);
+                $('.numbers_exist').css('display', 'block');
+            }
+            if (upper_current_initial.charCodeAt(0) <= breaker.charCodeAt(0) && upper_current_initial.charCodeAt(0) >= starter.charCodeAt(0)){
+                item_rendered.push(rendered);
+            }
+        });
+        $(container).show();
+        $(container).html(item_rendered.join(''));
+    }
+</script>
