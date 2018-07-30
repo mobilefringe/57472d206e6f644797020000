@@ -1,0 +1,195 @@
+$layout_color: #012e45;
+$animation_color: #a5afb0;
+
+.main_btn, .back_to_home, .copyright_footer, .newsletter_btn, .flex-control-paging li a.flex-active, .store_nav a.active_store_nav:after, .store_nav a:hover:after, .store_initial, .details_header, .back_to_list, .back_to_list:hover, .back_to_list:focus, .mobile_menu_dd, #mm_page_content h2{
+    background: $layout_color;
+}
+
+.newsletter_control:focus{
+    border-color: $layout_color;
+}
+
+.view_more_btn, .colored_link, .colored_link a, #mm_page_content h1, .mobile_menu li a, .promo_exist{
+    color: $layout_color;
+}
+
+.animated_btn:before{
+    background: $animation_color;
+}
+
+.stores_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59b15cb26e6f64357b090000/image/png/1521568024000/district2.png);
+}
+
+.events_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59b15cb26e6f64357b090000/image/png/1521651884000/events.png);
+}
+
+.dine_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59b15cb26e6f64357b090000/image/png/1521647552000/DINE.png);
+}
+
+.jobs_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_jobs.jpg);
+}
+
+.location_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59b15cb26e6f64357b090000/image/png/1521578273000/location.png);
+}
+
+.district-services{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59b15cb26e6f64357b090000/image/png/1521647398000/services.png);
+}
+
+.district-contact-us{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59b15cb26e6f64357b090000/image/png/1521647650000/contactus.png);
+}
+.district-privacy-policy{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_privacy.jpg);
+}
+.district-videos{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f2b1016e6f645d03550000/image/jpeg/undefined/dtl_1920x150_banner_events.jpg);
+}
+.main_logo{
+    margin-top: 0;
+    max-height: 90px;
+}
+.top_menu a {
+    padding: 0 16px;
+}
+.open #dropdownMenuCenterInfo {
+    padding: 0 14px;
+    width: 168px;
+    top: -15px;
+    left: 3px;
+    text-align: center;
+}
+.center_info_dd {
+    padding-top: 30px;
+    top: -30px;
+    left: 3px;
+}
+.mark {
+    background-color: transparent;
+}
+
+.logo_container{
+    width: 220px;    
+}
+
+.nav_container{
+    width: calc(100% - 220px);
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+/* *** CALENDAR PAGE *** */
+.event_calendar_header {
+    position: absolute;
+    right: 0;
+    list-style: none;
+    width: calc(100% - 200px);
+    margin-bottom: 0;
+    top: 72px;
+    font-size: 16px;
+}
+.event_calendar_header li {
+    margin-left: 20px;
+    float: right;
+    line-height: normal;
+    color: #000;
+}
+.event_calendar_header li span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    border-radius: 4px;
+    float: left;
+}
+
+.initial {
+    text-transform: initial !important;
+}
+
+@media (max-width: 768px) {
+    .mobile_menu {
+        top: 99px;
+    }
+    .logo_container {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        .main_logo {
+            max-width: 100%;
+        }
+    }
+    .bordered-box .col-md-2 {
+        border-right: none ;
+    }
+    .bordered-box .col-md-10 {
+        padding-top: 0;
+        padding-left: 0;
+    }
+}
+
+/**** DINE STYLING *****/
+#dining_container {
+    .store_nav a:after {
+        min-width: 90px;
+    }
+    .store_container {
+        position:relative;
+        .store_logo_container {
+            overflow: hidden;
+            border: 1px solid #D8D8D8;
+            .store_list_logo {
+                max-width: 100%;
+                max-height:100%;
+                
+                transition: all ease 0.3s;
+                &:hover {
+                    transform:scale(1.1);
+                }
+            }
+        }
+        .store_data_container {
+            background: #F2F2F2;
+            border: 1px solid #D8D8D8;
+            border-top: none;
+            padding-top: 15px;
+            height: 150px;
+            position:relative;
+            .store_list_name {
+                font-size: 20px;
+                line-height: normal;
+            }
+            .today_store_hours {
+                margin: 0 20px;
+                font-size: 14px;
+                position: absolute;
+                bottom: 10px;
+            }
+            .today_store_hours.red{
+                color: red;
+            }
+        }
+        .new_store_tag {
+            position: absolute;
+            width: 60px;
+            right: 0px;
+            top: -8px;
+            z-index: 3;
+        }
+    }
+    #current_category {
+        font-family: Avenir-Medium;
+        font-size: 18px;
+        color: #4B4B4B;
+        position: relative;
+        display: inline-block;
+        margin: auto;
+    }
+}
