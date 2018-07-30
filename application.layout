@@ -67,7 +67,7 @@
     
     <!-- Site data -->
     <script>
-    $.getJSON("//longbeach.mallmaverickstaging.com/api/v4/longbeach/subcategories.json?bust=true").done(function(data){
+        $.getJSON("//longbeach.mallmaverickstaging.com/api/v4/longbeach/subcategories.json?bust=true").done(function(data){
             
         });
         
