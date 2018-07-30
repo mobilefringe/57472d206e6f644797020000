@@ -70,6 +70,7 @@
     
     function renderPage(){
         var dining_cat = getCategoryDetailsByName('Dining');
+        console.log("dining_cat", dining_cat)
         var subcategories = [];
         if (dining_cat !== null && dining_cat !== undefined) {
            subcategories = getSubcategoriesByParentID(dining_cat.id);
