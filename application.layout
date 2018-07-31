@@ -67,9 +67,6 @@
     
     <!-- Site data -->
     <script>
-        $.getJSON("//riverside.mallmaverick.com/api/v4/riverside/subcategories.json?bust=true").done(function(data){
-            
-        });
         $.getJSON("//thedistrict.mallmaverick.com/api/v4/district/subcategories.json?bust=true").done(function(data){
             
         });
