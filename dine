@@ -137,7 +137,7 @@
             else{
                 rows.hide();
             }
-            $.each($('.store_initial'), function(i, val){
+            $.each($('.cats_row'), function(i, val){
                if ($(val).text().trim().length > 0){
                    $(val).show();
                } 
