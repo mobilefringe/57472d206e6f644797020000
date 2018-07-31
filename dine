@@ -69,7 +69,7 @@
     })
     
     function renderPage(){
-        var dining_cat = getCategoryDetailsByName('DINING');
+        var dining_cat = getCategoryDetailsByName('Dining');
         var subcategories = [];
         if (dining_cat !== null && dining_cat !== undefined) {
            subcategories = getSubcategoriesByParentID(dining_cat.id);
