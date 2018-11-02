@@ -1,0 +1,81 @@
+<link href="../blog.css" rel="stylesheet">
+<div class="main_container mobile_padding">
+    <div class="row">
+        <div class="col-md-3 hidden_phone"></div>
+        <div class="col-md-9">
+            <h4 class="main-header">#MyDISTRICT</h4>
+            <h5 class="main-subheader">Your insider's guide to everything THE DISTRICT, from where to Shop, Dine and Play -- to uncovering the hidden gems and discovering what’s new and fresh!</h5>
+        </div>
+    </div>
+    <div class="details_row">
+        <div class="details_col_3">
+            <ul class="side-blog-nav hidden_phone">
+                <li><a href="/posts" class="colored_link">All</a></li>
+                <li><a href="/posts?tag=beauty" class="colored_link">Beauty</a></li>
+                <li><a href="/posts?tag=food" class="colored_link">Food</a></li>
+                <li><a href="/posts?tag=entertainment" class="colored_link">Entertainment</a></li>
+                <li><a href="/posts?tag=family" class="colored_link">Family</a></li>
+                <li><a href="/posts?tag=home" class="colored_link">Home</a></li>
+                <li><a href="/posts?tag=lifestyle" class="colored_link">Lifestyle</a></li>
+                <li><a href="/posts?tag=pets" class="colored_link">Pets</a></li>
+            </ul>
+            <div class="position_relative visible_phone">
+                <select class="mobile_blog_select ">
+                    <option selected>Select a Category</option>
+                    <option value="/posts">All</option>
+                    <option value="/posts?tag=beauty">Beauty</option>
+                    <option value="/posts?tag=food">Food</option>
+                    <option value="/posts?tag=entertainment">Entertainment</option>
+                    <option value="/posts?tag=family">Family</option>
+                    <option value="/posts?tag=home">Home</option>
+                    <option value="/posts?tag=lifestyle">Lifestyle</option>
+                    <option value="/posts?tag=pets">Pets</option>
+                </select>
+                <span class="mobile_blog_select_arrow"></span>
+            </div>
+        </div>
+        <div class="details_col_9 blog-right">
+            <div class="blog-wrapper-main">
+                <div class="post-list post-list-landing hidden_now" id="blog_container">
+                    <script id="blog_template" type="x-tmpl-mustache/text">
+                        <div class="post-item hidden_now" id="show_{{counter}}">
+                            <a href="/posts/{{slug}}"><img alt="blog" class="width_100 margin-20" src="{{post_image}}" /></a>
+                            <h3 class="feature_text margin-10"><a href="/posts/{{slug}}">{{title}}</a></h3>
+                            <div class="blog_description description details_desc">{{ description_short }}</div>
+                            <p class="promo_exist">{{published_on}}</p>
+                        </div>
+                    </script>
+                </div>
+                <div id="no_posts" class="hidden_now ">
+        	        <h4>Sorry, no posts.</h4>
+        	    </div>
+            </div>
+            <input type="hidden" value="1" id="num_loaded" />
+            <p class="new_store_subheading text-center hidden_now" id="all_loaded"></p>
+            <p class="text-center" id="loaded_posts">
+                <a href="#" id="load_more_posts">LOAD MORE POSTS</a>
+            </p>
+        </div>
+    </div>
+</div>
+<script src="../blog.js"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        renderPostsPageData();
+
+        $('.colored_link').click(function(e) {
+            var href = $(this).attr('href');
+            document.location.href = href;
+        });
+        
+        $('.mobile_blog_select').change(function(e){
+            var href = this.value;
+            document.location.href = href;
+        });
+    }
+</script>
