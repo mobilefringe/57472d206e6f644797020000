@@ -12,7 +12,6 @@
         </a>
         <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2">
             <li href="#" class="show_all_stores">All Cuisine</li>
-           
         </ul>
     </div>
     <div class="store_nav hidden_phone">
@@ -33,7 +32,9 @@
             <script id="store_list_template" type="x-tmpl-mustache/text">
                 <div class="cats_row open_{{data_initial}} col-sm-3" data-cat="{{subcat_list}}">
                     <div class="store_container">
-                        {{#is_new_store}}<img class="new_store_tag" src="//codecloud.cdn.speedyrails.net/sites/5b5a39ff6e6f64136f3c0000/image/png/1532704917337/tag-new.png"/>{{/is_new_store}}
+                        {{#is_new_store}}
+                            <img class="new_store_tag" src="//codecloud.cdn.speedyrails.net/sites/5b5a39ff6e6f64136f3c0000/image/png/1532704917337/tag-new.png"/>
+                        {{/is_new_store}}
                         <div class="store_logo_container">
                             <img src="{{alt_store_front_url}}" style="{{show_main_image}}" class="store_list_logo" />
                         </div>
