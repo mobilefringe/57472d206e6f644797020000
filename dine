@@ -12,6 +12,7 @@
         </a>
         <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2">
             <li href="#" class="show_all_stores">All Cuisine</li>
+           
         </ul>
     </div>
     <div class="store_nav hidden_phone">
@@ -82,7 +83,6 @@
         var stores = getStoresListBySubcategory();
         
         stores.sortBy(function(o){ return o.name })
-        console.log("stores", stores)
         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
         
         $.each(stores, function(key, val){
