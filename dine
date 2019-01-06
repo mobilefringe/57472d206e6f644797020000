@@ -82,7 +82,7 @@
         var stores = getStoresListBySubcategory();
         
         stores.sortBy(function(o){ return o.name })
-        console.log("stores", storess)
+        console.log("stores", stores)
         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
         
         $.each(stores, function(key, val){
