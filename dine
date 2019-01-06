@@ -87,7 +87,7 @@
         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
         
         $.each(stores, function(key, val){
-             //get today's hours per store
+            //get today's hours per store
             var hour_ids = val.store_hours;
             if (hour_ids != null){
                 if (val.hour_string === "Closed Today"){
@@ -98,10 +98,7 @@
             } else {
                 $('#today_store_hour_'+val.id).hide();
             }
-            
-            
         });
-        
         
         show_content();
         show_cat_stores();
