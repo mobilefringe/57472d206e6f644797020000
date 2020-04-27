@@ -74,8 +74,8 @@
         var slug = pathArray[pathArray.length-1];
         var contest_list = getContestList();
         var contest_slug = _.filter(contest_list, function(o) { return _.includes(o.show_on_slug, slug) });
-        
-        contest_details = getContestBySlug(slug);
+        contest_slug = contest_slug[0]
+        contest_details = getContestBySlug(contest_slug.slug);
         console.log(contest_slug, contest_details)
         renderContest("#contest_details_container", '#contest_details_template', contest_details)
         show_content();
