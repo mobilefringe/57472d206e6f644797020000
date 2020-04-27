@@ -72,8 +72,11 @@
     function renderPage(){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
+        var contest_list = getContestList();
+        var contest_slug = _.filter(contest_list, function(o) { return _.includes(o.show_on_slug, slug) });
+        
         contest_details = getContestBySlug(slug);
-        console.log(contest_details)
+        console.log(contest_slug, contest_details)
         renderContest("#contest_details_container", '#contest_details_template', contest_details)
         show_content();
         $.validate();
