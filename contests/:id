@@ -39,7 +39,7 @@
                         <div class="col-md-12 margin_30">
                             <label>
                                 <input id="age_agreement" type="checkbox" name="contest[age]" required data-validation="required"/> 
-                                I am over the age of 21.
+                                I am over the age of 18.
                             </label>
                         </div>
                     </div>
