@@ -95,7 +95,7 @@
         $.each( promos , function( key, val ){
             today = moment();
             webDate = moment(val.show_on_web_date);
-            console.log(val.name, today.format('MM dd'),webDate.format('MM dd') ,today >= webDate )
+            console.log(val.name, today.format('MM ddd'),webDate.format('MM dd') ,today >= webDate )
             if (today >= webDate) {
                 published_promos.push(val)
             } 
