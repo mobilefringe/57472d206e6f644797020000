@@ -81,9 +81,9 @@
                     <div class="col-md-12">
                         <p class="store_list_name">
                             <a href="/stores/{{slug}}">{{name}}</a>
-                            <span style="{{tags_exist}}" class="pull-right store_tag">{{ tag_list }}</span>
-                            <span style="{{new_store}}" class="pull-right store_tag">NEW</span> 
-                            <span style="{{coming_soon_store}}" class="pull-right store_tag">COMING SOON</span>
+                            <span style="{{tags_exist}}" class="pull-right store_tag">{{ tag_list }} </span>
+                            <span style="{{new_store}}" class="pull-right store_tag">NEW </span> 
+                            <span style="{{coming_soon_store}}" class="pull-right store_tag">COMING SOON </span>
                             <i style="{{promo_exist}}" class="fa fa-tags promo_exist pull-right" aria-hidden="true"></i>
                         </p>
                     </div>
